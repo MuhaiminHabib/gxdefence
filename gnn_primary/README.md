@@ -18,10 +18,12 @@ Use the experiment's recorded main Python environment. The DGL worker remains in
 python gnn_primary/validate.py
 python gnn_primary/run.py smoke --outer 3 --draws 4 --targets 1 --trials 1
 python gnn_primary/run.py pilot
-python gnn_primary/run.py full
+python gnn_primary/run.py full --trials 5 --targets 0
 ```
 
 The smoke run only checks two validation targets. The pilot uses the three previously selected validation targets per dataset and two seeds (12 target-trial cases). The full run uses every previously eligible test target (166 AMLSim, 795 HI-Small) and five seeds. A complete pilot with matching source hashes and outer/draw settings is required before full execution. Resume accepts only identical source hashes and parameters.
+
+`continue_after_pilot.ps1` waits for an already-running pilot and starts the full run only after completion. Start at most one such controller. Its pipeline status and full log are saved under results. In the full command, targets=0 records that no target cap is requested; the full phase always enumerates every eligible test target.
 
 ## Registered initial settings
 

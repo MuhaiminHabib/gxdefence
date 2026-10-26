@@ -8,6 +8,7 @@
 !/complete_graphs/*.py
 !/complete_graphs/*.md
 !/gnn_primary/*.py
+!/gnn_primary/*.ps1
 !/gnn_primary/*.md
 !/gnn_primary/results/validation.json
 !/gnn_primary/results/*/REPORT.md

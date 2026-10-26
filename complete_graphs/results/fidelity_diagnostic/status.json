@@ -1,0 +1,8 @@
+{
+  "state": "complete",
+  "targets": 20,
+  "rows": 320,
+  "checks_passed": true,
+  "max_local_full_logit_error": 1.9073486328125e-06,
+  "seconds": 7.437021017074585
+}

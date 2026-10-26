@@ -1,0 +1,61 @@
+dataset,attack,explainer,k,attempted,unique_targets,preserved
+amlsim,Clean repeat,GNNExplainer,5,6,3,6
+amlsim,Clean repeat,GNNExplainer,10,6,3,6
+amlsim,Clean repeat,GNNExplainer,20,6,3,6
+amlsim,Clean repeat,PGExplainer,5,6,3,6
+amlsim,Clean repeat,PGExplainer,10,6,3,6
+amlsim,Clean repeat,PGExplainer,20,6,3,6
+amlsim,Clean repeat,SubgraphX,0,6,3,6
+amlsim,GXAttack,GNNExplainer,5,6,3,6
+amlsim,GXAttack,GNNExplainer,10,6,3,6
+amlsim,GXAttack,GNNExplainer,20,6,3,6
+amlsim,GXAttack,PGExplainer,5,6,3,6
+amlsim,GXAttack,PGExplainer,10,6,3,6
+amlsim,GXAttack,PGExplainer,20,6,3,6
+amlsim,GXAttack,SubgraphX,0,6,3,6
+amlsim,Random flipping,PGExplainer,5,6,3,6
+amlsim,Random flipping,PGExplainer,10,6,3,6
+amlsim,Random flipping,PGExplainer,20,6,3,6
+amlsim,Random rewiring,PGExplainer,5,6,3,6
+amlsim,Random rewiring,PGExplainer,10,6,3,6
+amlsim,Random rewiring,PGExplainer,20,6,3,6
+elliptic,Clean repeat,GNNExplainer,5,6,3,6
+elliptic,Clean repeat,GNNExplainer,10,6,3,6
+elliptic,Clean repeat,GNNExplainer,20,6,3,6
+elliptic,Clean repeat,PGExplainer,5,6,3,6
+elliptic,Clean repeat,PGExplainer,10,6,3,6
+elliptic,Clean repeat,PGExplainer,20,6,3,6
+elliptic,Clean repeat,SubgraphX,0,6,3,6
+elliptic,GXAttack,GNNExplainer,5,6,3,6
+elliptic,GXAttack,GNNExplainer,10,6,3,6
+elliptic,GXAttack,GNNExplainer,20,6,3,6
+elliptic,GXAttack,PGExplainer,5,6,3,6
+elliptic,GXAttack,PGExplainer,10,6,3,6
+elliptic,GXAttack,PGExplainer,20,6,3,6
+elliptic,GXAttack,SubgraphX,0,6,3,6
+elliptic,Random flipping,PGExplainer,5,6,3,6
+elliptic,Random flipping,PGExplainer,10,6,3,6
+elliptic,Random flipping,PGExplainer,20,6,3,6
+elliptic,Random rewiring,PGExplainer,5,6,3,6
+elliptic,Random rewiring,PGExplainer,10,6,3,6
+elliptic,Random rewiring,PGExplainer,20,6,3,6
+hi_small,Clean repeat,GNNExplainer,5,6,3,6
+hi_small,Clean repeat,GNNExplainer,10,6,3,6
+hi_small,Clean repeat,GNNExplainer,20,6,3,6
+hi_small,Clean repeat,PGExplainer,5,6,3,6
+hi_small,Clean repeat,PGExplainer,10,6,3,6
+hi_small,Clean repeat,PGExplainer,20,6,3,6
+hi_small,Clean repeat,SubgraphX,0,6,3,6
+hi_small,GXAttack,GNNExplainer,5,6,3,6
+hi_small,GXAttack,GNNExplainer,10,6,3,6
+hi_small,GXAttack,GNNExplainer,20,6,3,6
+hi_small,GXAttack,PGExplainer,5,6,3,6
+hi_small,GXAttack,PGExplainer,10,6,3,6
+hi_small,GXAttack,PGExplainer,20,6,3,6
+hi_small,GXAttack,SubgraphX,0,6,3,6
+hi_small,Random flipping,PGExplainer,5,6,3,6
+hi_small,Random flipping,PGExplainer,10,6,3,6
+hi_small,Random flipping,PGExplainer,20,6,3,6
+hi_small,Random rewiring,PGExplainer,5,6,3,6
+hi_small,Random rewiring,PGExplainer,10,6,3,6
+hi_small,Random rewiring,PGExplainer,20,6,3,6

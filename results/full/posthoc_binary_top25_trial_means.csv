@@ -1,0 +1,76 @@
+dataset,attack,explainer,trial,binary_top25_cosine
+amlsim,GXAttack,GNNExplainer,2026,0.5548452801370768
+amlsim,GXAttack,GNNExplainer,2027,0.4597510625686898
+amlsim,GXAttack,GNNExplainer,2028,0.34298410184320105
+amlsim,GXAttack,GNNExplainer,2029,0.2841960470078689
+amlsim,GXAttack,GNNExplainer,2030,0.29298093454028806
+amlsim,GXAttack,PGExplainer,2026,0.9706458231037414
+amlsim,GXAttack,PGExplainer,2027,0.9035125852176045
+amlsim,GXAttack,PGExplainer,2028,0.8382746004161548
+amlsim,GXAttack,PGExplainer,2029,0.5765424532942215
+amlsim,GXAttack,PGExplainer,2030,0.690651343791986
+amlsim,GXAttack,SubgraphX,2026,0.27498067270228843
+amlsim,GXAttack,SubgraphX,2027,0.2657208643832413
+amlsim,GXAttack,SubgraphX,2028,0.39541994449456025
+amlsim,GXAttack,SubgraphX,2029,0.23715992173810366
+amlsim,GXAttack,SubgraphX,2030,0.23102398967298343
+amlsim,Random flipping,PGExplainer,2026,0.944708411982569
+amlsim,Random flipping,PGExplainer,2027,0.9541719891162671
+amlsim,Random flipping,PGExplainer,2028,0.9776853758384131
+amlsim,Random flipping,PGExplainer,2029,0.9853181614140806
+amlsim,Random flipping,PGExplainer,2030,0.936130408420389
+amlsim,Random rewiring,PGExplainer,2026,0.9547395965555245
+amlsim,Random rewiring,PGExplainer,2027,0.982802118917864
+amlsim,Random rewiring,PGExplainer,2028,0.9636759104035177
+amlsim,Random rewiring,PGExplainer,2029,0.974564791508294
+amlsim,Random rewiring,PGExplainer,2030,0.9624091726059691
+elliptic,GXAttack,GNNExplainer,2026,0.23871602433263445
+elliptic,GXAttack,GNNExplainer,2027,0.14351100340515616
+elliptic,GXAttack,GNNExplainer,2028,0.22962623016547917
+elliptic,GXAttack,GNNExplainer,2029,0.3062680837411968
+elliptic,GXAttack,GNNExplainer,2030,0.2645570183187154
+elliptic,GXAttack,PGExplainer,2026,0.3723515088501223
+elliptic,GXAttack,PGExplainer,2027,0.3079868032394951
+elliptic,GXAttack,PGExplainer,2028,0.29768222239237263
+elliptic,GXAttack,PGExplainer,2029,0.278242993276494
+elliptic,GXAttack,PGExplainer,2030,0.33301221023895944
+elliptic,GXAttack,SubgraphX,2026,0.16906955250190578
+elliptic,GXAttack,SubgraphX,2027,0.2299848964890266
+elliptic,GXAttack,SubgraphX,2028,0.15420638665455996
+elliptic,GXAttack,SubgraphX,2029,0.3285452047185004
+elliptic,GXAttack,SubgraphX,2030,0.22856120100813565
+elliptic,Random flipping,PGExplainer,2026,0.7012648511897467
+elliptic,Random flipping,PGExplainer,2027,0.6247709880112701
+elliptic,Random flipping,PGExplainer,2028,0.5866720796885373
+elliptic,Random flipping,PGExplainer,2029,0.38054649198915974
+elliptic,Random flipping,PGExplainer,2030,0.3394076211193175
+elliptic,Random rewiring,PGExplainer,2026,0.5533357688278886
+elliptic,Random rewiring,PGExplainer,2027,0.34671265125597245
+elliptic,Random rewiring,PGExplainer,2028,0.5279203344875977
+elliptic,Random rewiring,PGExplainer,2029,0.4147475991020483
+elliptic,Random rewiring,PGExplainer,2030,0.3569654128971823
+hi_small,GXAttack,GNNExplainer,2026,0.38889068760194934
+hi_small,GXAttack,GNNExplainer,2027,0.3439592714564548
+hi_small,GXAttack,GNNExplainer,2028,0.3441816663334414
+hi_small,GXAttack,GNNExplainer,2029,0.3720366650701496
+hi_small,GXAttack,GNNExplainer,2030,0.2896311338658494
+hi_small,GXAttack,PGExplainer,2026,0.5200374127000005
+hi_small,GXAttack,PGExplainer,2027,0.5718109220069321
+hi_small,GXAttack,PGExplainer,2028,0.5568954565557932
+hi_small,GXAttack,PGExplainer,2029,0.6013013234876752
+hi_small,GXAttack,PGExplainer,2030,0.5713530485914216
+hi_small,GXAttack,SubgraphX,2026,0.47665922976903974
+hi_small,GXAttack,SubgraphX,2027,0.43486211687258697
+hi_small,GXAttack,SubgraphX,2028,0.5398682155652988
+hi_small,GXAttack,SubgraphX,2029,0.41781876730512296
+hi_small,GXAttack,SubgraphX,2030,0.4294935662072276
+hi_small,Random flipping,PGExplainer,2026,0.6278964354758504
+hi_small,Random flipping,PGExplainer,2027,0.6592694064730442
+hi_small,Random flipping,PGExplainer,2028,0.6777176609680806
+hi_small,Random flipping,PGExplainer,2029,0.663455395494174
+hi_small,Random flipping,PGExplainer,2030,0.600910653542198
+hi_small,Random rewiring,PGExplainer,2026,0.6071501769720242
+hi_small,Random rewiring,PGExplainer,2027,0.703383140742466
+hi_small,Random rewiring,PGExplainer,2028,0.6327730505037854
+hi_small,Random rewiring,PGExplainer,2029,0.6682656818527545
+hi_small,Random rewiring,PGExplainer,2030,0.6630391803221016

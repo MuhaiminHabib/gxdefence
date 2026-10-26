@@ -1,0 +1,21 @@
+{
+  "state": "complete",
+  "coverage": [
+    {
+      "dataset": "amlsim",
+      "targets": 166,
+      "trials": 5,
+      "evaluations": 830,
+      "label_changes": 0
+    },
+    {
+      "dataset": "hi_small",
+      "targets": 795,
+      "trials": 5,
+      "evaluations": 3975,
+      "label_changes": 14
+    }
+  ],
+  "full_edge_removal_audit": false,
+  "all_target_noedge_ablation": true
+}

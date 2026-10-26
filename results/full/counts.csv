@@ -1,0 +1,61 @@
+dataset,attack,explainer,k,attempted,unique_targets,preserved
+amlsim,Clean repeat,GNNExplainer,5,250,50,250
+amlsim,Clean repeat,GNNExplainer,10,250,50,250
+amlsim,Clean repeat,GNNExplainer,20,250,50,250
+amlsim,Clean repeat,PGExplainer,5,250,50,250
+amlsim,Clean repeat,PGExplainer,10,250,50,250
+amlsim,Clean repeat,PGExplainer,20,250,50,250
+amlsim,Clean repeat,SubgraphX,0,250,50,250
+amlsim,GXAttack,GNNExplainer,5,250,50,250
+amlsim,GXAttack,GNNExplainer,10,250,50,250
+amlsim,GXAttack,GNNExplainer,20,250,50,250
+amlsim,GXAttack,PGExplainer,5,250,50,250
+amlsim,GXAttack,PGExplainer,10,250,50,250
+amlsim,GXAttack,PGExplainer,20,250,50,250
+amlsim,GXAttack,SubgraphX,0,250,50,250
+amlsim,Random flipping,PGExplainer,5,250,50,250
+amlsim,Random flipping,PGExplainer,10,250,50,250
+amlsim,Random flipping,PGExplainer,20,250,50,250
+amlsim,Random rewiring,PGExplainer,5,250,50,250
+amlsim,Random rewiring,PGExplainer,10,250,50,250
+amlsim,Random rewiring,PGExplainer,20,250,50,250
+elliptic,Clean repeat,GNNExplainer,5,205,41,205
+elliptic,Clean repeat,GNNExplainer,10,205,41,205
+elliptic,Clean repeat,GNNExplainer,20,205,41,205
+elliptic,Clean repeat,PGExplainer,5,205,41,205
+elliptic,Clean repeat,PGExplainer,10,205,41,205
+elliptic,Clean repeat,PGExplainer,20,205,41,205
+elliptic,Clean repeat,SubgraphX,0,205,41,205
+elliptic,GXAttack,GNNExplainer,5,205,41,205
+elliptic,GXAttack,GNNExplainer,10,205,41,205
+elliptic,GXAttack,GNNExplainer,20,205,41,205
+elliptic,GXAttack,PGExplainer,5,205,41,205
+elliptic,GXAttack,PGExplainer,10,205,41,205
+elliptic,GXAttack,PGExplainer,20,205,41,205
+elliptic,GXAttack,SubgraphX,0,205,41,205
+elliptic,Random flipping,PGExplainer,5,205,41,199
+elliptic,Random flipping,PGExplainer,10,205,41,199
+elliptic,Random flipping,PGExplainer,20,205,41,199
+elliptic,Random rewiring,PGExplainer,5,205,41,192
+elliptic,Random rewiring,PGExplainer,10,205,41,192
+elliptic,Random rewiring,PGExplainer,20,205,41,192
+hi_small,Clean repeat,GNNExplainer,5,250,50,250
+hi_small,Clean repeat,GNNExplainer,10,250,50,250
+hi_small,Clean repeat,GNNExplainer,20,250,50,250
+hi_small,Clean repeat,PGExplainer,5,250,50,250
+hi_small,Clean repeat,PGExplainer,10,250,50,250
+hi_small,Clean repeat,PGExplainer,20,250,50,250
+hi_small,Clean repeat,SubgraphX,0,250,50,250
+hi_small,GXAttack,GNNExplainer,5,250,50,250
+hi_small,GXAttack,GNNExplainer,10,250,50,250
+hi_small,GXAttack,GNNExplainer,20,250,50,250
+hi_small,GXAttack,PGExplainer,5,250,50,250
+hi_small,GXAttack,PGExplainer,10,250,50,250
+hi_small,GXAttack,PGExplainer,20,250,50,250
+hi_small,GXAttack,SubgraphX,0,250,50,250
+hi_small,Random flipping,PGExplainer,5,250,50,237
+hi_small,Random flipping,PGExplainer,10,250,50,237
+hi_small,Random flipping,PGExplainer,20,250,50,237
+hi_small,Random rewiring,PGExplainer,5,250,50,240
+hi_small,Random rewiring,PGExplainer,10,250,50,240
+hi_small,Random rewiring,PGExplainer,20,250,50,240

@@ -7,6 +7,12 @@
 !/*.md
 !/complete_graphs/*.py
 !/complete_graphs/*.md
+!/gnn_primary/*.py
+!/gnn_primary/*.md
+!/gnn_primary/results/validation.json
+!/gnn_primary/results/*/REPORT.md
+!/gnn_primary/results/*/summary.csv
+!/gnn_primary/results/*/trial_means.csv
 !/vendor/*.py
 !/vendor/LICENSE
 !/framework/src/**/*.py

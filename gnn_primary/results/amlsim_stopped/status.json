@@ -1,0 +1,12 @@
+{
+  "state": "stopped_by_user",
+  "reason": "User requested saving AMLSim and replacing remaining full run with a separate 30-target HI-Small preview.",
+  "saved_evaluations": 277,
+  "unique_targets": 166,
+  "trial_counts": {
+    "2026": 166,
+    "2027": 111
+  },
+  "interrupted_unsaved_target": 5998,
+  "timestamp": "2026-10-27T10:01:33.430221+08:00"
+}

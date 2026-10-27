@@ -15,6 +15,16 @@
 !/performance/*.py
 !/performance/*.json
 !/performance/*.md
+!/hi_small_preview/*.py
+!/hi_small_preview/*.md
+!/hi_small_preview/results/validation.json
+!/hi_small_preview/results/preview/REPORT.md
+!/hi_small_preview/results/preview/summary.csv
+!/hi_small_preview/results/preview/trial_means.csv
+!/gnn_primary/results/amlsim_stopped/*.md
+!/gnn_primary/results/amlsim_stopped/*summary.csv
+!/gnn_primary/results/amlsim_stopped/trial_means.csv
+!/gnn_primary/results/amlsim_stopped/status.json
 !/gnn_primary/results/*/REPORT.md
 !/gnn_primary/results/*/summary.csv
 !/gnn_primary/results/*/trial_means.csv

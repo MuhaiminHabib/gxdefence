@@ -1,0 +1,16 @@
+{
+  "state": "passed",
+  "reused": 307,
+  "expected": 2883,
+  "remaining": 2576,
+  "datasets": {
+    "amlsim": 166,
+    "hi_small": 795
+  },
+  "trials": [
+    2026,
+    2027,
+    2028
+  ],
+  "per_case_body_identical": true
+}

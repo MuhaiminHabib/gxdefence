@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "native_mask_max_error": 1.6653345369377348e-16,
+  "hypergradient_max_error": 2.5889290711234025e-12,
+  "checks": [
+    "native PyG mask parity at identical initialization, 100 Adam steps",
+    "parallel edges and self loop predictor equivalence",
+    "unrolled Adam gradient versus independent finite differences"
+  ]
+}

@@ -16,6 +16,13 @@
 !/performance/*.json
 !/performance/*.md
 !/hi_small_preview/*.py
+!/gnn_three_trials/*.py
+!/gnn_three_trials/*.md
+!/gnn_three_trials/results/validation.json
+!/gnn_three_trials/results/setup_audit.json
+!/gnn_three_trials/results/full/TABLES_PAPER_LAYOUT.md
+!/gnn_three_trials/results/full/summary.csv
+!/gnn_three_trials/results/full/trial_means.csv
 !/hi_small_preview/*.md
 !/hi_small_preview/results/validation.json
 !/hi_small_preview/results/preview/REPORT.md

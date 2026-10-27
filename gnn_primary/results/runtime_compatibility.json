@@ -1,0 +1,24 @@
+{
+  "old_sources": {
+    "gnn_primary\\core.py": "dc25ddfb6d09147cdfb750e0cebf78ccd4fe32f46d7c3150a95f68f64ee68930",
+    "gnn_primary\\run.py": "cd66ad20e426ac453babd35c5a9984149f2a164ca6afb991d41870763a33c9d7",
+    "gnn_primary\\validate.py": "9c66552f10cd141a8d7c25a95cfca1b061b90e81177daf06eddd3929adbcd9d6",
+    "complete_graphs\\attack_core.py": "4834bf56466f8ba30f9dc91d66e5ae6199ef0300aa9b5d9b93a016d6b5686cd8",
+    "complete_graphs\\prepare.py": "9204f8dbf1333db368d583fa41c1cd42e0a420f2d5bbd30079ef418cc76edeae",
+    "complete_graphs\\run_study.py": "4c57063c122fbee527a3baef86e13d84ced783ad83e01eb089a9ccf8b576ce29",
+    "complete_graphs\\subgraph_worker.py": "ffb360d8312cc3b8b62260b132ceb7be633e4d25ed9f9b964af0c89983642c24"
+  },
+  "new_sources": {
+    "gnn_primary\\core.py": "c65970534e328d53cb440f0d5469d6eb891fb90363731aa9f5311fbcd15f74a5",
+    "gnn_primary\\run.py": "653c35ab755bbf08c68d5b436fa7570dba6e02b09e553fdcc3ae3e282183c1d3",
+    "gnn_primary\\validate.py": "9c66552f10cd141a8d7c25a95cfca1b061b90e81177daf06eddd3929adbcd9d6",
+    "complete_graphs\\attack_core.py": "4834bf56466f8ba30f9dc91d66e5ae6199ef0300aa9b5d9b93a016d6b5686cd8",
+    "complete_graphs\\prepare.py": "9204f8dbf1333db368d583fa41c1cd42e0a420f2d5bbd30079ef418cc76edeae",
+    "complete_graphs\\run_study.py": "4c57063c122fbee527a3baef86e13d84ced783ad83e01eb089a9ccf8b576ce29",
+    "complete_graphs\\subgraph_worker.py": "ffb360d8312cc3b8b62260b132ceb7be633e4d25ed9f9b964af0c89983642c24"
+  },
+  "evidence_path": "performance/benchmark_indices.json",
+  "evidence_sha256": "eace37f2da752ee7bd35b4426a227b546745a09b2469c06ea54872aabf86d80a",
+  "reason": "Cache the fixed mask indices once, instead of repeating boolean nonzero operations. No experiment parameters changed. Runner change only permits this exact audited source transition.",
+  "preserved_completed_cases": 275
+}

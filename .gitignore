@@ -11,6 +11,10 @@
 !/gnn_primary/*.ps1
 !/gnn_primary/*.md
 !/gnn_primary/results/validation.json
+!/gnn_primary/results/runtime_compatibility.json
+!/performance/*.py
+!/performance/*.json
+!/performance/*.md
 !/gnn_primary/results/*/REPORT.md
 !/gnn_primary/results/*/summary.csv
 !/gnn_primary/results/*/trial_means.csv

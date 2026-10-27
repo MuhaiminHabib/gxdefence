@@ -1,0 +1,31 @@
+{
+  "state": "passed",
+  "results": [
+    {
+      "dataset": "amlsim",
+      "target": 7598,
+      "mask_error": 0.0,
+      "gradient_error": 2.9802322387695312e-08,
+      "trace_error": 0.0,
+      "all_40_candidates_identical": true,
+      "original_fit_seconds": 1.1489461499950266,
+      "fast_fit_seconds": 0.7777110999959405,
+      "original_optimize_seconds": 101.34282819999498,
+      "fast_optimize_seconds": 80.63503969999147,
+      "speedup": 1.2568088088881502
+    },
+    {
+      "dataset": "hi_small",
+      "target": 277872,
+      "mask_error": 5.960464477539063e-08,
+      "gradient_error": 7.62939453125e-06,
+      "trace_error": 1.7881393432617188e-07,
+      "all_40_candidates_identical": true,
+      "original_fit_seconds": 0.9131200999981957,
+      "fast_fit_seconds": 0.7166164000009303,
+      "original_optimize_seconds": 94.00352559999737,
+      "fast_optimize_seconds": 75.45902169999317,
+      "speedup": 1.2457559544534338
+    }
+  ]
+}

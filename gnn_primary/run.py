@@ -11,6 +11,18 @@ from run_study import Worker
 ROOT=Path(__file__).resolve().parent
 OLD=ROOT.parent/'complete_graphs'
 
+def compatible_sources(old,new):
+    if old==new:return True
+    # Only an explicitly recorded, independently tested runtime-only migration
+    # can reuse previous cases. Never accept arbitrary source mismatches.
+    path=ROOT/'results/runtime_compatibility.json'
+    if not path.exists():return False
+    record=json.loads(path.read_text())
+    evidence=ROOT.parent/record['evidence_path']
+    return (old==record['old_sources'] and new==record['new_sources']
+            and sha(evidence)==record['evidence_sha256']
+            and json.loads(evidence.read_text()).get('state')=='passed')
+
 def report(folder):
     rows=[]
     for p in (folder/'cases').glob('*.json'):rows.extend(json.loads(p.read_text())['rows'])
@@ -36,7 +48,7 @@ def run(args):
         status=json.loads((ROOT/'results/pilot/status.json').read_text())
         assert status['state']=='complete' and status['params']['outer']==args.outer and status['params']['draws']==args.draws
         assert status['params']['targets']==3 and status['params']['trials']==2
-        assert status['sources']==sources,'Pilot/full sources differ'
+        assert compatible_sources(status['sources'],sources),'Pilot/full sources differ'
     save(folder/'manifest.json',dict(params=params,sources=sources,datasets=['amlsim','hi_small'],phase=args.phase))
     worker=Worker(folder)
     try:
@@ -51,7 +63,7 @@ def run(args):
                 for target in targets:
                     dest=folder/'cases'/f'{name}_{target}_{trial}.json'
                     if dest.exists():
-                        old=json.loads(dest.read_text());assert old['sources']==sources and old['params']==params
+                        old=json.loads(dest.read_text());assert compatible_sources(old['sources'],sources) and old['params']==params
                         continue
                     save(folder/'status.json',dict(state='running',dataset=name,target=target,trial=trial,params=params))
                     started=time.time();ctx=Context(cache,target);frozen={k:v.clone() for k,v in model.state_dict().items()}

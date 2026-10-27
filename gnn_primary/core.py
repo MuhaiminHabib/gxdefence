@@ -36,11 +36,13 @@ def fit(model,x,edge,presence,target,label,initial,steps=100,unroll=False):
         out=forward(model,x,edge,presence,z.sigmoid())[target]
         loss=-out.log_softmax(-1)[label]
         if hard is not None:
-            m=z[hard].sigmoid();weights=presence[hard]
+            m=z.index_select(0,hard_idx).sigmoid();weights=presence.index_select(0,hard_idx)
             entropy=-m*torch.log(m+1e-15)-(1-m)*torch.log(1-m+1e-15)
             loss=loss+.005*(weights*m).sum()+(weights*entropy).sum()/weights.sum().clamp_min(1e-15)
         grad=torch.autograd.grad(loss,z,create_graph=unroll)[0]
-        if hard is None:hard=grad.detach()!=0
+        if hard is None:
+            hard=grad.detach()!=0
+            hard_idx=hard.nonzero().flatten()
         first=.9*first+.1*grad;second=.999*second+.001*grad.square()
         # Clamp only prevents undefined higher derivatives at zero Adam variance.
         z=z-.01*(first/(1-.9**(i+1)))/((second/(1-.999**(i+1))).clamp_min(1e-30).sqrt()+1e-8)

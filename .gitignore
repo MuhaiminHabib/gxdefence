@@ -17,6 +17,11 @@
 !/performance/*.md
 !/hi_small_preview/*.py
 !/gnn_three_trials/*.py
+!/subgraphx_primary/*.py
+!/subgraphx_primary/*.md
+!/subgraphx_primary/results/*/REPORT.md
+!/subgraphx_primary/results/*/summary.csv
+!/subgraphx_primary/results/*/trial_means.csv
 !/gnn_three_trials/*.md
 !/gnn_three_trials/results/validation.json
 !/gnn_three_trials/results/setup_audit.json

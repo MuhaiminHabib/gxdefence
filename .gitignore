@@ -18,6 +18,11 @@
 !/hi_small_preview/*.py
 !/gnn_three_trials/*.py
 !/subgraphx_primary/*.py
+!/subgraphx_hi_small/*.py
+!/subgraphx_hi_small/*.md
+!/subgraphx_hi_small/results/*/REPORT.md
+!/subgraphx_hi_small/results/*/summary.csv
+!/subgraphx_hi_small/results/*/trial_means.csv
 !/subgraphx_primary/*.md
 !/subgraphx_primary/results/*/REPORT.md
 !/subgraphx_primary/results/*/summary.csv

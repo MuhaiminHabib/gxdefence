@@ -159,9 +159,14 @@ def capture():
                       'Seeds and trials are averaged within targets for uncertainty estimates; screening and expansion remain separate.'
                       if expanded.get('complete') else
                       'The pattern expansion remains incomplete. Partial expansion means may average different numbers of completed trials per target and are not confirmatory.')
+        hi=records.get('subgraphx_hi_small',{})
+        hi_note=(f'HI-Small SubgraphX is complete: {hi["saved"]}/{hi["expected"]} targets in one trial. '
+                 'The final report includes native-set overlap and fidelity; between-trial uncertainty is unavailable.'
+                 if hi.get('complete') else
+                 'HI-Small SubgraphX results remain provisional until the planned cohort finishes.')
         lines+=['',pattern_note+' '
                 'Transaction-consistency pilot completeness is determined by its coverage row; its verified promotion decision is published separately. '
-                'HI-Small SubgraphX results remain provisional until the planned cohort finishes.', '',
+                +hi_note, '',
                 'The additional resolution cohort excludes the original fresh-seed cohort but was included in the earlier retrospective aggregates. '
                 'It supplies new explainer draws and native permutation controls, not an independent dataset or trained-model replication.', '',
                 '[Updated contribution register](../../RESEARCH_CONTRIBUTIONS.md) | [Case/input hash manifest](snapshot.json)', '',

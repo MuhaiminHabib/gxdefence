@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "saved": 200,
+  "expected": 200,
+  "seeds_and_trial_membership_verified": true,
+  "screening_and_expansion_targets_disjoint": true,
+  "selected_cycles_checked_independently": true,
+  "by_dataset": {
+    "amlsim": {
+      "search_cases": 100,
+      "feasible_degree_cycle_cases": 100,
+      "zero_structural_pool_cases": 0,
+      "nonempty_pool_without_feasible_attack": 0,
+      "fewer_than_40_structural_candidates": 2,
+      "total_structural_candidates": 3986
+    },
+    "hi_small": {
+      "search_cases": 100,
+      "feasible_degree_cycle_cases": 75,
+      "zero_structural_pool_cases": 18,
+      "nonempty_pool_without_feasible_attack": 7,
+      "fewer_than_40_structural_candidates": 24,
+      "total_structural_candidates": 3124
+    }
+  }
+}

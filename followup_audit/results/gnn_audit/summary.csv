@@ -1,0 +1,817 @@
+dataset,method,stage,population,targets,metric,mean,lo,hi
+amlsim,GNN-targeted GX adaptation,fresh,all,50,binary_top25_cosine,0.2470931237453668,0.23340000572688585,0.2608369316033543
+amlsim,GNN-targeted GX adaptation,fresh,all,50,jaccard,0.010497911445279865,0.004210526315789475,0.020967418546365916
+amlsim,GNN-targeted GX adaptation,fresh,all,50,cosine,0.8334614326953889,0.7977718408942226,0.867178030461073
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.286185002169624,0.30249818645611587
+amlsim,GNN-targeted GX adaptation,fresh,all,50,preserved,1.0,1.0,1.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,delta_prob,0.0008042299747467041,0.00021009739637374876,0.0017308079123497012
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_hard_minus,0.024,0.004,0.055999999999999994
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_soft_plus,0.0004460885524749756,-0.00015261626839637747,0.001508185136318206
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_soft_minus,0.009562467013951392,-0.0032313873341889114,0.02525930187341292
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_hard_minus,0.008,0.0,0.02
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_soft_plus,0.000486492395401001,-6.122770309448242e-05,0.001526145350933075
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_soft_minus,-0.003498279541730881,-0.010623796398937704,0.0023244629971683082
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.0680250000000001
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.692021220922468e-05,1.6645152866840372e-05
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_clean_soft_minus,0.00691083511346369,-0.0012454186178132666,0.016044509466312605
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_attacked_hard_minus,0.028000000000000004,0.006,0.06499999999999999
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_attacked_soft_plus,5.093783140182495e-05,-1.5062126517295832e-05,0.0001374101564288139
+amlsim,GNN-targeted GX adaptation,fresh,all,50,random_attacked_soft_minus,0.004097959395265207,-0.006674186757206921,0.013983593790279702
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_excess_hard_minus,-0.006,-0.051024999999999994,0.029999999999999995
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_excess_soft_plus,0.00047306507825851447,-0.00015638493746519092,0.0015736179977655423
+amlsim,GNN-targeted GX adaptation,fresh,all,50,clean_excess_soft_minus,0.0026516319004877002,-0.015764300695843846,0.02293964779398884
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_hard_minus,-0.02,-0.057999999999999996,0.006000000000000001
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_soft_plus,0.0004355545639991759,-0.0001790882304310799,0.0015374713480472565
+amlsim,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_soft_minus,-0.007596238936996088,-0.02133366798470961,0.005741143873194233
+amlsim,GNN-targeted GX adaptation,fresh,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,all,50,delta_excess_hard_minus,-0.014000000000000004,-0.033999999999999996,0.001999999999999998
+amlsim,GNN-targeted GX adaptation,fresh,all,50,delta_excess_soft_plus,-3.7510514259338366e-05,-0.0001750782772898674,7.98850163817406e-05
+amlsim,GNN-targeted GX adaptation,fresh,all,50,delta_excess_soft_minus,-0.010247870837483788,-0.026555040096742595,0.0032603759981051604
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,binary_top25_cosine,0.2470931237453668,0.23290368455108118,0.2606676867915167
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,jaccard,0.010497911445279865,0.004210526315789475,0.020756892230576446
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,cosine,0.8334614326953889,0.7963287336528302,0.8657311797857287
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.2857384349754406,0.30249061519319814
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_prob,0.0008042299747467041,0.00020523090362548828,0.0016982361793518067
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_hard_minus,0.024,0.004,0.052000000000000005
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_soft_plus,0.0004460885524749756,-0.000144962203502655,0.0014851430118083956
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_soft_minus,0.009562467013951392,-0.002719626080989837,0.02503681278604782
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_hard_minus,0.008,0.0,0.02
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_soft_plus,0.000486492395401001,-5.815762281417845e-05,0.0015185275077819825
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_soft_minus,-0.003498279541730881,-0.01045214595869184,0.002153932285308839
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006000000000000001,0.07
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.640935719013215e-05,1.631143987178804e-05
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0012072742045471383,0.015843571704249913
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_hard_minus,0.028000000000000004,0.006,0.06599999999999999
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_soft_plus,5.093783140182495e-05,-1.2456412613391866e-05,0.00013005026876926424
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_soft_minus,0.004097959395265207,-0.006260062900924822,0.014216815901320665
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.006,-0.04999999999999999,0.028999999999999998
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_soft_plus,0.00047306507825851447,-0.00015268730968236911,0.0015638334840536116
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_soft_minus,0.0026516319004877002,-0.01493331517375991,0.022535017066856386
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_hard_minus,-0.02,-0.05800000000000001,0.006
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.0004355545639991759,-0.00017111876308917992,0.0015243167564272886
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_soft_minus,-0.007596238936996088,-0.021421841045515613,0.005161215356463801
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_hard_minus,-0.014000000000000004,-0.033,0.0019999999999999974
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_soft_plus,-3.7510514259338366e-05,-0.00017668303698301318,7.692057192325596e-05
+amlsim,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_soft_minus,-0.010247870837483788,-0.02694543479432833,0.003365830175997693
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,binary_top25_cosine,0.24509950161587973,0.23304700443200313,0.2573425528166321
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,jaccard,0.008538011695906433,0.003157894736842105,0.015204678362573096
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,cosine,0.8323384261131287,0.7961678520441056,0.8637437536418437
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.26283046308660574,0.28223500584356803
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,preserved,1.0,1.0,1.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,delta_prob,0.0008042287826538086,0.0002177387773990631,0.0017059498727321626
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_soft_plus,0.0007258248329162597,-3.979265689849853e-05,0.0020710107982158665
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_soft_minus,0.0006334954500198365,-0.014448736667633057,0.020941464513540266
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_hard_minus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_soft_plus,0.0007107484340667724,5.092266201972962e-05,0.0018449681401252747
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_soft_minus,-0.015514681339263916,-0.03006835153698921,-0.004000415503978729
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.069
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.645451813936234e-05,1.6665023565292367e-05
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_soft_minus,0.00691083511346369,-0.0014309038362662252,0.015879536958444077
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_hard_minus,0.028000000000000004,0.006,0.06499999999999999
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_soft_plus,5.093783140182495e-05,-1.4164732396602628e-05,0.00013420366644859317
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_soft_minus,0.004097959395265207,-0.006156592635065315,0.014338277661195026
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_hard_minus,-0.010000000000000002,-0.06,0.043
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_soft_plus,0.0007528013586997988,-5.037488639354707e-05,0.002155330774188042
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_soft_minus,-0.006277339663443856,-0.02802294312953018,0.021163677224615825
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_hard_minus,-0.028000000000000004,-0.06499999999999999,-0.006
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_soft_plus,0.0006598106026649476,2.6786263287067418e-05,0.0017884011641144757
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_soft_minus,-0.019612640734529122,-0.03300239086694201,-0.008337056061864129
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_hard_minus,-0.018000000000000002,-0.057999999999999996,0.0059999999999999975
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_soft_plus,-9.299075603485107e-05,-0.0005051523640751838,0.0003431504100561146
+amlsim,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_soft_minus,-0.01333530107108527,-0.04348836369340496,0.006027596326534702
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,binary_top25_cosine,0.24509950161587973,0.23303925634928185,0.25754112256345313
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,jaccard,0.008538011695906433,0.003157894736842105,0.015204678362573096
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,cosine,0.8323384261131287,0.7983008023202419,0.8644438220560551
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.2622097102007808,0.28203015875521437
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_prob,0.0008042287826538086,0.0002044549882411957,0.0017197800874710083
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_soft_plus,0.0007258248329162597,-3.281703591346739e-05,0.002089556336402893
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_soft_minus,0.0006334954500198365,-0.014795368164777755,0.021603817746043207
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_hard_minus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_soft_plus,0.0007107484340667724,4.9139350652694704e-05,0.0018668717741966248
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_soft_minus,-0.015514681339263916,-0.030775585174560548,-0.003747190654277801
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.06999999999999999
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.787667602300644e-05,1.5948911011219035e-05
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0013553974768568881,0.015458963025081913
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.028000000000000004,0.006,0.065
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_soft_plus,5.093783140182495e-05,-1.1757031083106991e-05,0.0001366908118128777
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.004097959395265207,-0.006906365777651084,0.014086087768431758
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_hard_minus,-0.010000000000000002,-0.06,0.0420250000000001
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_soft_plus,0.0007528013586997988,-4.712817370891571e-05,0.002178964507579804
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.006277339663443856,-0.028345654664782345,0.02216505802996325
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.028000000000000004,-0.065,-0.006
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.0006598106026649476,2.9526200890541074e-05,0.0018085073471069335
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,-0.019612640734529122,-0.03299598806836293,-0.008124761938676239
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_hard_minus,-0.018000000000000002,-0.06,0.006
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_soft_plus,-9.299075603485107e-05,-0.000525228002667427,0.00034638343304395754
+amlsim,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_soft_minus,-0.01333530107108527,-0.044234825589598764,0.006715495479052336
+amlsim,Random flipping,fresh,all,50,binary_top25_cosine,0.5264588053794395,0.45524123512973685,0.6035099684599917
+amlsim,Random flipping,fresh,all,50,jaccard,0.2956084053545354,0.19890635144009755,0.4002647507892864
+amlsim,Random flipping,fresh,all,50,cosine,0.968442887544632,0.9500234546184537,0.9820853710830212
+amlsim,Random flipping,fresh,all,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.2858613186864354,0.30265000350538884
+amlsim,Random flipping,fresh,all,50,preserved,1.0,1.0,1.0
+amlsim,Random flipping,fresh,all,50,delta_prob,0.0003163292407989502,3.0345153808593752e-05,0.0008475044131278991
+amlsim,Random flipping,fresh,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,clean_hard_minus,0.024,0.004,0.05600000000000001
+amlsim,Random flipping,fresh,all,50,clean_soft_plus,0.0004460885524749756,-0.0001539441764354706,0.0014655839622020723
+amlsim,Random flipping,fresh,all,50,clean_soft_minus,0.009562467013951392,-0.0024066442906856534,0.025124919196334684
+amlsim,Random flipping,fresh,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,attacked_hard_minus,0.032,0.004,0.07600000000000001
+amlsim,Random flipping,fresh,all,50,attacked_soft_plus,0.0003955047130584717,-0.00024535219073295596,0.0014776024699211124
+amlsim,Random flipping,fresh,all,50,attacked_soft_minus,0.012716017275207605,-0.0035705112755298604,0.033596020029197246
+amlsim,Random flipping,fresh,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.06799999999999999
+amlsim,Random flipping,fresh,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.417429327964788e-05,1.789288967847827e-05
+amlsim,Random flipping,fresh,all,50,random_clean_soft_minus,0.00691083511346369,-0.002012256574045024,0.015663354489160702
+amlsim,Random flipping,fresh,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,random_attacked_hard_minus,0.028999999999999998,0.007000000000000001,0.062
+amlsim,Random flipping,fresh,all,50,random_attacked_soft_plus,-4.6556293964385995e-05,-0.00010508105307817458,-8.566966652870166e-06
+amlsim,Random flipping,fresh,all,50,random_attacked_soft_minus,0.006509604468941689,-0.0015130331654101606,0.015400100243929774
+amlsim,Random flipping,fresh,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,clean_excess_hard_minus,-0.006,-0.048999999999999995,0.031
+amlsim,Random flipping,fresh,all,50,clean_excess_soft_plus,0.00047306507825851447,-0.00016656135171651834,0.00154593595713377
+amlsim,Random flipping,fresh,all,50,clean_excess_soft_minus,0.0026516319004877002,-0.015291077975977537,0.023508044424597026
+amlsim,Random flipping,fresh,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,attacked_excess_hard_minus,0.0030000000000000005,-0.038000000000000006,0.045
+amlsim,Random flipping,fresh,all,50,attacked_excess_soft_plus,0.0004420610070228576,-0.00018980948179960245,0.0015236006006598473
+amlsim,Random flipping,fresh,all,50,attacked_excess_soft_minus,0.00620641280626592,-0.013171938703079703,0.0307535789712122
+amlsim,Random flipping,fresh,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,all,50,delta_excess_hard_minus,0.009000000000000001,-0.006000000000000001,0.025999999999999995
+amlsim,Random flipping,fresh,all,50,delta_excess_soft_plus,-3.100407123565671e-05,-0.00020591579228639603,0.00012256013453006747
+amlsim,Random flipping,fresh,all,50,delta_excess_soft_minus,0.0035547809057782185,-0.01158442980096077,0.018870567016168974
+amlsim,Random flipping,fresh,prediction_preserved,50,binary_top25_cosine,0.5264588053794395,0.4549173729835957,0.6031337696887509
+amlsim,Random flipping,fresh,prediction_preserved,50,jaccard,0.2956084053545354,0.20222969364656676,0.40260111398749165
+amlsim,Random flipping,fresh,prediction_preserved,50,cosine,0.968442887544632,0.9492854252099993,0.9818216197729106
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.28623136653941145,0.30263265093665775
+amlsim,Random flipping,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,Random flipping,fresh,prediction_preserved,50,delta_prob,0.0003163292407989502,2.903069853782654e-05,0.0008440274417400361
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_hard_minus,0.024,0.004,0.052000000000000005
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_soft_plus,0.0004460885524749756,-0.0001475004136562347,0.0014763337671756744
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_soft_minus,0.009562467013951392,-0.0022087874643504615,0.02456564057823272
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_hard_minus,0.032,0.004,0.07200000000000001
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_soft_plus,0.0003955047130584717,-0.0002454027652740479,0.0014928569257259367
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_soft_minus,0.012716017275207605,-0.0035952540457458945,0.032089419357340575
+amlsim,Random flipping,fresh,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.06699999999999999
+amlsim,Random flipping,fresh,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.584380298852922e-05,1.6461123526096348e-05
+amlsim,Random flipping,fresh,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0013749573738816253,0.01623153398948272
+amlsim,Random flipping,fresh,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,random_attacked_hard_minus,0.028999999999999998,0.006000000000000001,0.063
+amlsim,Random flipping,fresh,prediction_preserved,50,random_attacked_soft_plus,-4.6556293964385995e-05,-9.984700977802279e-05,-7.416832447052002e-06
+amlsim,Random flipping,fresh,prediction_preserved,50,random_attacked_soft_minus,0.006509604468941689,-0.0014018558902665985,0.015406898100394759
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.006,-0.051,0.029999999999999995
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_excess_soft_plus,0.00047306507825851447,-0.00015287592709064483,0.0015539297834038736
+amlsim,Random flipping,fresh,prediction_preserved,50,clean_excess_soft_minus,0.0026516319004877002,-0.015037489045263655,0.022768507244563814
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_excess_hard_minus,0.0030000000000000005,-0.040999999999999995,0.041999999999999996
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.0004420610070228576,-0.0001943733140826225,0.0015371711805462842
+amlsim,Random flipping,fresh,prediction_preserved,50,attacked_excess_soft_minus,0.00620641280626592,-0.013845756543728124,0.02898724705078804
+amlsim,Random flipping,fresh,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,fresh,prediction_preserved,50,delta_excess_hard_minus,0.009000000000000001,-0.006000000000000001,0.02500000000000001
+amlsim,Random flipping,fresh,prediction_preserved,50,delta_excess_soft_plus,-3.100407123565671e-05,-0.00020233451575040815,0.00011607290357351307
+amlsim,Random flipping,fresh,prediction_preserved,50,delta_excess_soft_minus,0.0035547809057782185,-0.011493109872434437,0.01878130370346545
+amlsim,Random flipping,selection_seed,all,50,binary_top25_cosine,0.523991161506714,0.448013066743608,0.6009942572381715
+amlsim,Random flipping,selection_seed,all,50,jaccard,0.30026759789917684,0.19641890711627552,0.40967019530177406
+amlsim,Random flipping,selection_seed,all,50,cosine,0.9667978107929229,0.9480111358463764,0.9806105340719223
+amlsim,Random flipping,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.2625019606228392,0.28236865445018894
+amlsim,Random flipping,selection_seed,all,50,preserved,1.0,1.0,1.0
+amlsim,Random flipping,selection_seed,all,50,delta_prob,0.0003163278102874756,2.8999269008636477e-05,0.0008563736081123352
+amlsim,Random flipping,selection_seed,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,Random flipping,selection_seed,all,50,clean_soft_plus,0.0007258248329162597,-4.2920649051666256e-05,0.002044571042060852
+amlsim,Random flipping,selection_seed,all,50,clean_soft_minus,0.0006334954500198365,-0.014672892928123474,0.021234410971403123
+amlsim,Random flipping,selection_seed,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,attacked_hard_minus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,attacked_soft_plus,0.000711292028427124,8.716076612472535e-05,0.001689097166061402
+amlsim,Random flipping,selection_seed,all,50,attacked_soft_minus,-0.014713149070739746,-0.027611977219581602,-0.004706912368535994
+amlsim,Random flipping,selection_seed,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,random_clean_hard_minus,0.030000000000000006,0.006000000000000001,0.06899999999999999
+amlsim,Random flipping,selection_seed,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.457187265157702e-05,1.587173640727997e-05
+amlsim,Random flipping,selection_seed,all,50,random_clean_soft_minus,0.00691083511346369,-0.001498305732019796,0.015276662515705539
+amlsim,Random flipping,selection_seed,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,random_attacked_hard_minus,0.028999999999999998,0.006999999999999999,0.065
+amlsim,Random flipping,selection_seed,all,50,random_attacked_soft_plus,-4.6556293964385995e-05,-0.0001017692416906357,-7.695856690406797e-06
+amlsim,Random flipping,selection_seed,all,50,random_attacked_soft_minus,0.006509604468941689,-0.001282407852727921,0.01576891885250807
+amlsim,Random flipping,selection_seed,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,clean_excess_hard_minus,-0.010000000000000002,-0.06,0.042
+amlsim,Random flipping,selection_seed,all,50,clean_excess_soft_plus,0.0007528013586997988,-5.478562265634538e-05,0.0021248399689793593
+amlsim,Random flipping,selection_seed,all,50,clean_excess_soft_minus,-0.006277339663443856,-0.02802746661337223,0.021315533094812416
+amlsim,Random flipping,selection_seed,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,attacked_excess_hard_minus,-0.028999999999999998,-0.065,-0.006999999999999999
+amlsim,Random flipping,selection_seed,all,50,attacked_excess_soft_plus,0.0007578483223915102,0.00010029906183481218,0.0017756318002939233
+amlsim,Random flipping,selection_seed,all,50,attacked_excess_soft_minus,-0.021222753539681435,-0.03520788695476949,-0.009550654105190189
+amlsim,Random flipping,selection_seed,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,all,50,delta_excess_hard_minus,-0.019000000000000003,-0.06800000000000002,0.009999999999999998
+amlsim,Random flipping,selection_seed,all,50,delta_excess_soft_plus,5.046963691711433e-06,-0.000656515367329121,0.0007006370231509213
+amlsim,Random flipping,selection_seed,all,50,delta_excess_soft_minus,-0.01494541387623758,-0.04784692800324192,0.005242248958205892
+amlsim,Random flipping,selection_seed,prediction_preserved,50,binary_top25_cosine,0.523991161506714,0.4530090548565232,0.6017983623572992
+amlsim,Random flipping,selection_seed,prediction_preserved,50,jaccard,0.30026759789917684,0.20071884621226724,0.41192841077051606
+amlsim,Random flipping,selection_seed,prediction_preserved,50,cosine,0.9667978107929229,0.94752407887578,0.9807029867172242
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.26245481155299194,0.28252815004775433
+amlsim,Random flipping,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,delta_prob,0.0003163278102874756,3.063869476318359e-05,0.0008432517945766449
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_soft_plus,0.0007258248329162597,-3.956872224807739e-05,0.002040142506361008
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_soft_minus,0.0006334954500198365,-0.014361144214868546,0.021664221882820134
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_hard_minus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_soft_plus,0.000711292028427124,8.998745679855347e-05,0.0016857572495937348
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_soft_minus,-0.014713149070739746,-0.026913948744535444,-0.005057344675064083
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.06899999999999999
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.643593192100522e-05,1.6927359998226205e-05
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0010647748567607772,0.015972242257511975
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.028999999999999998,0.006999999999999999,0.065
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_attacked_soft_plus,-4.6556293964385995e-05,-0.00010315112471580504,-8.35528373718261e-06
+amlsim,Random flipping,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.006509604468941689,-0.0009957296533510088,0.01552311638556421
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_excess_hard_minus,-0.010000000000000002,-0.061,0.043
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_excess_soft_plus,0.0007528013586997988,-5.874616801738738e-05,0.002122302074730397
+amlsim,Random flipping,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.006277339663443856,-0.02825900817033035,0.021738110129976135
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.028999999999999998,-0.065,-0.006999999999999999
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.0007578483223915102,0.00010108757466077805,0.001756625767052173
+amlsim,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,-0.021222753539681435,-0.035789137504994864,-0.009491195007413621
+amlsim,Random flipping,selection_seed,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random flipping,selection_seed,prediction_preserved,50,delta_excess_hard_minus,-0.019000000000000003,-0.06800000000000002,0.009999999999999998
+amlsim,Random flipping,selection_seed,prediction_preserved,50,delta_excess_soft_plus,5.046963691711433e-06,-0.0006574521392583844,0.0007081984013319016
+amlsim,Random flipping,selection_seed,prediction_preserved,50,delta_excess_soft_minus,-0.01494541387623758,-0.048647498644337615,0.005065393311480151
+amlsim,Random search,fresh,all,50,binary_top25_cosine,0.24432602501007775,0.2318534691225139,0.256241726314725
+amlsim,Random search,fresh,all,50,jaccard,0.007591331269349844,0.003789473684210527,0.013300309597523215
+amlsim,Random search,fresh,all,50,cosine,0.8274184559583664,0.7884518571496011,0.862445279198885
+amlsim,Random search,fresh,all,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.28612603773678724,0.3023736486084622
+amlsim,Random search,fresh,all,50,preserved,1.0,1.0,1.0
+amlsim,Random search,fresh,all,50,delta_prob,0.000805774450302124,0.00032153102755546573,0.001502922558784485
+amlsim,Random search,fresh,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,clean_hard_minus,0.024,0.004,0.05600000000000001
+amlsim,Random search,fresh,all,50,clean_soft_plus,0.0004460885524749756,-0.00014759567379951476,0.0014765307843685148
+amlsim,Random search,fresh,all,50,clean_soft_minus,0.009562467013951392,-0.0028491879830486143,0.02541760711125098
+amlsim,Random search,fresh,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,attacked_hard_minus,0.04,0.012000000000000002,0.07600000000000001
+amlsim,Random search,fresh,all,50,attacked_soft_plus,0.00025848865509033205,-0.0003393703162670135,0.0012371944665908812
+amlsim,Random search,fresh,all,50,attacked_soft_minus,0.023906508868327365,0.0044637435964250466,0.04824471546615823
+amlsim,Random search,fresh,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.067
+amlsim,Random search,fresh,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.388815224170684e-05,1.5507709980011016e-05
+amlsim,Random search,fresh,all,50,random_clean_soft_minus,0.00691083511346369,-0.0018110930142982396,0.016035841310212722
+amlsim,Random search,fresh,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,random_attacked_hard_minus,0.026000000000000002,0.002,0.066
+amlsim,Random search,fresh,all,50,random_attacked_soft_plus,9.439527988433836e-06,-2.2119352221488957e-05,4.887444823980331e-05
+amlsim,Random search,fresh,all,50,random_attacked_soft_minus,0.0002418884038925165,-0.01017266963273287,0.010649520167708402
+amlsim,Random search,fresh,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,clean_excess_hard_minus,-0.006,-0.051,0.028999999999999995
+amlsim,Random search,fresh,all,50,clean_excess_soft_plus,0.00047306507825851447,-0.00015362263917922974,0.001556967723369598
+amlsim,Random search,fresh,all,50,clean_excess_soft_minus,0.0026516319004877002,-0.015497317680798007,0.023191541636423063
+amlsim,Random search,fresh,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,attacked_excess_hard_minus,0.014000000000000002,-0.03699999999999999,0.05800000000000001
+amlsim,Random search,fresh,all,50,attacked_excess_soft_plus,0.0002490491271018981,-0.00035682497918605813,0.0012299384802579882
+amlsim,Random search,fresh,all,50,attacked_excess_soft_minus,0.023664620464434852,-0.0022109385541523793,0.05521606668573222
+amlsim,Random search,fresh,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,all,50,delta_excess_hard_minus,0.02,0.0019999999999999966,0.042
+amlsim,Random search,fresh,all,50,delta_excess_soft_plus,-0.00022401595115661619,-0.0004487860634922979,-4.056749045848844e-05
+amlsim,Random search,fresh,all,50,delta_excess_soft_minus,0.02101298856394715,0.005663055355707184,0.03871613974719804
+amlsim,Random search,fresh,prediction_preserved,50,binary_top25_cosine,0.24432602501007775,0.23183815317450776,0.2564992469549691
+amlsim,Random search,fresh,prediction_preserved,50,jaccard,0.007591331269349844,0.003789473684210527,0.013510835913312695
+amlsim,Random search,fresh,prediction_preserved,50,cosine,0.8274184559583664,0.7892309351295238,0.8626152239978314
+amlsim,Random search,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.29394816998016043,0.2862081438444818,0.3024273569867753
+amlsim,Random search,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,Random search,fresh,prediction_preserved,50,delta_prob,0.000805774450302124,0.00032256209850311276,0.00145028795003891
+amlsim,Random search,fresh,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,clean_hard_minus,0.024,0.004,0.05200000000000001
+amlsim,Random search,fresh,prediction_preserved,50,clean_soft_plus,0.0004460885524749756,-0.00014855669736862185,0.0014913009703159334
+amlsim,Random search,fresh,prediction_preserved,50,clean_soft_minus,0.009562467013951392,-0.0029088413283228872,0.02503176939161496
+amlsim,Random search,fresh,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,attacked_hard_minus,0.04,0.012000000000000002,0.07600000000000001
+amlsim,Random search,fresh,prediction_preserved,50,attacked_soft_plus,0.00025848865509033205,-0.00032910315394401544,0.0012670046925544742
+amlsim,Random search,fresh,prediction_preserved,50,attacked_soft_minus,0.023906508868327365,0.004909108366252623,0.04874827697268338
+amlsim,Random search,fresh,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.07
+amlsim,Random search,fresh,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.741073012351993e-05,1.7874062061309856e-05
+amlsim,Random search,fresh,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0010768285924183149,0.0160305008740048
+amlsim,Random search,fresh,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,random_attacked_hard_minus,0.026000000000000002,0.003,0.067
+amlsim,Random search,fresh,prediction_preserved,50,random_attacked_soft_plus,9.439527988433836e-06,-2.1337740123271944e-05,4.6536898612976086e-05
+amlsim,Random search,fresh,prediction_preserved,50,random_attacked_soft_minus,0.0002418884038925165,-0.009789151029288767,0.010503833852335819
+amlsim,Random search,fresh,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.006,-0.052000000000000005,0.028999999999999995
+amlsim,Random search,fresh,prediction_preserved,50,clean_excess_soft_plus,0.00047306507825851447,-0.00015700462013483053,0.001573469717800617
+amlsim,Random search,fresh,prediction_preserved,50,clean_excess_soft_minus,0.0026516319004877002,-0.015808177879072897,0.022259858464363798
+amlsim,Random search,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,attacked_excess_hard_minus,0.014000000000000002,-0.039025,0.05800000000000001
+amlsim,Random search,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.0002490491271018981,-0.00034856566488742827,0.0012650922551751135
+amlsim,Random search,fresh,prediction_preserved,50,attacked_excess_soft_minus,0.023664620464434852,-0.002927287083724515,0.05557096517141328
+amlsim,Random search,fresh,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,fresh,prediction_preserved,50,delta_excess_hard_minus,0.02,0.000999999999999998,0.042
+amlsim,Random search,fresh,prediction_preserved,50,delta_excess_soft_plus,-0.00022401595115661619,-0.0004525398045778272,-3.779026865959166e-05
+amlsim,Random search,fresh,prediction_preserved,50,delta_excess_soft_minus,0.02101298856394715,0.005962863959127573,0.03894433000988429
+amlsim,Random search,selection_seed,all,50,binary_top25_cosine,0.24394367761957966,0.22958850651002458,0.25794099930880404
+amlsim,Random search,selection_seed,all,50,jaccard,0.006432748538011695,0.0010526315789473684,0.012865497076023392
+amlsim,Random search,selection_seed,all,50,cosine,0.8262367421388626,0.7889033640772105,0.8616692597866058
+amlsim,Random search,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.2626157347188726,0.2822970556255519
+amlsim,Random search,selection_seed,all,50,preserved,1.0,1.0,1.0
+amlsim,Random search,selection_seed,all,50,delta_prob,0.0008057773113250733,0.00033311340212821957,0.001435623347759247
+amlsim,Random search,selection_seed,all,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,Random search,selection_seed,all,50,clean_soft_plus,0.0007258248329162597,-5.212360620498656e-05,0.0020394366383552553
+amlsim,Random search,selection_seed,all,50,clean_soft_minus,0.0006334954500198365,-0.014415070593357086,0.02190341705083848
+amlsim,Random search,selection_seed,all,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,attacked_hard_minus,0.02,0.0,0.06
+amlsim,Random search,selection_seed,all,50,attacked_soft_plus,0.0003856754302978516,-0.00014108866453170775,0.0013040992319583893
+amlsim,Random search,selection_seed,all,50,attacked_soft_minus,0.010043138528708369,-0.0191623118519783,0.05692504911078141
+amlsim,Random search,selection_seed,all,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.069
+amlsim,Random search,selection_seed,all,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.506855070590975e-05,1.7542882263660437e-05
+amlsim,Random search,selection_seed,all,50,random_clean_soft_minus,0.00691083511346369,-0.0015648794890359562,0.015502159982817114
+amlsim,Random search,selection_seed,all,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,random_attacked_hard_minus,0.026000000000000002,0.002,0.067
+amlsim,Random search,selection_seed,all,50,random_attacked_soft_plus,9.439527988433836e-06,-2.2174344956874847e-05,4.865488409996034e-05
+amlsim,Random search,selection_seed,all,50,random_attacked_soft_minus,0.0002418884038925165,-0.00992979494668543,0.0099482267268002
+amlsim,Random search,selection_seed,all,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,clean_excess_hard_minus,-0.010000000000000002,-0.059,0.04402500000000009
+amlsim,Random search,selection_seed,all,50,clean_excess_soft_plus,0.0007528013586997988,-6.603083610534669e-05,0.0021245847001671804
+amlsim,Random search,selection_seed,all,50,clean_excess_soft_minus,-0.006277339663443856,-0.02747218016897677,0.022446109713751508
+amlsim,Random search,selection_seed,all,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,attacked_excess_hard_minus,-0.006000000000000001,-0.05999999999999999,0.052000000000000005
+amlsim,Random search,selection_seed,all,50,attacked_excess_soft_plus,0.00037623590230941777,-0.0001429210871458053,0.0012924733713269231
+amlsim,Random search,selection_seed,all,50,attacked_excess_soft_minus,0.00980125012481585,-0.0191415511649102,0.057032301611732714
+amlsim,Random search,selection_seed,all,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,all,50,delta_excess_hard_minus,0.004,-0.055999999999999994,0.06699999999999999
+amlsim,Random search,selection_seed,all,50,delta_excess_soft_plus,-0.0003765654563903809,-0.0008947608575224873,4.2541697621345455e-05
+amlsim,Random search,selection_seed,all,50,delta_excess_soft_minus,0.016078589788259705,-0.027631508953271985,0.07182909833741725
+amlsim,Random search,selection_seed,prediction_preserved,50,binary_top25_cosine,0.24394367761957966,0.2296597089432277,0.2575944146130596
+amlsim,Random search,selection_seed,prediction_preserved,50,jaccard,0.006432748538011695,0.0010526315789473684,0.012865497076023389
+amlsim,Random search,selection_seed,prediction_preserved,50,cosine,0.8262367421388626,0.7890794290453196,0.862199825450778
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.27189194918636944,0.26255427292420264,0.28265079559543976
+amlsim,Random search,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+amlsim,Random search,selection_seed,prediction_preserved,50,delta_prob,0.0008057773113250733,0.0003295961022377014,0.0014718251824378968
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_hard_minus,0.02,0.0,0.06
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_soft_plus,0.0007258248329162597,-3.339886665344237e-05,0.002112238168716431
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_soft_minus,0.0006334954500198365,-0.014579604446887969,0.021418950766325006
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_hard_minus,0.02,0.0,0.06
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_soft_plus,0.0003856754302978516,-0.00013971906900405885,0.001299628585577011
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_soft_minus,0.010043138528708369,-0.01953027966618538,0.05612231098068879
+amlsim,Random search,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.030000000000000006,0.006999999999999999,0.0690250000000001
+amlsim,Random search,selection_seed,prediction_preserved,50,random_clean_soft_plus,-2.6976525783538822e-05,-8.573467433452602e-05,1.8321393430233002e-05
+amlsim,Random search,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.00691083511346369,-0.0014129404891420562,0.0158391021851392
+amlsim,Random search,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.026000000000000002,0.002,0.06799999999999999
+amlsim,Random search,selection_seed,prediction_preserved,50,random_attacked_soft_plus,9.439527988433836e-06,-2.2697117924690246e-05,4.834773093461992e-05
+amlsim,Random search,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.0002418884038925165,-0.009568703296780586,0.01016900020428002
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_excess_hard_minus,-0.010000000000000002,-0.061,0.044
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_excess_soft_plus,0.0007528013586997988,-4.745035916566845e-05,0.0022058473959565166
+amlsim,Random search,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.006277339663443856,-0.02774431284087695,0.021487418609213656
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.006000000000000001,-0.059000000000000004,0.051
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.00037623590230941777,-0.00014352098107337953,0.001297060376405715
+amlsim,Random search,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,0.00980125012481585,-0.01897866135314107,0.05512134872740136
+amlsim,Random search,selection_seed,prediction_preserved,50,delta_excess_hard_plus,0.0,0.0,0.0
+amlsim,Random search,selection_seed,prediction_preserved,50,delta_excess_hard_minus,0.004,-0.056999999999999995,0.064
+amlsim,Random search,selection_seed,prediction_preserved,50,delta_excess_soft_plus,-0.0003765654563903809,-0.0008864264085888862,2.279164642095571e-05
+amlsim,Random search,selection_seed,prediction_preserved,50,delta_excess_soft_minus,0.016078589788259705,-0.02790491580503512,0.07003429168793009
+hi_small,GNN-targeted GX adaptation,fresh,all,50,binary_top25_cosine,0.30640091213122167,0.25291262142197346,0.36767594133228015
+hi_small,GNN-targeted GX adaptation,fresh,all,50,jaccard,0.1557462432991845,0.11650700385613702,0.20177985790954828
+hi_small,GNN-targeted GX adaptation,fresh,all,50,cosine,0.5300678780376911,0.46931978880912073,0.5922474101707339
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.3284198471643162,0.3888238989512295
+hi_small,GNN-targeted GX adaptation,fresh,all,50,preserved,1.0,1.0,1.0
+hi_small,GNN-targeted GX adaptation,fresh,all,50,delta_prob,0.029011255502700804,0.018786136716604233,0.04136020544171334
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_hard_plus,0.05200000000000001,0.016,0.10000000000000002
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_hard_minus,0.07200000000000001,0.024000000000000004,0.128
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_soft_plus,0.027734346866607668,0.015007774406671524,0.04404765008091927
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_soft_minus,-0.0016921141892671577,-0.03229019681923091,0.033380802857503306
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_hard_plus,0.036,0.004,0.08800000000000001
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_hard_minus,0.064,0.016,0.11599999999999999
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_soft_plus,0.05498797072470188,0.034680849772691716,0.0784486885298044
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_soft_minus,-0.03916285270452499,-0.07369528413116931,-0.0022363226100802227
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_clean_hard_plus,0.037000000000000005,0.009000000000000001,0.0760250000000001
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_clean_hard_minus,0.09100000000000001,0.04,0.153
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_clean_soft_plus,0.020935630928725,0.008198168873041867,0.03742566547542812
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_clean_soft_minus,0.03756852778419852,0.01731246615536511,0.060864640806615355
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_attacked_hard_plus,0.015,0.0,0.04100000000000001
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_attacked_hard_minus,0.08700000000000001,0.032,0.15499999999999997
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_attacked_soft_plus,0.023101512562483547,0.008421739470679313,0.04142776001961904
+hi_small,GNN-targeted GX adaptation,fresh,all,50,random_attacked_soft_minus,0.035868086948990824,0.0067322249568998824,0.06767818316919733
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_excess_hard_plus,0.015000000000000005,-0.018,0.057999999999999996
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_excess_hard_minus,-0.019,-0.046,0.005025000000000093
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_excess_soft_plus,0.0067987159378826625,-0.006233194889687001,0.019978775595314798
+hi_small,GNN-targeted GX adaptation,fresh,all,50,clean_excess_soft_minus,-0.03926064197346568,-0.05854626719625668,-0.02058858043821529
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_hard_plus,0.021,0.004,0.047
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_hard_minus,-0.023000000000000003,-0.05200000000000001,0.003999999999999998
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_soft_plus,0.03188645816221833,0.022315498895943173,0.04263564200019464
+hi_small,GNN-targeted GX adaptation,fresh,all,50,attacked_excess_soft_minus,-0.07503093965351582,-0.09847463849391788,-0.05255908663943413
+hi_small,GNN-targeted GX adaptation,fresh,all,50,delta_excess_hard_plus,0.005999999999999998,-0.034,0.05099999999999999
+hi_small,GNN-targeted GX adaptation,fresh,all,50,delta_excess_hard_minus,-0.004,-0.044,0.037000000000000005
+hi_small,GNN-targeted GX adaptation,fresh,all,50,delta_excess_soft_plus,0.025087742224335675,0.01103683925829828,0.042418494485318675
+hi_small,GNN-targeted GX adaptation,fresh,all,50,delta_excess_soft_minus,-0.03577029768005014,-0.06316933068400248,-0.011571706770826131
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,binary_top25_cosine,0.30640091213122167,0.2487511516534786,0.3673079307428915
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,jaccard,0.1557462432991845,0.11521122419548112,0.2010601324114482
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,cosine,0.5300678780376911,0.4670983212418854,0.5948841731466352
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.3269773485299773,0.38869952689175724
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_prob,0.029011255502700804,0.018821145325899125,0.0410505540072918
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_hard_plus,0.05200000000000001,0.012000000000000002,0.1
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_hard_minus,0.07200000000000001,0.027999999999999997,0.12400000000000003
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_soft_plus,0.027734346866607668,0.014297418096661567,0.044108820512890806
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_soft_minus,-0.0016921141892671577,-0.031185082253813733,0.0325819476120174
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_hard_plus,0.036,0.004,0.084
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_hard_minus,0.064,0.02,0.11999999999999998
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_soft_plus,0.05498797072470188,0.03438665699362754,0.07775947866998614
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_soft_minus,-0.03916285270452499,-0.07357855896055698,-0.0012114850074052613
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009000000000000001,0.075
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.03900000000000001,0.1520250000000001
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.00804008817486465,0.03668562997225672
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.01713784074112773,0.059732702872715884
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_hard_plus,0.015,0.0,0.040999999999999995
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_hard_minus,0.08700000000000001,0.034,0.15099999999999997
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_soft_plus,0.023101512562483547,0.008007589095830917,0.039930766528286046
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,random_attacked_soft_minus,0.035868086948990824,0.008193218376394366,0.06687253322340549
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_hard_plus,0.015000000000000005,-0.017999999999999995,0.057
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.019,-0.046000000000000006,0.006
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_soft_plus,0.0067987159378826625,-0.005752844050992279,0.020275402976665653
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,clean_excess_soft_minus,-0.03926064197346568,-0.05791552450433374,-0.02023007162855937
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.021,0.004,0.044000000000000004
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_hard_minus,-0.023000000000000003,-0.051000000000000004,0.003999999999999998
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.03188645816221833,0.021901998667512086,0.04206488858228549
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,attacked_excess_soft_minus,-0.07503093965351582,-0.09857906870478765,-0.05243878286089749
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_hard_plus,0.005999999999999998,-0.033999999999999996,0.048999999999999995
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_hard_minus,-0.004,-0.046,0.03600000000000001
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_soft_plus,0.025087742224335675,0.010427456181682648,0.04170599209852517
+hi_small,GNN-targeted GX adaptation,fresh,prediction_preserved,50,delta_excess_soft_minus,-0.03577029768005014,-0.061580676658917186,-0.010618603713158512
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,binary_top25_cosine,0.2591036200468396,0.1950599649145681,0.32963741445824496
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,jaccard,0.12721100365063212,0.08375408874750981,0.17563897295514938
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,cosine,0.4995053469389677,0.4332880389112979,0.5639823811817914
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.3422899241744794,0.3998679104009598
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,preserved,1.0,1.0,1.0
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,delta_prob,0.029011255502700804,0.017919814944267275,0.04081882098317147
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_hard_minus,0.1,0.02,0.2
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_soft_plus,0.015443055033683777,0.003838221177458763,0.029867792025208475
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_soft_minus,0.007478443384170533,-0.0292421777844429,0.04611302474141121
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_hard_plus,0.0,0.0,0.0
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_hard_minus,0.08,0.02,0.16
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_soft_plus,0.03463955760002136,0.01901817399263382,0.05390712288022042
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_soft_minus,-0.03787511825561524,-0.0772655071914196,0.004247972294688268
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_hard_plus,0.037000000000000005,0.01,0.07500000000000001
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_hard_minus,0.09100000000000001,0.042,0.153
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_soft_plus,0.020935630928725,0.008890162355639043,0.036758035969175394
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_clean_soft_minus,0.03756852778419852,0.018591826734226203,0.05982316184993837
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_hard_plus,0.015,0.0,0.040999999999999995
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_hard_minus,0.08700000000000001,0.036000000000000004,0.15200000000000002
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_soft_plus,0.023101512562483547,0.008481519964337351,0.04027615833133457
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,random_attacked_soft_minus,0.035868086948990824,0.008450339514296502,0.06545047646816822
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_hard_plus,0.0030000000000000005,-0.056025,0.07299999999999998
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_hard_minus,0.008999999999999998,-0.055,0.077
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_soft_plus,-0.005492575895041228,-0.02563590204734355,0.012827911438420417
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,clean_excess_soft_minus,-0.030090084400027993,-0.05902629660572858,-6.908047432079959e-05
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_hard_plus,-0.015,-0.040999999999999995,0.0
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_hard_minus,-0.006999999999999999,-0.038,0.024
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_soft_plus,0.011538045037537817,-0.003543268286436794,0.024931295276712628
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,attacked_excess_soft_minus,-0.07374320520460605,-0.10044457415360955,-0.04755754946842786
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_hard_plus,-0.018000000000000002,-0.08199999999999999,0.030999999999999993
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_hard_minus,-0.016,-0.091025,0.062
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_soft_plus,0.017030620932579038,0.0037412241378799093,0.03083180371653289
+hi_small,GNN-targeted GX adaptation,selection_seed,all,50,delta_excess_soft_minus,-0.04365312080457806,-0.07243459335565565,-0.012637179123610249
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,binary_top25_cosine,0.2591036200468396,0.1962954574809492,0.32716434914451636
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,jaccard,0.12721100365063212,0.08393961383473768,0.17686472338291223
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,cosine,0.4995053469389677,0.4365717735476792,0.5656926268003881
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.34285975873091573,0.3993803567753796
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_prob,0.029011255502700804,0.01878576144576073,0.041159134864807136
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_hard_minus,0.1,0.02,0.18
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_soft_plus,0.015443055033683777,0.004246634602546692,0.029304286181926726
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_soft_minus,0.007478443384170533,-0.029553713351488112,0.045666636452078836
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_hard_plus,0.0,0.0,0.0
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_hard_minus,0.08,0.02,0.16
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_soft_plus,0.03463955760002136,0.01884229892492294,0.052132234364748
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_soft_minus,-0.03787511825561524,-0.07808300760388373,0.004302492037415508
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009,0.075
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.03900000000000001,0.15
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.007978046600706874,0.036415831959247594
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.018103754282090812,0.06066368558481336
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.015,0.0,0.04100000000000001
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.08700000000000001,0.033,0.153
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_soft_plus,0.023101512562483547,0.008169176711142064,0.03946359555004165
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.035868086948990824,0.008211214076634499,0.0666132211743854
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0030000000000000005,-0.05599999999999999,0.06999999999999999
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_hard_minus,0.008999999999999998,-0.055999999999999994,0.076
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_soft_plus,-0.005492575895041228,-0.02500491584409029,0.013015109141729774
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.030090084400027993,-0.05968524026637897,-0.00014173567341640482
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,-0.015,-0.04100000000000001,0.0
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.006999999999999999,-0.036,0.023999999999999994
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.011538045037537817,-0.0037516739252023406,0.024991274739801894
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,-0.07374320520460605,-0.10022649096474051,-0.048010830293223256
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_hard_plus,-0.018000000000000002,-0.07899999999999999,0.029999999999999995
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_hard_minus,-0.016,-0.09100000000000001,0.06399999999999999
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_soft_plus,0.017030620932579038,0.0029811259854584924,0.02962951170299203
+hi_small,GNN-targeted GX adaptation,selection_seed,prediction_preserved,50,delta_excess_soft_minus,-0.04365312080457806,-0.0745958222025074,-0.012286338757257907
+hi_small,Random flipping,fresh,all,50,binary_top25_cosine,0.5504400325800318,0.47894833057443464,0.628004547268231
+hi_small,Random flipping,fresh,all,50,jaccard,0.4128108427520192,0.33088043862741995,0.5016620976890325
+hi_small,Random flipping,fresh,all,50,cosine,0.7483083065450191,0.694655872810632,0.8004580181114376
+hi_small,Random flipping,fresh,all,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.3276110708770032,0.3889839655176855
+hi_small,Random flipping,fresh,all,50,preserved,1.0,1.0,1.0
+hi_small,Random flipping,fresh,all,50,delta_prob,0.008423983573913574,0.004903071475028992,0.01288595116138459
+hi_small,Random flipping,fresh,all,50,clean_hard_plus,0.05200000000000001,0.012000000000000002,0.1
+hi_small,Random flipping,fresh,all,50,clean_hard_minus,0.07200000000000001,0.027999999999999997,0.12799999999999997
+hi_small,Random flipping,fresh,all,50,clean_soft_plus,0.027734346866607668,0.014952773767709732,0.043607432696223254
+hi_small,Random flipping,fresh,all,50,clean_soft_minus,-0.0016921141892671577,-0.032856292224302884,0.03234618357717991
+hi_small,Random flipping,fresh,all,50,attacked_hard_plus,0.06000000000000001,0.012000000000000002,0.12010000000000039
+hi_small,Random flipping,fresh,all,50,attacked_hard_minus,0.055999999999999994,0.016,0.10400000000000001
+hi_small,Random flipping,fresh,all,50,attacked_soft_plus,0.02919468492269516,0.013962393717467787,0.04751074008196592
+hi_small,Random flipping,fresh,all,50,attacked_soft_minus,-0.0097636386603117,-0.039966065134853145,0.020321175798028713
+hi_small,Random flipping,fresh,all,50,random_clean_hard_plus,0.037000000000000005,0.008,0.07400000000000001
+hi_small,Random flipping,fresh,all,50,random_clean_hard_minus,0.09100000000000001,0.03997500000000001,0.15100000000000002
+hi_small,Random flipping,fresh,all,50,random_clean_soft_plus,0.020935630928725,0.0079877767464146,0.03656291443910449
+hi_small,Random flipping,fresh,all,50,random_clean_soft_minus,0.03756852778419852,0.0174635582152754,0.059457810993492614
+hi_small,Random flipping,fresh,all,50,random_attacked_hard_plus,0.024000000000000004,0.006000000000000001,0.046
+hi_small,Random flipping,fresh,all,50,random_attacked_hard_minus,0.10099999999999999,0.041999999999999996,0.172
+hi_small,Random flipping,fresh,all,50,random_attacked_soft_plus,0.008428386021405457,0.0018721200419589885,0.015853999147377913
+hi_small,Random flipping,fresh,all,50,random_attacked_soft_minus,0.03775762521848083,0.01518148963954299,0.06235593015076594
+hi_small,Random flipping,fresh,all,50,clean_excess_hard_plus,0.015000000000000005,-0.016999999999999998,0.057999999999999996
+hi_small,Random flipping,fresh,all,50,clean_excess_hard_minus,-0.019,-0.04500000000000001,0.006
+hi_small,Random flipping,fresh,all,50,clean_excess_soft_plus,0.0067987159378826625,-0.006692631805129348,0.019816155626717957
+hi_small,Random flipping,fresh,all,50,clean_excess_soft_minus,-0.03926064197346568,-0.05883360836617649,-0.020711023294180637
+hi_small,Random flipping,fresh,all,50,attacked_excess_hard_plus,0.036000000000000004,-0.008024999999999992,0.096
+hi_small,Random flipping,fresh,all,50,attacked_excess_hard_minus,-0.04499999999999999,-0.09699999999999998,-0.004999999999999999
+hi_small,Random flipping,fresh,all,50,attacked_excess_soft_plus,0.0207662989012897,0.005812003336194904,0.03895188089190054
+hi_small,Random flipping,fresh,all,50,attacked_excess_soft_minus,-0.047521263878792526,-0.07207324351994317,-0.024954180659539985
+hi_small,Random flipping,fresh,all,50,delta_excess_hard_plus,0.021,-0.016,0.08299999999999999
+hi_small,Random flipping,fresh,all,50,delta_excess_hard_minus,-0.025999999999999995,-0.075,0.0050000000000000044
+hi_small,Random flipping,fresh,all,50,delta_excess_soft_plus,0.013967582963407039,-0.001447340172622352,0.0378361188742332
+hi_small,Random flipping,fresh,all,50,delta_excess_soft_minus,-0.008260621905326846,-0.03129003906399011,0.011389186553657055
+hi_small,Random flipping,fresh,prediction_preserved,50,binary_top25_cosine,0.5504400325800318,0.47448028079677174,0.6259512604886368
+hi_small,Random flipping,fresh,prediction_preserved,50,jaccard,0.4128108427520192,0.3287748382078878,0.5006617189999544
+hi_small,Random flipping,fresh,prediction_preserved,50,cosine,0.7483083065450191,0.6904930414758623,0.8003690737009048
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.32675422431352064,0.3874665768195236
+hi_small,Random flipping,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,Random flipping,fresh,prediction_preserved,50,delta_prob,0.008423983573913574,0.004766065680980682,0.01291514458656311
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_hard_plus,0.05200000000000001,0.012000000000000002,0.1
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_hard_minus,0.07200000000000001,0.027999999999999997,0.12400000000000004
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_soft_plus,0.027734346866607668,0.0141175321161747,0.043788857355713834
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_soft_minus,-0.0016921141892671577,-0.03175990919917821,0.031159033647552143
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_hard_plus,0.06000000000000001,0.008,0.12000000000000002
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_hard_minus,0.055999999999999994,0.016,0.10400000000000001
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_soft_plus,0.02919468492269516,0.01385863466113806,0.048823188073933134
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_soft_minus,-0.0097636386603117,-0.03793069221526385,0.021115008993446843
+hi_small,Random flipping,fresh,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009,0.075
+hi_small,Random flipping,fresh,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.038000000000000006,0.15102500000000008
+hi_small,Random flipping,fresh,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.008174976098164916,0.03693698900314051
+hi_small,Random flipping,fresh,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.01763911163434386,0.06092342695398257
+hi_small,Random flipping,fresh,prediction_preserved,50,random_attacked_hard_plus,0.024000000000000004,0.006000000000000001,0.04699999999999999
+hi_small,Random flipping,fresh,prediction_preserved,50,random_attacked_hard_minus,0.10099999999999999,0.03900000000000001,0.174
+hi_small,Random flipping,fresh,prediction_preserved,50,random_attacked_soft_plus,0.008428386021405457,0.0016191308457404383,0.016011442447826273
+hi_small,Random flipping,fresh,prediction_preserved,50,random_attacked_soft_minus,0.03775762521848083,0.014891155633330346,0.06344942517112939
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_excess_hard_plus,0.015000000000000005,-0.018000000000000002,0.05799999999999998
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.019,-0.04500000000000001,0.004999999999999999
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_excess_soft_plus,0.0067987159378826625,-0.005495716312993316,0.019582837400678548
+hi_small,Random flipping,fresh,prediction_preserved,50,clean_excess_soft_minus,-0.03926064197346568,-0.05890405882112681,-0.021793283611908548
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.036000000000000004,-0.01,0.096
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_excess_hard_minus,-0.04499999999999999,-0.09799999999999999,-0.0029999999999999983
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.0207662989012897,0.00609366345657036,0.040175767394807195
+hi_small,Random flipping,fresh,prediction_preserved,50,attacked_excess_soft_minus,-0.047521263878792526,-0.07238120059072971,-0.024318223838880652
+hi_small,Random flipping,fresh,prediction_preserved,50,delta_excess_hard_plus,0.021,-0.016000000000000004,0.08199999999999998
+hi_small,Random flipping,fresh,prediction_preserved,50,delta_excess_hard_minus,-0.025999999999999995,-0.075,0.006000000000000002
+hi_small,Random flipping,fresh,prediction_preserved,50,delta_excess_soft_plus,0.013967582963407039,-0.0011536172690801323,0.037570253866538394
+hi_small,Random flipping,fresh,prediction_preserved,50,delta_excess_soft_minus,-0.008260621905326846,-0.03153902796069159,0.01119552497109399
+hi_small,Random flipping,selection_seed,all,50,binary_top25_cosine,0.5559861121898705,0.47746882619257475,0.6329665618404212
+hi_small,Random flipping,selection_seed,all,50,jaccard,0.43805681934164903,0.3489599349738668,0.5325991038974784
+hi_small,Random flipping,selection_seed,all,50,cosine,0.7616905763745307,0.7042560033649207,0.8163442504033447
+hi_small,Random flipping,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.342864528819228,0.3995248951872143
+hi_small,Random flipping,selection_seed,all,50,preserved,1.0,1.0,1.0
+hi_small,Random flipping,selection_seed,all,50,delta_prob,0.008423982858657838,0.004759909331798554,0.012998248785734176
+hi_small,Random flipping,selection_seed,all,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,Random flipping,selection_seed,all,50,clean_hard_minus,0.1,0.02,0.18050000000000183
+hi_small,Random flipping,selection_seed,all,50,clean_soft_plus,0.015443055033683777,0.0036664260476827622,0.030771146520972254
+hi_small,Random flipping,selection_seed,all,50,clean_soft_minus,0.007478443384170533,-0.030350084066390993,0.046129684850573546
+hi_small,Random flipping,selection_seed,all,50,attacked_hard_plus,0.08,0.02,0.16
+hi_small,Random flipping,selection_seed,all,50,attacked_hard_minus,0.06,0.0,0.14
+hi_small,Random flipping,selection_seed,all,50,attacked_soft_plus,0.04057234361767769,0.01698527270555496,0.07071085721999408
+hi_small,Random flipping,selection_seed,all,50,attacked_soft_minus,-0.0072284132242202755,-0.040928065121173855,0.026943344965577133
+hi_small,Random flipping,selection_seed,all,50,random_clean_hard_plus,0.037000000000000005,0.009000000000000001,0.07300000000000001
+hi_small,Random flipping,selection_seed,all,50,random_clean_hard_minus,0.09100000000000001,0.04100000000000001,0.15399999999999997
+hi_small,Random flipping,selection_seed,all,50,random_clean_soft_plus,0.020935630928725,0.008651081358455123,0.036468982602562754
+hi_small,Random flipping,selection_seed,all,50,random_clean_soft_minus,0.03756852778419852,0.019005426913127305,0.05980042748469861
+hi_small,Random flipping,selection_seed,all,50,random_attacked_hard_plus,0.024000000000000004,0.006975000000000008,0.048
+hi_small,Random flipping,selection_seed,all,50,random_attacked_hard_minus,0.10099999999999999,0.041999999999999996,0.17200000000000004
+hi_small,Random flipping,selection_seed,all,50,random_attacked_soft_plus,0.008428386021405457,0.002018608141690493,0.015880977514106786
+hi_small,Random flipping,selection_seed,all,50,random_attacked_soft_minus,0.03775762521848083,0.015949111597053707,0.06297417298220098
+hi_small,Random flipping,selection_seed,all,50,clean_excess_hard_plus,0.0030000000000000005,-0.055,0.071
+hi_small,Random flipping,selection_seed,all,50,clean_excess_hard_minus,0.008999999999999998,-0.054025000000000004,0.077
+hi_small,Random flipping,selection_seed,all,50,clean_excess_soft_plus,-0.005492575895041228,-0.02477641011383385,0.012330461997911343
+hi_small,Random flipping,selection_seed,all,50,clean_excess_soft_minus,-0.030090084400027993,-0.06058242069659756,0.0005396850634366334
+hi_small,Random flipping,selection_seed,all,50,attacked_excess_hard_plus,0.05600000000000001,-0.012,0.14
+hi_small,Random flipping,selection_seed,all,50,attacked_excess_hard_minus,-0.040999999999999995,-0.11402500000000002,0.028000000000000004
+hi_small,Random flipping,selection_seed,all,50,attacked_excess_soft_plus,0.03214395759627223,0.008786599535215647,0.0603222548570484
+hi_small,Random flipping,selection_seed,all,50,attacked_excess_soft_minus,-0.0449860384427011,-0.07765851139491425,-0.012852828290034075
+hi_small,Random flipping,selection_seed,all,50,delta_excess_hard_plus,0.053000000000000005,-0.009000000000000001,0.14300000000000002
+hi_small,Random flipping,selection_seed,all,50,delta_excess_hard_minus,-0.05,-0.127,0.004000000000000003
+hi_small,Random flipping,selection_seed,all,50,delta_excess_soft_plus,0.03763653349131346,0.009610595699492836,0.07610208526896313
+hi_small,Random flipping,selection_seed,all,50,delta_excess_soft_minus,-0.01489595404267311,-0.0440566371180117,0.010611948536615822
+hi_small,Random flipping,selection_seed,prediction_preserved,50,binary_top25_cosine,0.5559861121898705,0.47864933746354715,0.6316431369766591
+hi_small,Random flipping,selection_seed,prediction_preserved,50,jaccard,0.43805681934164903,0.3518300830146805,0.5294599019831218
+hi_small,Random flipping,selection_seed,prediction_preserved,50,cosine,0.7616905763745307,0.7057518196627497,0.813949994981289
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.3432028860778801,0.40075822145852574
+hi_small,Random flipping,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,Random flipping,selection_seed,prediction_preserved,50,delta_prob,0.008423982858657838,0.004833866059780121,0.012813573956489565
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_hard_minus,0.1,0.02,0.18
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_soft_plus,0.015443055033683777,0.0041243466734886165,0.028544468700885783
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_soft_minus,0.007478443384170533,-0.028568037673830985,0.047018174365162854
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_hard_plus,0.08,0.02,0.16
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_hard_minus,0.06,0.0,0.14
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_soft_plus,0.04057234361767769,0.017159558489918708,0.06801028032228353
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_soft_minus,-0.0072284132242202755,-0.039414048537611955,0.0283332756459713
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009000000000000001,0.076
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.04100000000000001,0.151
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.00798751804092899,0.03755879645897077
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.018213795529585325,0.0592679630853236
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.024000000000000004,0.006000000000000001,0.048
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.10099999999999999,0.041975000000000005,0.17099999999999999
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_attacked_soft_plus,0.008428386021405457,0.0016256457591429356,0.0159467552558519
+hi_small,Random flipping,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.03775762521848083,0.015187344950623807,0.06245375996287918
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0030000000000000005,-0.054025,0.073
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_excess_hard_minus,0.008999999999999998,-0.05700000000000001,0.07100000000000001
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_excess_soft_plus,-0.005492575895041228,-0.02496011967193336,0.01240100069409237
+hi_small,Random flipping,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.030090084400027993,-0.05889763263985514,0.00016523074284197135
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,0.05600000000000001,-0.01,0.135
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.040999999999999995,-0.11899999999999998,0.028000000000000004
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.03214395759627223,0.009515391452331094,0.058217967274785044
+hi_small,Random flipping,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,-0.0449860384427011,-0.07685283065624536,-0.011325308645516627
+hi_small,Random flipping,selection_seed,prediction_preserved,50,delta_excess_hard_plus,0.053000000000000005,-0.007000000000000002,0.141
+hi_small,Random flipping,selection_seed,prediction_preserved,50,delta_excess_hard_minus,-0.05,-0.124,0.004
+hi_small,Random flipping,selection_seed,prediction_preserved,50,delta_excess_soft_plus,0.03763653349131346,0.009976188614591956,0.07497030623015018
+hi_small,Random flipping,selection_seed,prediction_preserved,50,delta_excess_soft_minus,-0.01489595404267311,-0.04347419118555263,0.011541989554278551
+hi_small,Random search,fresh,all,50,binary_top25_cosine,0.26316978990483125,0.2090345678867959,0.3216499420035119
+hi_small,Random search,fresh,all,50,jaccard,0.12905787918651696,0.08725046773101337,0.17725146795112356
+hi_small,Random search,fresh,all,50,cosine,0.48321181331574914,0.419498422241956,0.5460562625929715
+hi_small,Random search,fresh,all,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.32760355510913886,0.3882553096865118
+hi_small,Random search,fresh,all,50,preserved,1.0,1.0,1.0
+hi_small,Random search,fresh,all,50,delta_prob,0.024195311784744263,0.014546326601505278,0.03662024335861206
+hi_small,Random search,fresh,all,50,clean_hard_plus,0.05200000000000001,0.016,0.10000000000000002
+hi_small,Random search,fresh,all,50,clean_hard_minus,0.07200000000000001,0.027999999999999997,0.128
+hi_small,Random search,fresh,all,50,clean_soft_plus,0.027734346866607668,0.014347206670045859,0.044604115796089173
+hi_small,Random search,fresh,all,50,clean_soft_minus,-0.0016921141892671577,-0.032361822666600336,0.03288722429312765
+hi_small,Random search,fresh,all,50,attacked_hard_plus,0.052000000000000005,0.008,0.10800000000000001
+hi_small,Random search,fresh,all,50,attacked_hard_minus,0.044000000000000004,0.008,0.09200000000000001
+hi_small,Random search,fresh,all,50,attacked_soft_plus,0.03180805051326752,0.01972933839857578,0.04673162311017514
+hi_small,Random search,fresh,all,50,attacked_soft_minus,-0.036563412711024285,-0.06547846896760164,-0.007290806670859455
+hi_small,Random search,fresh,all,50,random_clean_hard_plus,0.037000000000000005,0.009000000000000001,0.07300000000000001
+hi_small,Random search,fresh,all,50,random_clean_hard_minus,0.09100000000000001,0.04100000000000001,0.15002500000000007
+hi_small,Random search,fresh,all,50,random_clean_soft_plus,0.020935630928725,0.007527456775121388,0.03689011800987646
+hi_small,Random search,fresh,all,50,random_clean_soft_minus,0.03756852778419852,0.017763502489775422,0.06085145648391917
+hi_small,Random search,fresh,all,50,random_attacked_hard_plus,0.038000000000000006,0.006,0.08702500000000009
+hi_small,Random search,fresh,all,50,random_attacked_hard_minus,0.07,0.019000000000000003,0.133
+hi_small,Random search,fresh,all,50,random_attacked_soft_plus,0.015674418576061725,0.004346792585216463,0.030749329957179734
+hi_small,Random search,fresh,all,50,random_attacked_soft_minus,0.019363573838025328,-0.005142830088548362,0.046935592337325215
+hi_small,Random search,fresh,all,50,clean_excess_hard_plus,0.015000000000000005,-0.016999999999999998,0.05800000000000001
+hi_small,Random search,fresh,all,50,clean_excess_hard_minus,-0.019,-0.046000000000000006,0.0059999999999999975
+hi_small,Random search,fresh,all,50,clean_excess_soft_plus,0.0067987159378826625,-0.006114240503124889,0.02035367641802877
+hi_small,Random search,fresh,all,50,clean_excess_soft_minus,-0.03926064197346568,-0.058179303412139394,-0.02061894425945357
+hi_small,Random search,fresh,all,50,attacked_excess_hard_plus,0.014000000000000002,-0.01,0.044000000000000004
+hi_small,Random search,fresh,all,50,attacked_excess_hard_minus,-0.026000000000000006,-0.05899999999999998,-2.7755575615628914e-19
+hi_small,Random search,fresh,all,50,attacked_excess_soft_plus,0.01613363193720579,0.006795394588075578,0.027254190886393193
+hi_small,Random search,fresh,all,50,attacked_excess_soft_minus,-0.055926986549049616,-0.07875089372703803,-0.03453937882762403
+hi_small,Random search,fresh,all,50,delta_excess_hard_plus,-0.0010000000000000052,-0.042,0.029999999999999995
+hi_small,Random search,fresh,all,50,delta_excess_hard_minus,-0.006999999999999996,-0.030999999999999986,0.018000000000000006
+hi_small,Random search,fresh,all,50,delta_excess_soft_plus,0.00933491599932313,-0.006546382137201725,0.024021673973277216
+hi_small,Random search,fresh,all,50,delta_excess_soft_minus,-0.016666344575583934,-0.03960659544421359,0.004277964456193151
+hi_small,Random search,fresh,prediction_preserved,50,binary_top25_cosine,0.26316978990483125,0.20746169321303662,0.3248319167359492
+hi_small,Random search,fresh,prediction_preserved,50,jaccard,0.12905787918651696,0.08742742852005234,0.18039534913143274
+hi_small,Random search,fresh,prediction_preserved,50,cosine,0.48321181331574914,0.41942845854014166,0.5458997404884549
+hi_small,Random search,fresh,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.3574183190472626,0.3267504882710002,0.39117700411198
+hi_small,Random search,fresh,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,Random search,fresh,prediction_preserved,50,delta_prob,0.024195311784744263,0.014552237218618393,0.03566542221903801
+hi_small,Random search,fresh,prediction_preserved,50,clean_hard_plus,0.05200000000000001,0.012000000000000002,0.1
+hi_small,Random search,fresh,prediction_preserved,50,clean_hard_minus,0.07200000000000001,0.027999999999999997,0.128
+hi_small,Random search,fresh,prediction_preserved,50,clean_soft_plus,0.027734346866607668,0.01430467867851258,0.045603038287162785
+hi_small,Random search,fresh,prediction_preserved,50,clean_soft_minus,-0.0016921141892671577,-0.032076285034418096,0.031996373940631775
+hi_small,Random search,fresh,prediction_preserved,50,attacked_hard_plus,0.052000000000000005,0.008,0.10800000000000001
+hi_small,Random search,fresh,prediction_preserved,50,attacked_hard_minus,0.044000000000000004,0.008,0.096
+hi_small,Random search,fresh,prediction_preserved,50,attacked_soft_plus,0.03180805051326752,0.01924313268959522,0.04618624393939972
+hi_small,Random search,fresh,prediction_preserved,50,attacked_soft_minus,-0.036563412711024285,-0.06471564901880919,-0.005249365175142889
+hi_small,Random search,fresh,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009,0.07500000000000001
+hi_small,Random search,fresh,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.03900000000000001,0.15099999999999997
+hi_small,Random search,fresh,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.008134919780306518,0.03730935458559543
+hi_small,Random search,fresh,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.018234343295544384,0.06010602373154834
+hi_small,Random search,fresh,prediction_preserved,50,random_attacked_hard_plus,0.038000000000000006,0.006,0.087
+hi_small,Random search,fresh,prediction_preserved,50,random_attacked_hard_minus,0.07,0.017000000000000005,0.1350250000000001
+hi_small,Random search,fresh,prediction_preserved,50,random_attacked_soft_plus,0.015674418576061725,0.004751613693125546,0.030672292404063065
+hi_small,Random search,fresh,prediction_preserved,50,random_attacked_soft_minus,0.019363573838025328,-0.005213018799573181,0.047872622264176615
+hi_small,Random search,fresh,prediction_preserved,50,clean_excess_hard_plus,0.015000000000000005,-0.018000000000000002,0.057999999999999996
+hi_small,Random search,fresh,prediction_preserved,50,clean_excess_hard_minus,-0.019,-0.04600000000000001,0.005
+hi_small,Random search,fresh,prediction_preserved,50,clean_excess_soft_plus,0.0067987159378826625,-0.0061595303628593666,0.020164050818607213
+hi_small,Random search,fresh,prediction_preserved,50,clean_excess_soft_minus,-0.03926064197346568,-0.05921472428794948,-0.020428427862003443
+hi_small,Random search,fresh,prediction_preserved,50,attacked_excess_hard_plus,0.014000000000000002,-0.011000000000000001,0.045
+hi_small,Random search,fresh,prediction_preserved,50,attacked_excess_hard_minus,-0.026000000000000006,-0.058025,0.0009999999999999998
+hi_small,Random search,fresh,prediction_preserved,50,attacked_excess_soft_plus,0.01613363193720579,0.0063664625179022565,0.027335607110522683
+hi_small,Random search,fresh,prediction_preserved,50,attacked_excess_soft_minus,-0.055926986549049616,-0.0780997320649214,-0.03533906926801428
+hi_small,Random search,fresh,prediction_preserved,50,delta_excess_hard_plus,-0.0010000000000000052,-0.042,0.029999999999999992
+hi_small,Random search,fresh,prediction_preserved,50,delta_excess_hard_minus,-0.006999999999999996,-0.03,0.018000000000000002
+hi_small,Random search,fresh,prediction_preserved,50,delta_excess_soft_plus,0.00933491599932313,-0.006670844214130185,0.02400028155306354
+hi_small,Random search,fresh,prediction_preserved,50,delta_excess_soft_minus,-0.016666344575583934,-0.03952759901871905,0.005031453400570903
+hi_small,Random search,selection_seed,all,50,binary_top25_cosine,0.21636203698344747,0.15989341216378405,0.28122408939555776
+hi_small,Random search,selection_seed,all,50,jaccard,0.10148855650713234,0.06047113494520615,0.14991851431162578
+hi_small,Random search,selection_seed,all,50,cosine,0.4464314103126526,0.38240651071816684,0.5135343285501003
+hi_small,Random search,selection_seed,all,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.34275932703646256,0.40079065131801983
+hi_small,Random search,selection_seed,all,50,preserved,1.0,1.0,1.0
+hi_small,Random search,selection_seed,all,50,delta_prob,0.02419531226158142,0.014581473678350448,0.03597412365674973
+hi_small,Random search,selection_seed,all,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,Random search,selection_seed,all,50,clean_hard_minus,0.1,0.02,0.18
+hi_small,Random search,selection_seed,all,50,clean_soft_plus,0.015443055033683777,0.003911001041531563,0.030074704349040988
+hi_small,Random search,selection_seed,all,50,clean_soft_minus,0.007478443384170533,-0.030211259827017785,0.04526936601102354
+hi_small,Random search,selection_seed,all,50,attacked_hard_plus,0.04,0.0,0.1
+hi_small,Random search,selection_seed,all,50,attacked_hard_minus,0.06,0.0,0.12
+hi_small,Random search,selection_seed,all,50,attacked_soft_plus,0.02504495620727539,0.012436436027288436,0.04043062803149224
+hi_small,Random search,selection_seed,all,50,attacked_soft_minus,-0.03261816918849945,-0.07246907299757004,0.007284423068165804
+hi_small,Random search,selection_seed,all,50,random_clean_hard_plus,0.037000000000000005,0.009,0.07500000000000001
+hi_small,Random search,selection_seed,all,50,random_clean_hard_minus,0.09100000000000001,0.03800000000000001,0.15099999999999997
+hi_small,Random search,selection_seed,all,50,random_clean_soft_plus,0.020935630928725,0.007540778396464884,0.03670954389432446
+hi_small,Random search,selection_seed,all,50,random_clean_soft_minus,0.03756852778419852,0.016783659211173658,0.05909342741696165
+hi_small,Random search,selection_seed,all,50,random_attacked_hard_plus,0.038000000000000006,0.006,0.085
+hi_small,Random search,selection_seed,all,50,random_attacked_hard_minus,0.07,0.017,0.135
+hi_small,Random search,selection_seed,all,50,random_attacked_soft_plus,0.015674418576061725,0.004074921759963036,0.029970866897515953
+hi_small,Random search,selection_seed,all,50,random_attacked_soft_minus,0.019363573838025328,-0.005719872975256292,0.047184326899610454
+hi_small,Random search,selection_seed,all,50,clean_excess_hard_plus,0.0030000000000000005,-0.054025,0.07102500000000009
+hi_small,Random search,selection_seed,all,50,clean_excess_hard_minus,0.008999999999999998,-0.055999999999999994,0.071
+hi_small,Random search,selection_seed,all,50,clean_excess_soft_plus,-0.005492575895041228,-0.025430097569990907,0.012849857185501612
+hi_small,Random search,selection_seed,all,50,clean_excess_soft_minus,-0.030090084400027993,-0.059287724281381834,-0.0005576253080740533
+hi_small,Random search,selection_seed,all,50,attacked_excess_hard_plus,0.0020000000000000005,-0.033,0.05002500000000009
+hi_small,Random search,selection_seed,all,50,attacked_excess_hard_minus,-0.009999999999999998,-0.066025,0.046000000000000006
+hi_small,Random search,selection_seed,all,50,attacked_excess_soft_plus,0.009370537631213666,-0.006134565186128016,0.025239687900431462
+hi_small,Random search,selection_seed,all,50,attacked_excess_soft_minus,-0.05198174302652477,-0.08425158032123,-0.019980126498080786
+hi_small,Random search,selection_seed,all,50,delta_excess_hard_plus,-0.001000000000000003,-0.052000000000000005,0.034999999999999996
+hi_small,Random search,selection_seed,all,50,delta_excess_hard_minus,-0.019,-0.08900000000000001,0.05200000000000001
+hi_small,Random search,selection_seed,all,50,delta_excess_soft_plus,0.014863113526254895,-0.0017913969352841346,0.03189425173765049
+hi_small,Random search,selection_seed,all,50,delta_excess_soft_minus,-0.021891658626496793,-0.05711795499213039,0.014452871424797929
+hi_small,Random search,selection_seed,prediction_preserved,50,binary_top25_cosine,0.21636203698344747,0.15610117607004745,0.2819277304429732
+hi_small,Random search,selection_seed,prediction_preserved,50,jaccard,0.10148855650713234,0.059288251265418465,0.1492637435835578
+hi_small,Random search,selection_seed,prediction_preserved,50,cosine,0.4464314103126526,0.38042921415716413,0.5115712043717504
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_repeat_binary_top25_cosine,0.37055377927496147,0.34150402120241197,0.39876145094534543
+hi_small,Random search,selection_seed,prediction_preserved,50,preserved,1.0,1.0,1.0
+hi_small,Random search,selection_seed,prediction_preserved,50,delta_prob,0.02419531226158142,0.014413847237825394,0.0357989793419838
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_hard_plus,0.04,0.0,0.1
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_hard_minus,0.1,0.02,0.2
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_soft_plus,0.015443055033683777,0.00415544781088829,0.029169929757714274
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_soft_minus,0.007478443384170533,-0.029908348381519317,0.046769226357340814
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_hard_plus,0.04,0.0,0.1
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_hard_minus,0.06,0.0,0.14
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_soft_plus,0.02504495620727539,0.011835255295038224,0.04006239694356919
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_soft_minus,-0.03261816918849945,-0.0712921569943428,0.009019392848014831
+hi_small,Random search,selection_seed,prediction_preserved,50,random_clean_hard_plus,0.037000000000000005,0.009,0.075
+hi_small,Random search,selection_seed,prediction_preserved,50,random_clean_hard_minus,0.09100000000000001,0.04,0.1500250000000001
+hi_small,Random search,selection_seed,prediction_preserved,50,random_clean_soft_plus,0.020935630928725,0.008174091791175305,0.03657778726750984
+hi_small,Random search,selection_seed,prediction_preserved,50,random_clean_soft_minus,0.03756852778419852,0.017790016258973623,0.05848178145559508
+hi_small,Random search,selection_seed,prediction_preserved,50,random_attacked_hard_plus,0.038000000000000006,0.006,0.08700000000000001
+hi_small,Random search,selection_seed,prediction_preserved,50,random_attacked_hard_minus,0.07,0.01897500000000001,0.13302500000000012
+hi_small,Random search,selection_seed,prediction_preserved,50,random_attacked_soft_plus,0.015674418576061725,0.004288277343474329,0.030491625885665435
+hi_small,Random search,selection_seed,prediction_preserved,50,random_attacked_soft_minus,0.019363573838025328,-0.004765729626826941,0.04656518066544086
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_excess_hard_plus,0.0030000000000000005,-0.055,0.07100000000000001
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_excess_hard_minus,0.008999999999999998,-0.052000000000000005,0.07999999999999999
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_excess_soft_plus,-0.005492575895041228,-0.02447386387065053,0.01175336268283427
+hi_small,Random search,selection_seed,prediction_preserved,50,clean_excess_soft_minus,-0.030090084400027993,-0.05959007534207777,0.000794117871951325
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_excess_hard_plus,0.0020000000000000005,-0.033,0.049
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_excess_hard_minus,-0.009999999999999998,-0.06699999999999998,0.046025000000000094
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_excess_soft_plus,0.009370537631213666,-0.007116724659129978,0.024566688986308875
+hi_small,Random search,selection_seed,prediction_preserved,50,attacked_excess_soft_minus,-0.05198174302652477,-0.08372473433399576,-0.020395243513584148
+hi_small,Random search,selection_seed,prediction_preserved,50,delta_excess_hard_plus,-0.001000000000000003,-0.052000000000000005,0.03599999999999999
+hi_small,Random search,selection_seed,prediction_preserved,50,delta_excess_hard_minus,-0.019,-0.09299999999999999,0.05
+hi_small,Random search,selection_seed,prediction_preserved,50,delta_excess_soft_plus,0.014863113526254895,-0.0018015804991126068,0.031232903451379423
+hi_small,Random search,selection_seed,prediction_preserved,50,delta_excess_soft_minus,-0.021891658626496793,-0.05919751974837856,0.014266214750148372

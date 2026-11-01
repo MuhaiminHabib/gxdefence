@@ -1,0 +1,98 @@
+{
+  "qualified_datasets": [],
+  "criteria": {
+    "datasets": [
+      "amlsim",
+      "hi_small"
+    ],
+    "screening_targets": 20,
+    "expanded_targets": 50,
+    "subset_seed": 1618033,
+    "proposals": 40,
+    "budget": 6,
+    "probability_cap": 0.02,
+    "k": 10,
+    "screening_trials": [
+      0
+    ],
+    "expanded_trials": [
+      1,
+      2
+    ],
+    "selection_seeds": [
+      61001,
+      61002,
+      61003
+    ],
+    "screening_seeds": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005
+    ],
+    "expanded_seeds": [
+      81001,
+      81002,
+      81003,
+      81004,
+      81005
+    ],
+    "minimum_coverage": 0.8,
+    "minimum_mean_advantage": 0.005,
+    "bootstrap_draws": 5000
+  },
+  "details": {
+    "amlsim": {
+      "attempted": 20,
+      "feasible_coverage": 1.0,
+      "promising": false,
+      "comparisons": [
+        {
+          "dataset": "amlsim",
+          "comparator": "Cosine selector",
+          "targets": 20,
+          "mean": -0.0006693515181541443,
+          "lo": -0.002262483403086662,
+          "hi": 0.0002561051771044724,
+          "random_adjusted_mean": -0.0006726433336734776
+        },
+        {
+          "dataset": "amlsim",
+          "comparator": "First feasible candidate",
+          "targets": 20,
+          "mean": -4.280388355255129e-05,
+          "lo": -0.00031434394419193267,
+          "hi": 0.0002455633729696272,
+          "random_adjusted_mean": 6.109893321990964e-05
+        }
+      ]
+    },
+    "hi_small": {
+      "attempted": 20,
+      "feasible_coverage": 1.0,
+      "promising": false,
+      "comparisons": [
+        {
+          "dataset": "hi_small",
+          "comparator": "Cosine selector",
+          "targets": 20,
+          "mean": -0.00047244250774383656,
+          "lo": -0.013578136831521988,
+          "hi": 0.014672783240675924,
+          "random_adjusted_mean": -0.006950829699635506
+        },
+        {
+          "dataset": "hi_small",
+          "comparator": "First feasible candidate",
+          "targets": 20,
+          "mean": 0.005347255617380144,
+          "lo": -0.011249901659786699,
+          "hi": 0.023732135362923124,
+          "random_adjusted_mean": 0.0001389165967702843
+        }
+      ]
+    }
+  },
+  "manifest_id": "f17cd516cb2436a08d8bc5ec044f43bbb4b1ff54a1e4f545f615b9af14f26f10"
+}

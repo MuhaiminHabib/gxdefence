@@ -1,5 +1,7 @@
 # Financial GXAttack study
 
+Read [Research objective, questions, and defensible contributions](RESEARCH_CONTRIBUTIONS.md) for the current research position, evidence, and claim limits. [Results index](RESULTS_INDEX.md) distinguishes completed findings, exploratory analyses, and unfinished experiments. The [1 November 2026 publication snapshot](publication_snapshots/2026-11-01/README.md) records the uploaded coverage; GitHub is not a live experiment monitor.
+
 Start with [Reproducibility and results guide](REPRODUCIBILITY.md), the [complete-graph results](complete_graphs/REPORT.md), and the [full-cohort fidelity investigation](complete_graphs/results/soft_fidelity_full/REPORT.md). The sections below describe the earlier sampled study. Raw data and model checkpoints are excluded from Git.
 
 Read PROTOCOL.md for the revised experiment and REPORT.md for measured results.
@@ -12,7 +14,7 @@ Read PROTOCOL.md for the revised experiment and REPORT.md for measured results.
 - results/pipeline_status.json: overall execution state.
 - results/environment.json: main package versions. DGL worker uses the existing separate PyTorch 2.1.2 / DGL 2.2.1 environment.
 
-The pipeline saves each case atomically and can resume completed cases. Do not run two controllers concurrently. A failed pilot stops promotion. Full-run failures preserve prior results and a traceback. Failed attacks that change the prediction are valid measured outcomes and remain in the tables.
+The original pipeline saves each case atomically and can resume completed cases. Do not run two controllers concurrently for the same experiment/output directory. Independent follow-up experiments use separate directories. A failed pilot stops promotion. Full-run failures preserve prior results and a traceback. Failed attacks that change the prediction are valid measured outcomes and remain in the tables.
 
 Main interpreter used:
 

@@ -1,0 +1,31 @@
+dataset,target,trial,condition,draws,accepted,rejections,budget_shortfall,feasible_candidates
+amlsim,1193,1,source_fixed,173,40,"{'non_distinct_sources_or_receivers': 114, 'self_loop': 9, 'unchanged_or_cancelled_pair': 10}",0,40
+amlsim,1193,1,degree,165,40,"{'non_distinct_sources_or_receivers': 110, 'self_loop': 15}",0,40
+amlsim,1193,1,degree_cycles,1484,40,"{'non_distinct_sources_or_receivers': 978, 'self_loop': 146, 'changed_cycles': 320}",0,40
+amlsim,1284,1,source_fixed,83,40,"{'non_distinct_sources_or_receivers': 41, 'self_loop': 2}",0,40
+amlsim,1284,1,degree,86,40,"{'non_distinct_sources_or_receivers': 43, 'self_loop': 3}",0,40
+amlsim,1284,1,degree_cycles,214,40,"{'non_distinct_sources_or_receivers': 95, 'changed_cycles': 74, 'self_loop': 5}",0,40
+amlsim,1453,1,source_fixed,198,40,"{'non_distinct_sources_or_receivers': 150, 'self_loop': 3, 'unchanged_or_cancelled_pair': 5}",0,40
+amlsim,1453,1,degree,158,40,"{'non_distinct_sources_or_receivers': 104, 'self_loop': 14}",0,40
+amlsim,1453,1,degree_cycles,733,40,"{'non_distinct_sources_or_receivers': 531, 'changed_cycles': 114, 'self_loop': 48}",0,40
+amlsim,1557,1,source_fixed,83,40,"{'non_distinct_sources_or_receivers': 42, 'unchanged_or_cancelled_pair': 1}",0,40
+amlsim,1557,1,degree,81,40,"{'non_distinct_sources_or_receivers': 36, 'self_loop': 5}",0,40
+amlsim,1557,1,degree_cycles,147,40,"{'non_distinct_sources_or_receivers': 61, 'self_loop': 7, 'changed_cycles': 39}",0,40
+amlsim,1595,1,source_fixed,112,40,"{'non_distinct_sources_or_receivers': 68, 'self_loop': 3, 'unchanged_or_cancelled_pair': 1}",0,40
+amlsim,1595,1,degree,103,40,"{'non_distinct_sources_or_receivers': 61, 'self_loop': 2}",0,40
+amlsim,1595,1,degree_cycles,312,40,"{'non_distinct_sources_or_receivers': 196, 'changed_cycles': 71, 'self_loop': 5}",0,40
+amlsim,1629,1,source_fixed,95,40,"{'non_distinct_sources_or_receivers': 48, 'self_loop': 3, 'unchanged_or_cancelled_pair': 4}",0,40
+amlsim,1629,1,degree,94,40,"{'non_distinct_sources_or_receivers': 51, 'self_loop': 3}",0,40
+amlsim,1629,1,degree_cycles,377,40,"{'non_distinct_sources_or_receivers': 208, 'changed_cycles': 106, 'self_loop': 23}",0,40
+amlsim,385,1,source_fixed,86,40,"{'non_distinct_sources_or_receivers': 39, 'self_loop': 6, 'unchanged_or_cancelled_pair': 1}",0,40
+amlsim,385,1,degree,97,40,"{'non_distinct_sources_or_receivers': 54, 'self_loop': 3}",0,40
+amlsim,385,1,degree_cycles,141,40,"{'non_distinct_sources_or_receivers': 83, 'self_loop': 5, 'changed_cycles': 13}",0,40
+amlsim,514,1,source_fixed,546,40,"{'non_distinct_sources_or_receivers': 492, 'unchanged_or_cancelled_pair': 7, 'self_loop': 7}",0,40
+amlsim,514,1,degree,445,40,"{'non_distinct_sources_or_receivers': 394, 'self_loop': 11}",0,40
+amlsim,514,1,degree_cycles,1471,40,"{'non_distinct_sources_or_receivers': 1296, 'self_loop': 51, 'changed_cycles': 84}",0,40
+amlsim,528,1,source_fixed,240,40,"{'non_distinct_sources_or_receivers': 184, 'unchanged_or_cancelled_pair': 11, 'self_loop': 5}",0,40
+amlsim,528,1,degree,191,40,"{'non_distinct_sources_or_receivers': 136, 'self_loop': 15}",0,40
+amlsim,528,1,degree_cycles,943,40,"{'non_distinct_sources_or_receivers': 701, 'changed_cycles': 130, 'self_loop': 72}",0,40
+amlsim,977,1,source_fixed,81,40,"{'non_distinct_sources_or_receivers': 35, 'unchanged_or_cancelled_pair': 4, 'self_loop': 2}",0,40
+amlsim,977,1,degree,85,40,"{'non_distinct_sources_or_receivers': 34, 'self_loop': 11}",0,40
+amlsim,977,1,degree_cycles,317,40,"{'changed_cycles': 100, 'non_distinct_sources_or_receivers': 142, 'self_loop': 35}",0,40

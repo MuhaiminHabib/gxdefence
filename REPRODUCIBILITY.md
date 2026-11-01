@@ -5,7 +5,7 @@ This repository contains experiment source, protocols, aggregated results, and d
 ## Results to read first
 
 - [Research questions and claim register](RESEARCH_CONTRIBUTIONS.md): completed contributions, exploratory findings, pending hypotheses, literature boundaries, and limitations.
-- [Latest dated publication snapshot](publication_snapshots/2026-11-01/README.md): validated upload contents and coverage, independent of changing local status files.
+- [Latest dated publication snapshot](publication_snapshots/2026-11-01-191803/README.md): reports rebuilt from verified case records, independent of changing local status files. The morning snapshot remains preserved separately.
 - [Complete-graph report](complete_graphs/REPORT.md): five-trial results for all eligible targets, with the earlier pilot also shown.
 - [Full-cohort soft fidelity](complete_graphs/results/soft_fidelity_full/REPORT.md): 166 AMLSim and 795 HI-Small targets; soft versus hard fidelity and all-edge-removal ablation.
 - [Independent diagnostic pilot](complete_graphs/results/fidelity_diagnostic/REPORT.md): physical full-graph versus local edge-removal checks for 20 targets.
@@ -15,7 +15,7 @@ The historical root-level results reports describe the earlier study (including 
 
 ## Follow-up experiments
 
-The followup_audit and deletion_access folders contain completed fresh-seed/random-mask, search-budget, and access-restriction analyses. The exploratory_multigraph_resolution folder contains completed retrospective diagnostic analyses. The exploratory_fidelity_objective folder preserves a negative pilot. The transaction-consistency, additional-resolution-validation, and pattern-constraint folders contain separately scoped experiments whose completion must be checked before interpreting their results.
+The followup_audit and deletion_access folders contain completed fresh-seed/random-mask, search-budget, and access-restriction analyses. The exploratory_multigraph_resolution folder contains completed retrospective diagnostic analyses. The exploratory_fidelity_objective folder preserves a negative pilot. The additional resolution-validation cohort, pattern-constraint screening and transaction-consistency pilot are complete in the latest snapshot; pattern expansion and HI-Small SubgraphX remain incomplete. publish_latest_results.py validates immutable source/case records and invokes each original report function in an isolated temporary directory, then publishes only aggregate outputs and case hashes. Live case records are never published or modified by that exporter.
 
 Each follow-up README describes its protocol and runtime assumptions. Source code reuses existing local prepared graphs, frozen classifiers, and saved per-target cases; these are excluded from Git. The published aggregate snapshot therefore supports review of the reported evidence but does not alone reproduce the full pipeline. Runtime manifests/checkpoints must be restored and source hashes must match before resuming. Run at most one controller per experiment/output directory; separate experiments can run concurrently when resources permit. Do not infer live process state from an uploaded status file.
 

@@ -1,0 +1,6 @@
+dataset,a,b,mean,lo,hi
+amlsim,source_fixed|Best of 40,source_fixed|First random candidate,0.24176625504634167,0.15126370699085392,0.3562450937442849
+amlsim,degree|Best of 40,degree|First random candidate,0.2883552323095047,0.1926946195479297,0.3907567613112787
+amlsim,degree_cycles|Best of 40,degree_cycles|First random candidate,0.3247790700652597,0.22839591149021468,0.4162754801325107
+amlsim,degree_cycles|Best of 40,source_fixed|Best of 40,0.08116569529837221,-0.007140904759352989,0.16669889235638852
+amlsim,degree_cycles|Best of 40,degree|Best of 40,0.023916971027466545,0.0014794936801309304,0.05163145077370914

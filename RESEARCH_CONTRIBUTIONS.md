@@ -1,6 +1,6 @@
 # Research objective, questions, and defensible contributions
 
-**Evidence reviewed: 1 November 2026 (Australia/Perth).** This is a claim register for the current study, not a declaration that every finding is novel. Completed evidence, exploratory findings, and unfinished hypotheses are distinguished below. Numeric values are tied to the linked experiment; cohorts, explainers, and trials must not be pooled indiscriminately.
+**Evidence reviewed: 1 November 2026, evening update (Australia/Perth).** The [latest results snapshot](publication_snapshots/2026-11-01-191803/README.md) was rebuilt from verified saved cases. The additional 100-target resolution audit, 20-target pattern-constraint screening, and 40-target transaction-consistency pilot are now complete. Pattern expansion and HI-Small SubgraphX remain provisional. This is a claim register, not a declaration that every finding is novel; cohorts, explainers, and trials must not be pooled indiscriminately.
 
 ## Research objective
 
@@ -16,12 +16,12 @@ The intended contribution is a controlled empirical evaluation on directed finan
 |---|---|---|
 | RQ1 | How much can small structural edits change financial-graph explanations while preserving the classifier's prediction? | Completed PG-targeted complete-graph study, GNN-targeted three-trial study, and AMLSim SubgraphX study. HI-Small SubgraphX remains incomplete. |
 | RQ2 | How does restricting the attacker from mixed addition/deletion to deletion-only access change explanation disruption? | Completed paired SubgraphX experiment: 30 targets per dataset. |
-| RQ3 | Does disruption selected under one explainer seed persist under unseen explanation randomness? | Completed original audit: 50 targets per dataset, five fresh seeds. Additional fresh-randomness validation remains incomplete. |
+| RQ3 | Does disruption selected under one explainer seed persist under unseen explanation randomness? | Completed original audit: 50 targets per dataset, five fresh seeds. The additional 50-target-per-dataset resolution audit with new seeds is also complete. |
 | RQ4 | Does lower explanation overlap correspond to lower fidelity, including fidelity relative to size-matched random explanations? | Completed full-cohort hard/soft fidelity analysis and fresh-seed random-mask controls. |
 | RQ5 | How much do random search and proposal budget explain the observed attack effectiveness? | Completed three-trial baselines and retrospective AMLSim SubgraphX trajectory analysis. |
-| RQ6 | Does matching model-indistinguishable parallel transaction rows change the interpretation of attack and clean-repeat overlap? | Completed exploratory multigraph-resolution audit and mechanical equivalence checks; additional native explainer/permutation validation is incomplete. |
-| RQ7 | Do conclusions survive recomputation of transaction-derived account features after record changes? | Transaction-consistency experiment implemented and partially evaluated; no completed-cohort conclusion yet. |
-| RQ8 | Can explanation disruption survive exact degree and short-cycle-count constraints while retaining the prediction? | New GNNExplainer constrained-rewiring pilot implemented and partially evaluated; no completed-cohort conclusion yet. |
+| RQ6 | Does matching model-indistinguishable parallel transaction rows change the interpretation of attack and clean-repeat overlap? | Completed retrospective audit, mechanical checks, and additional 100-target fresh-randomness/native-permutation validation. |
+| RQ7 | Do conclusions survive recomputation of transaction-derived account features after record changes? | Completed 40-target pilot: no clear primary matched-search difference; substantial secondary differences between edge-only and record-consistent fidelity interventions. No expansion was triggered. |
+| RQ8 | Can explanation disruption survive exact degree and short-cycle-count constraints while retaining the prediction? | Completed 20-target pilot supports a narrow positive finding; both datasets passed the prespecified expansion gate. The 200 target-search-case expansion is incomplete. |
 
 ## Strongest completed empirical contributions
 
@@ -99,7 +99,7 @@ The analysis covers 166 targets and three source trials, or 498 saved trajectori
 
 Evidence: [budget report and intervals](followup_audit/results/search_budget/REPORT.md), [budget summary](followup_audit/results/search_budget/summary.csv).
 
-## Promising completed exploratory contribution
+## Completed representation audit
 
 ### C6. Transaction identity and model resolution change attack evaluation
 
@@ -118,9 +118,71 @@ For fresh-seed GNN-targeted attacks, matching original rows available in both in
 
 The completed AMLSim native SubgraphX control has zero matching discrepancy, consistent with selection of whole induced edge groups. The retrospective larger GNN cohort has 166 AMLSim and 795 HI-Small targets over three trials; it overlaps the initial audit and is not an independent replication.
 
-**Contribution status:** completed exploratory evidence; a plausible empirical contribution, pending the additional fresh-randomness/edge-order validation. **Boundary:** matching increases overlap by construction and is an upper-bound diagnostic, not a corrected attack-success rate or semantic-accuracy metric. The general symmetry problem is established literature. Recomputing transaction-derived features can break the stated equivalence.
+**Additional validation is now complete:** 50 further targets per dataset, disjoint from the original fresh-seed cohort, with five new explainer seeds. The predeclared primary endpoint is the change in clean-repeat-minus-attack contrast after within-pair matching, for GNN-targeted top-quarter explanations:
 
-Evidence: [resolution audit](exploratory_multigraph_resolution/results/REPORT.md), [paired clean-repeat analysis](exploratory_multigraph_resolution/results/PAIRED_BASELINE.md), [additional validation protocol](exploratory_resolution_validation/README.md).
+| Dataset | Raw contrast | Matched contrast | Change in contrast, 95% target interval |
+|---|---:|---:|---|
+| AMLSim | 0.0542 | 0.1666 | 0.1123 [0.0905, 0.1337] |
+| HI-Small | 0.0860 | 0.2114 | 0.1254 [0.0898, 0.1671] |
+
+The finding therefore persists under new explanation draws on additional targets. These targets were part of the earlier retrospective aggregate analysis; this is not wholly unseen-data or independently trained-model replication.
+
+**Native edge-order control:** without changing graph connections, permuting clean edge columns and rerunning GNNExplainer gives mean top-quarter row overlap 0.2890 on AMLSim and 0.3623 on HI-Small; within-pair matching raises these to 0.8181 and 0.6935. All 500 target-logit comparisons under permutation passed, with maximum difference 1.43e-6. These are actual explainer reruns, unlike the earlier constructed equivalent-mask check. Column order changes the assignment of random initial mask values, so this is implementation-level ordering sensitivity, not proof that top-k tie-breaking alone causes the effect. Unchanged predictions do not imply that the resulting explanation masks have identical fidelity.
+
+**Contribution status:** strengthened completed empirical evidence under the stated architecture, feature matrix and cohorts. **Boundary:** matching increases overlap by construction and is an upper-bound diagnostic, not a corrected attack-success rate or semantic-accuracy metric. Independent clean repeats remain a variability reference rather than a perfectly matched null. The general symmetry problem is established literature; recomputing transaction-derived features can break the stated equivalence.
+
+Evidence: [initial resolution audit](exploratory_multigraph_resolution/results/REPORT.md), [initial paired analysis](exploratory_multigraph_resolution/results/PAIRED_BASELINE.md), [completed additional validation](publication_snapshots/2026-11-01-191803/exploratory_resolution_validation/REPORT.md), [native permutation and attack summaries](publication_snapshots/2026-11-01-191803/exploratory_resolution_validation/summary.csv), [verification summary](publication_snapshots/2026-11-01-191803/exploratory_resolution_validation/validation_summary.json).
+
+## New positive pilot contribution
+
+### C7. Explanation disruption can survive degree and short-cycle-count preservation
+
+**Claim we can use at pilot scale:** On the fixed 10-target-per-dataset screening cohort, best-of-up-to-40 random search found prediction-preserving GNNExplainer disruptions even when each node's in/out degree and global multiplicity-weighted directed two- and three-cycle totals were preserved exactly.
+
+The attack rewires three transaction receivers, equivalent to three removed and three inserted connections. Features and classifier weights remain fixed. A selected attack must preserve the class and change its original-class probability by at most 0.02. Five fresh paired explanation seeds evaluate each selected graph. The search objective is endpoint-multiplicity overlap, reducing reliance on individual transaction-ID swaps.
+
+| Degree-and-cycle-constrained search | Feasible targets | Mean joint disruption | Excess disruption over clean-repeat reference, 95% target interval |
+|---|---:|---:|---|
+| AMLSim | 10/10 | 0.3696 | 0.1907 [0.1249, 0.2688] |
+| HI-Small | 9/10 | 0.3879 | 0.1228 [0.0407, 0.2340] |
+
+Joint disruption is feasibility multiplied by (1 - endpoint overlap); excess disruption is feasibility multiplied by (clean-repeat overlap - attacked overlap). Infeasible cases receive zero and remain in the denominator. The independent clean-repeat reference is not a perfectly matched null.
+
+The paired excess-disruption advantage over the first structurally admissible random candidate is 0.2908 [0.2188, 0.3620] on AMLSim and 0.1184 [0.0266, 0.2210] on HI-Small. This compares search with a single random candidate; it does not establish superiority over another best-of-40 algorithm.
+
+Both datasets met the prespecified expansion gate. The separate expansion uses 50 additional targets per dataset and two search trials, or 200 target-search cases total. Its incomplete results are not confirmation of the pilot and are not pooled with screening.
+
+**Boundary:** this is a small, one-search-trial pilot, not a final large-cohort finding or a new learned attack method. Exact total cycle counts do not preserve every individual motif or establish financial plausibility. Some targets yield fewer than 40 admissible candidates under the structural-draw cap; rejection counts and actual budgets are reported. Constraint conditions use different proposal distributions, so a better pilot mean under a stricter constraint is not evidence that adding constraints inherently improves an attack. No feature consistency, fidelity degradation, human deception, or fully black-box capability is established.
+
+Evidence: [complete screening report](publication_snapshots/2026-11-01-191803/exploratory_pattern_constraints/screening/REPORT.md), [paired comparisons](publication_snapshots/2026-11-01-191803/exploratory_pattern_constraints/screening/paired_effects.csv), [actual search coverage](publication_snapshots/2026-11-01-191803/exploratory_pattern_constraints/screening/search_coverage.csv), [verified expansion decision](publication_snapshots/2026-11-01-191803/exploratory_pattern_constraints/promotion_decision.json), [protocol](exploratory_pattern_constraints/README.md).
+
+## Completed secondary finding from the transaction-consistency pilot
+
+### C8. Fidelity changes when transaction-derived features are recomputed
+
+**Claim supported by the completed pilot:** For the evaluated clean SubgraphX explanations, deleting or retaining transaction records and recomputing account features gives materially different fidelity values from changing graph edges while holding those features fixed.
+
+The pilot uses 20 targets per dataset and five fresh explanation seeds. The table gives paired **record-intervention minus edge-only-intervention** changes on the clean graphs. Values and descriptive target-bootstrap intervals are in probability percentage points.
+
+| Dataset | Soft necessity change | Random-adjusted soft necessity change | Soft retention-gap change |
+|---|---|---|---|
+| AMLSim | +11.35 [2.64, 21.99] | +10.95 [2.41, 21.19] | +92.51 [87.66, 96.78] |
+| HI-Small | +11.76 [6.54, 17.48] | +6.40 [1.58, 11.65] | +19.69 [9.51, 30.47] |
+
+The necessity increase remains after subtracting size-matched random-mask necessity. However, the random-adjusted retention-gap difference is negative: -6.90 pp [-11.99, -2.75] on AMLSim and -26.44 pp [-37.44, -15.20] on HI-Small. Thus the large raw retention effect is not an explanation-specific deterioration. Record retention removes all other transaction records globally and recomputes aggregates, causing a much broader input change than edge-only masking.
+
+**Boundary:** these are preplanned secondary intervention comparisons, not ground-truth explanation accuracy or proof that one fidelity definition is universally correct. The intervals are descriptive and unadjusted for multiple comparisons. They concern the composed preprocessing/classifier intervention and remain conditional on the fixed trained models; substantial input-distribution change is possible. This result does not override the pilot's failed primary expansion gate.
+
+**Primary attack-comparison result:** reselecting attacks separately under frozen and refreshed features did not produce a clear paired change in fresh-seed joint disruption:
+
+| Dataset | Frozen-search joint disruption | Refreshed-search joint disruption | Refreshed minus frozen, 95% target interval |
+|---|---:|---:|---|
+| AMLSim | 0.4230 | 0.4554 | +0.0324 [-0.0140, 0.0823] |
+| HI-Small | 0.3934 | 0.3883 | -0.0052 [-0.1040, 0.0840] |
+
+Neither dataset met the prespecified criterion for expansion. This is absence of a clear effect in this pilot, not an equivalence test. Replaying previously selected adaptive edits on HI-Small reduced observed label/2pp feasibility from 16/20 to 13/20 after feature refresh; the paired feasibility-change interval touches zero. Report this as a descriptive transfer limitation, not a robust average causal claim.
+
+Evidence: [complete transaction-consistency report](publication_snapshots/2026-11-01-191803/exploratory_transaction_consistency/pilot/REPORT.md), [primary paired comparisons](publication_snapshots/2026-11-01-191803/exploratory_transaction_consistency/pilot/paired_effects.csv), [secondary fidelity comparisons](publication_snapshots/2026-11-01-191803/exploratory_transaction_consistency/pilot/fidelity_paired_effects.csv), [no-expansion decision](publication_snapshots/2026-11-01-191803/exploratory_transaction_consistency/promotion_decision.json).
 
 ## Supporting contributions and extras
 
@@ -135,12 +197,12 @@ Evidence: [resolution audit](exploratory_multigraph_resolution/results/REPORT.md
 
 | Candidate | Experiment | Claim requires |
 |---|---|---|
-| Feature-consistent threat-model assessment | [Transaction-consistency study](exploratory_transaction_consistency/README.md): frozen versus refreshed transaction-derived features, replay and matched searches | Completed paired cohort, valid prediction checks, uncertainty intervals, and scrutiny of feasibility/empty explanations. |
-| Explanation vulnerability under graph-pattern constraints | [Pattern-constraint pilot](exploratory_pattern_constraints/README.md): source-fixed, degree-preserving, and degree-plus-cycle-preserving rewiring | Completed fixed pilot; feasible coverage and fresh-seed outcomes; independent verification of global cycle counts; expansion only if its prespecified gate passes. |
-| Replication of the resolution finding under new explainer draws | [Additional resolution validation](exploratory_resolution_validation/README.md): 50 additional targets per dataset, new seeds and native edge-order reruns | Completed cohort and primary endpoint. Targets were included in earlier retrospective aggregates, so this is not wholly unseen-data confirmation. |
+| A large systematic change in optimized attack success after feature refresh | [Transaction-consistency study](exploratory_transaction_consistency/README.md) is complete at pilot scale | The current primary intervals include zero and the expansion criterion failed. A larger effect cannot be claimed from this pilot. |
+| Large-cohort confirmation of graph-pattern-constrained vulnerability | [Pattern-constraint study](exploratory_pattern_constraints/README.md): positive screening complete, expansion underway | Complete the 200 target-search cases on separate targets and assess fresh-seed results, feasibility and actual query coverage. C7 is currently a pilot claim. |
+| Generalization of the resolution finding to new datasets or architectures | Current additional resolution cohort is complete | Independent datasets/trained models or edge-attribute-aware architectures; those experiments have not been conducted. |
 | Full-cohort HI-Small SubgraphX finding | [SubgraphX HI-Small protocol](subgraphx_hi_small/README.md) | Completion of all 795 planned targets; partial snapshots must not be treated as completed-cohort estimates. |
 
-Current completion counts and publication boundaries are in the [dated snapshot](publication_snapshots/2026-11-01/README.md). Technical-pilot success establishes implementation readiness, not success of a scientific hypothesis.
+Current completion counts and publication boundaries are in the [evening snapshot](publication_snapshots/2026-11-01-191803/README.md); the [morning snapshot](publication_snapshots/2026-11-01/README.md) remains as history. Pattern expansion and HI-Small SubgraphX are published as provisional evidence, not promoted to completed-cohort claims.
 
 ## Literature positioning
 
@@ -150,7 +212,7 @@ Current completion counts and publication boundaries are in the [dated snapshot]
 | [Li et al., Graph Neural Network Explanations are Fragile, ICML 2024](https://proceedings.mlr.press/v235/li24bd.html) | Explanation attacks under limited knowledge and perturbation restrictions | Our deletion-only comparison and specific financial evaluation; no first restricted-threat-model claim. |
 | [Crabbe and van der Schaar, NeurIPS 2023](https://arxiv.org/abs/2304.06715) | Explanation invariance/equivariance and symmetry-based evaluation | Measured impact of parallel transaction identity on adversarial evaluation, rather than a new symmetry principle. |
 | [Xu et al., Automorphism-Induced Non-Canonicity in Top-k Explanations (2026 preprint)](https://arxiv.org/abs/2607.26344) | Ambiguity in top-k graph explanations and symmetry-aware reporting | Financial parallel-record and attack-evaluation consequences; not invention of symmetry-aware reporting. |
-| [Heijmans et al., Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis (LoG 2026)](https://arxiv.org/abs/2610.31718) | Financial multigraph prediction-evasion attacks and short-cycle regularization | Our pending prediction-preserving explanation objective under explicit constraints; not the first financial multigraph attack or cycle constraint. |
+| [Heijmans et al., Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis (LoG 2026)](https://arxiv.org/abs/2610.31718) | Financial multigraph prediction-evasion attacks and short-cycle regularization | Our positive pilot addresses a prediction-preserving explanation objective under explicit constraints; not the first financial multigraph attack or cycle constraint. |
 
 These references motivate narrow candidate gaps. They are not an exhaustive novelty proof. Any final paper should refresh the literature review and compare exact threat models, model inputs, and metrics.
 
@@ -166,6 +228,6 @@ These references motivate narrow candidate gaps. They are not an exhaustive nove
 
 ## Suggested concise contribution statement
 
-> We evaluate prediction-preserving explanation attacks on directed financial transaction multigraphs and show that their measured effects depend on attacker access, explainer randomness, and evaluation granularity. Paired deletion-only experiments quantify the role of insertion access; fresh-seed and random-explanation controls distinguish overlap changes from uniform fidelity degradation; and saved search trajectories expose strong random-search baselines and early proposal-budget saturation. An exploratory multigraph audit further shows that transaction-ID instability can obscure attack-associated explanation changes when the classifier cannot distinguish parallel records.
+> We evaluate prediction-preserving explanation attacks on directed financial transaction multigraphs and show that their measured effects depend on attacker access, explainer randomness, and evaluation granularity. Paired deletion-only experiments quantify the role of insertion access; fresh-seed and random-explanation controls distinguish overlap changes from uniform fidelity degradation; and saved search trajectories expose strong random-search baselines and early proposal-budget saturation. A multigraph audit, strengthened by additional fresh-randomness and native edge-order controls, shows that transaction-ID instability can obscure attack-associated changes when the classifier cannot distinguish parallel records. A transaction-consistency pilot further shows that refreshing derived account features changes the fidelity intervention being measured, while its primary matched-search effect remains inconclusive. A separate small pilot finds explanation disruption under exact degree and short-cycle-count preservation, motivating a larger evaluation.
 
-Use the final sentence as an exploratory contribution until the additional resolution-validation cohort is complete. Add feature-consistency or pattern-preservation claims only after their respective experiments finish and support them.
+Keep the final sentence explicitly at pilot scale until expansion is complete. Distinguish the transaction-consistency pilot's negative primary result from its secondary fidelity findings. All claims remain conditional on the fixed models, target eligibility, feature/intervention settings and stated metrics.

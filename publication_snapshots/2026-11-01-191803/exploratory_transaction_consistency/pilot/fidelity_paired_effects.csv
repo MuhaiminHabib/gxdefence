@@ -1,0 +1,145 @@
+dataset,method,scenario,metric,targets,mean,lo,hi
+amlsim,Clean,frozen,hard_plus,20,0.12000000000000002,0.02,0.25
+amlsim,Clean,frozen,hard_minus,20,0.93,0.86,0.9800000000000001
+amlsim,Clean,frozen,soft_plus,20,0.11351359952241183,0.02637864377349615,0.21993944115750483
+amlsim,Clean,frozen,soft_minus,20,0.9250689519389308,0.8765789692629986,0.9678114365821116
+amlsim,Clean,frozen,random_hard_plus,20,0.0025,0.001,0.0045
+amlsim,Clean,frozen,random_hard_minus,20,0.9984999999999999,0.9969999999999999,1.0
+amlsim,Clean,frozen,random_soft_plus,20,0.004061180278658867,0.0009362971123424358,0.007997699358232782
+amlsim,Clean,frozen,random_soft_minus,20,0.9940853197684006,0.990609764513349,0.9967767203898169
+amlsim,Clean,frozen,excess_hard_plus,20,0.11750000000000001,0.0095,0.24550000000000005
+amlsim,Clean,frozen,excess_hard_minus,20,-0.06849999999999999,-0.1375,-0.0185
+amlsim,Clean,frozen,excess_soft_plus,20,0.10945241924375297,0.024070483746845273,0.21192861630725657
+amlsim,Clean,frozen,excess_soft_minus,20,-0.06901636782946985,-0.11992627306043736,-0.027513907203962403
+amlsim,First random,refreshed,hard_plus,20,0.14,0.030000000000000006,0.28
+amlsim,First random,refreshed,hard_minus,20,0.9099999999999999,0.8300000000000001,0.9800000000000001
+amlsim,First random,refreshed,soft_plus,20,0.12913676938973367,0.03771568038128317,0.24345120520913036
+amlsim,First random,refreshed,soft_minus,20,0.9058587791632335,0.83671566038644,0.9633776796174714
+amlsim,First random,refreshed,random_hard_plus,20,0.0015,0.0,0.003
+amlsim,First random,refreshed,random_hard_minus,20,0.998,0.9949999999999999,1.0
+amlsim,First random,refreshed,random_soft_plus,20,0.0028575967932119965,0.0006576452530920507,0.0057273300068918604
+amlsim,First random,refreshed,random_soft_minus,20,0.9955410883427851,0.992404610726659,0.9980166575890065
+amlsim,First random,refreshed,excess_hard_plus,20,0.1385,0.028500000000000004,0.2670124999999998
+amlsim,First random,refreshed,excess_hard_minus,20,-0.088,-0.169025,-0.019
+amlsim,First random,refreshed,excess_soft_plus,20,0.12627917259652172,0.03642826179917902,0.23810264830284286
+amlsim,First random,refreshed,excess_soft_minus,20,-0.08968230917955136,-0.15728806155251163,-0.03097821905181827
+amlsim,Replay adaptive,refreshed,hard_plus,20,0.11000000000000001,0.0,0.23000000000000004
+amlsim,Replay adaptive,refreshed,hard_minus,20,0.9800000000000001,0.9399999999999998,1.0
+amlsim,Replay adaptive,refreshed,soft_plus,20,0.10374605294317008,0.018604170486330986,0.21621966422349212
+amlsim,Replay adaptive,refreshed,soft_minus,20,0.9459620738521046,0.895538597577668,0.987766553981559
+amlsim,Replay adaptive,refreshed,random_hard_plus,20,0.0025,0.0,0.0055
+amlsim,Replay adaptive,refreshed,random_hard_minus,20,0.9955,0.9909999999999999,0.9994999999999999
+amlsim,Replay adaptive,refreshed,random_soft_plus,20,0.003954880369827151,0.000786468981951475,0.008412559298845006
+amlsim,Replay adaptive,refreshed,random_soft_minus,20,0.992333320584525,0.9869192487077205,0.9969393466486853
+amlsim,Replay adaptive,refreshed,excess_hard_plus,20,0.10750000000000001,-0.001,0.2355
+amlsim,Replay adaptive,refreshed,excess_hard_minus,20,-0.015499999999999996,-0.05800000000000001,0.008000000000000005
+amlsim,Replay adaptive,refreshed,excess_soft_plus,20,0.09979117257334293,0.012575081186182797,0.21205460364928
+amlsim,Replay adaptive,refreshed,excess_soft_minus,20,-0.046371246732420206,-0.09736954384213048,-0.006978527719421349
+amlsim,Replay random search,refreshed,hard_plus,20,0.09,0.0,0.21000000000000002
+amlsim,Replay random search,refreshed,hard_minus,20,0.95,0.8799999999999999,1.0
+amlsim,Replay random search,refreshed,soft_plus,20,0.08127402800135315,0.01096954642352648,0.17544464411726213
+amlsim,Replay random search,refreshed,soft_minus,20,0.9594210906219013,0.9114574132327855,0.9939421619266564
+amlsim,Replay random search,refreshed,random_hard_plus,20,0.0035000000000000005,0.0,0.008000000000000002
+amlsim,Replay random search,refreshed,random_hard_minus,20,0.9964999999999999,0.9925,0.9995
+amlsim,Replay random search,refreshed,random_soft_plus,20,0.004778638879302889,6.632345169782644e-05,0.01134394358588615
+amlsim,Replay random search,refreshed,random_soft_minus,20,0.9940395018729082,0.9900876055828775,0.9975031907258873
+amlsim,Replay random search,refreshed,excess_hard_plus,20,0.0865,-0.0015000000000000002,0.20550000000000002
+amlsim,Replay random search,refreshed,excess_hard_minus,20,-0.0465,-0.11499999999999999,0.0010000000000000009
+amlsim,Replay random search,refreshed,excess_soft_plus,20,0.07649538912205026,0.00724231151668355,0.17014816872581137
+amlsim,Replay random search,refreshed,excess_soft_minus,20,-0.03461841125100672,-0.07891000463076778,-0.003566109461626802
+amlsim,Search frozen,refreshed,hard_plus,20,0.05,0.0,0.12
+amlsim,Search frozen,refreshed,hard_minus,20,0.86,0.74,0.95
+amlsim,Search frozen,refreshed,soft_plus,20,0.060722685432992876,0.014127349823713302,0.12378381987451574
+amlsim,Search frozen,refreshed,soft_minus,20,0.8587375860176127,0.7285898289660597,0.9509150447530011
+amlsim,Search frozen,refreshed,random_hard_plus,20,0.0015,0.0,0.004
+amlsim,Search frozen,refreshed,random_hard_minus,20,0.9424999999999999,0.8345,0.998
+amlsim,Search frozen,refreshed,random_soft_plus,20,0.002964558966457844,0.0005369531340897084,0.006115576488059015
+amlsim,Search frozen,refreshed,random_soft_minus,20,0.9349537018695269,0.8180478719254012,0.9954310320803422
+amlsim,Search frozen,refreshed,excess_hard_plus,20,0.0485,0.0,0.11750000000000001
+amlsim,Search frozen,refreshed,excess_hard_minus,20,-0.08249999999999999,-0.15251250000000002,-0.020999999999999998
+amlsim,Search frozen,refreshed,excess_soft_plus,20,0.05775812646653503,0.010391086727380754,0.11747981002386657
+amlsim,Search frozen,refreshed,excess_soft_minus,20,-0.07621611585191403,-0.14079481706840516,-0.02028384422388437
+amlsim,Search refreshed,refreshed,hard_plus,20,0.06999999999999999,0.0,0.15999999999999998
+amlsim,Search refreshed,refreshed,hard_minus,20,0.93,0.8699999999999999,0.9800000000000001
+amlsim,Search refreshed,refreshed,soft_plus,20,0.0797492611175403,0.01571260110102594,0.15810066875501064
+amlsim,Search refreshed,refreshed,soft_minus,20,0.9311498092108448,0.8752739389983274,0.9754209343334042
+amlsim,Search refreshed,refreshed,random_hard_plus,20,0.001,0.0,0.0025
+amlsim,Search refreshed,refreshed,random_hard_minus,20,0.998,0.9955,1.0
+amlsim,Search refreshed,refreshed,random_soft_plus,20,0.002117328242398799,0.00018257379606366163,0.004699483687826432
+amlsim,Search refreshed,refreshed,random_soft_minus,20,0.9950822397967904,0.9907572961334964,0.9982776094332276
+amlsim,Search refreshed,refreshed,excess_hard_plus,20,0.06899999999999999,-0.0005,0.159
+amlsim,Search refreshed,refreshed,excess_hard_minus,20,-0.068,-0.1295,-0.016999999999999998
+amlsim,Search refreshed,refreshed,excess_soft_plus,20,0.0776319328751415,0.01410096832215786,0.1575896673121023
+amlsim,Search refreshed,refreshed,excess_soft_minus,20,-0.06393243058594576,-0.12141283898366548,-0.017922905217984033
+hi_small,Clean,frozen,hard_plus,20,0.31,0.11000000000000001,0.51
+hi_small,Clean,frozen,hard_minus,20,0.32,0.15999999999999998,0.5
+hi_small,Clean,frozen,soft_plus,20,0.11761959135532381,0.06538729222491382,0.17478148321621115
+hi_small,Clean,frozen,soft_minus,20,0.19687494903802874,0.09507862363848836,0.3046831041052936
+hi_small,Clean,frozen,random_hard_plus,20,0.126,0.0485,0.22000000000000003
+hi_small,Clean,frozen,random_hard_minus,20,0.781,0.661,0.8800000000000001
+hi_small,Clean,frozen,random_soft_plus,20,0.05357126754755154,0.021915114830591484,0.09116050943943553
+hi_small,Clean,frozen,random_soft_minus,20,0.46124923324708655,0.39919225849242357,0.5185074276572718
+hi_small,Clean,frozen,excess_hard_plus,20,0.18400000000000002,-0.03151249999999999,0.4065
+hi_small,Clean,frozen,excess_hard_minus,20,-0.461,-0.6335,-0.27348750000000016
+hi_small,Clean,frozen,excess_soft_plus,20,0.06404832380777226,0.015849724723381226,0.11646465049824908
+hi_small,Clean,frozen,excess_soft_minus,20,-0.26437428420905784,-0.3743840868967818,-0.15198409437174026
+hi_small,First random,refreshed,hard_plus,20,0.25,0.0,0.5
+hi_small,First random,refreshed,hard_minus,20,0.31,0.13999999999999999,0.5
+hi_small,First random,refreshed,soft_plus,20,0.05644957141950727,-0.04600524921016766,0.15370049035828556
+hi_small,First random,refreshed,soft_minus,20,0.15503657046705482,0.02613087090617045,0.28495796074951063
+hi_small,First random,refreshed,random_hard_plus,20,0.047499999999999994,-0.0950125,0.1925124999999998
+hi_small,First random,refreshed,random_hard_minus,20,0.58,0.40499999999999997,0.7384999999999999
+hi_small,First random,refreshed,random_soft_plus,20,0.00932967489399016,-0.08218545498307794,0.10260154572757894
+hi_small,First random,refreshed,random_soft_minus,20,0.27793650714912654,0.1460619716822768,0.399695861769498
+hi_small,First random,refreshed,excess_hard_plus,20,0.20250000000000004,0.021450000000000018,0.4000249999999997
+hi_small,First random,refreshed,excess_hard_minus,20,-0.27,-0.4480124999999999,-0.091
+hi_small,First random,refreshed,excess_soft_plus,20,0.04711989652551711,0.007217444538092242,0.08943718249960793
+hi_small,First random,refreshed,excess_soft_minus,20,-0.1228999366820717,-0.2278086535689506,-0.023664574138834757
+hi_small,Replay adaptive,refreshed,hard_plus,20,0.33999999999999997,0.09,0.5900000000000001
+hi_small,Replay adaptive,refreshed,hard_minus,20,0.42000000000000004,0.23000000000000004,0.62
+hi_small,Replay adaptive,refreshed,soft_plus,20,0.10462653221562504,0.0029456740245223084,0.19925714678689824
+hi_small,Replay adaptive,refreshed,soft_minus,20,0.220195325165987,0.0913370797666721,0.3423809259273112
+hi_small,Replay adaptive,refreshed,random_hard_plus,20,0.157,-0.03751249999999999,0.35100000000000003
+hi_small,Replay adaptive,refreshed,random_hard_minus,20,0.606,0.4375,0.768
+hi_small,Replay adaptive,refreshed,random_soft_plus,20,0.07012439626269043,-0.028957831953605632,0.17004415318416416
+hi_small,Replay adaptive,refreshed,random_soft_minus,20,0.2868218763588884,0.1724298551838996,0.38559857345246545
+hi_small,Replay adaptive,refreshed,excess_hard_plus,20,0.183,0.006450000000000001,0.3760124999999998
+hi_small,Replay adaptive,refreshed,excess_hard_minus,20,-0.18599999999999997,-0.3330125,-0.036
+hi_small,Replay adaptive,refreshed,excess_soft_plus,20,0.03450213595293462,-0.006893377549154686,0.07718819853393352
+hi_small,Replay adaptive,refreshed,excess_soft_minus,20,-0.0666265511929014,-0.17199279374234594,0.03349610000614476
+hi_small,Replay random search,refreshed,hard_plus,20,0.4,0.15,0.65
+hi_small,Replay random search,refreshed,hard_minus,20,0.35,0.16,0.55
+hi_small,Replay random search,refreshed,soft_plus,20,0.147535357195884,0.04130483494326472,0.24838625705102454
+hi_small,Replay random search,refreshed,soft_minus,20,0.16983319075778128,0.050028805596753954,0.2914464502790942
+hi_small,Replay random search,refreshed,random_hard_plus,20,0.1945,-0.009012500000000007,0.4085249999999997
+hi_small,Replay random search,refreshed,random_hard_minus,20,0.5760000000000001,0.385,0.7595249999999997
+hi_small,Replay random search,refreshed,random_soft_plus,20,0.11273709068656901,0.006183898112818131,0.216441032761184
+hi_small,Replay random search,refreshed,random_soft_minus,20,0.2575188137727237,0.1312309533129068,0.36790475696906794
+hi_small,Replay random search,refreshed,excess_hard_plus,20,0.20550000000000002,0.03849999999999999,0.4000124999999998
+hi_small,Replay random search,refreshed,excess_hard_minus,20,-0.22599999999999998,-0.39449999999999996,-0.0635
+hi_small,Replay random search,refreshed,excess_soft_plus,20,0.034798266509314994,3.266079524182225e-05,0.07540650768105402
+hi_small,Replay random search,refreshed,excess_soft_minus,20,-0.08768562301494238,-0.19206411668508006,0.009242061649078053
+hi_small,Search frozen,refreshed,hard_plus,20,0.5,0.3,0.7
+hi_small,Search frozen,refreshed,hard_minus,20,0.36,0.18,0.55
+hi_small,Search frozen,refreshed,soft_plus,20,0.21769390242174266,0.14097303939284755,0.29646569971321135
+hi_small,Search frozen,refreshed,soft_minus,20,0.20498932071262974,0.10578993660624839,0.3037130357456045
+hi_small,Search frozen,refreshed,random_hard_plus,20,0.3245,0.14750000000000002,0.5150124999999999
+hi_small,Search frozen,refreshed,random_hard_minus,20,0.6559999999999999,0.4899874999999999,0.808
+hi_small,Search frozen,refreshed,random_soft_plus,20,0.16379113862942904,0.08556224827256519,0.25019643202833836
+hi_small,Search frozen,refreshed,random_soft_minus,20,0.3623052516488824,0.26925714912953264,0.44966183519244657
+hi_small,Search frozen,refreshed,excess_hard_plus,20,0.17550000000000002,0.005487500000000009,0.3705
+hi_small,Search frozen,refreshed,excess_hard_minus,20,-0.296,-0.4785125,-0.1145
+hi_small,Search frozen,refreshed,excess_soft_plus,20,0.05390276379231364,0.015087085005384873,0.09309558434213973
+hi_small,Search frozen,refreshed,excess_soft_minus,20,-0.1573159309362527,-0.2582880400714858,-0.06265615595100683
+hi_small,Search refreshed,refreshed,hard_plus,20,0.35,0.15,0.55
+hi_small,Search refreshed,refreshed,hard_minus,20,0.32,0.15,0.5
+hi_small,Search refreshed,refreshed,soft_plus,20,0.15433300256729127,0.09585236185416582,0.2194490982033312
+hi_small,Search refreshed,refreshed,soft_minus,20,0.18973697776207699,0.08861811871087409,0.2935675016068271
+hi_small,Search refreshed,refreshed,random_hard_plus,20,0.30600000000000005,0.14200000000000002,0.48201249999999973
+hi_small,Search refreshed,refreshed,random_hard_minus,20,0.616,0.4579874999999999,0.7635
+hi_small,Search refreshed,refreshed,random_soft_plus,20,0.13967536564567126,0.068822006456065,0.21941262476483822
+hi_small,Search refreshed,refreshed,random_soft_minus,20,0.366502806897588,0.27054262909059584,0.45514778686809865
+hi_small,Search refreshed,refreshed,excess_hard_plus,20,0.04399999999999997,-0.1970125,0.295
+hi_small,Search refreshed,refreshed,excess_hard_minus,20,-0.296,-0.46901249999999994,-0.11448750000000019
+hi_small,Search refreshed,refreshed,excess_soft_plus,20,0.014657636921619999,-0.047939190137217515,0.0725448112113168
+hi_small,Search refreshed,refreshed,excess_soft_minus,20,-0.17676582913551103,-0.27366780207995417,-0.08005350116855701

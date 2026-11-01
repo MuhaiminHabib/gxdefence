@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "targets": 100,
+  "source_hashes_verified": 112,
+  "permutation_comparisons": {
+    "amlsim": 250,
+    "hi_small": 250
+  },
+  "maximum_permutation_logit_error": {
+    "amlsim": 1.430511474609375e-06,
+    "hi_small": 2.682209014892578e-07
+  }
+}

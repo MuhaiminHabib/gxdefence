@@ -1,0 +1,23 @@
+{
+  "manifest_id": "cf0d9f96bc4f6a7e328160ce52b4ffa2027b9329cbf4e6d4945a8a4f6c4364ea",
+  "qualified_datasets": [],
+  "rule": "Complete technical coverage; abs paired joint-disruption difference >=0.10 and 95% interval excludes zero",
+  "details": [
+    {
+      "dataset": "amlsim",
+      "primary": "fresh-seed joint disruption",
+      "mean": 0.0323888354747822,
+      "lo": -0.0140142852433397,
+      "hi": 0.0823391961769662,
+      "promising": false
+    },
+    {
+      "dataset": "hi_small",
+      "primary": "fresh-seed joint disruption",
+      "mean": -0.0051737802686795,
+      "lo": -0.1039704987098479,
+      "hi": 0.084011161268793,
+      "promising": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+dataset,comparison,metric,targets,mean,lo,hi
+amlsim,First random / same edits,similarity,20,-0.0060046782510232485,-0.05003432191457945,0.05
+amlsim,First random / same edits,preserved,20,0.0,0.0,0.0
+amlsim,First random / same edits,feasible,20,0.0,0.0,0.0
+amlsim,First random / same edits,delta_prob,20,1.3825297355651855e-05,-2.5901198387145995e-06,4.0131807327270505e-05
+amlsim,First random / same edits,joint_disruption,20,0.0060046782510232485,-0.04715678085420548,0.05
+amlsim,Replay adaptive / same edits,similarity,20,-0.009187791103572662,-0.03471572309337411,0.010332416728641035
+amlsim,Replay adaptive / same edits,preserved,20,0.0,0.0,0.0
+amlsim,Replay adaptive / same edits,feasible,20,0.0,0.0,0.0
+amlsim,Replay adaptive / same edits,delta_prob,20,0.0005813062191009522,1.3648048043251039e-05,0.001680582985281944
+amlsim,Replay adaptive / same edits,joint_disruption,20,0.009187791103572667,-0.009877352677625312,0.034715723093374104
+amlsim,Replay random search / same edits,similarity,20,-0.007036283108080993,-0.03738548945875996,0.022614510541240036
+amlsim,Replay random search / same edits,preserved,20,0.0,0.0,0.0
+amlsim,Replay random search / same edits,feasible,20,0.0,0.0,0.0
+amlsim,Replay random search / same edits,delta_prob,20,7.35461711883545e-05,6.764978170394898e-06,0.00019008405506610863
+amlsim,Replay random search / same edits,joint_disruption,20,0.007036283108080984,-0.02261451054124004,0.03930158729864204
+amlsim,Search frozen / same edits,similarity,20,-0.023500158395230075,-0.06065137676330245,0.01416191471448385
+amlsim,Search frozen / same edits,preserved,20,-0.05,-0.15,0.0
+amlsim,Search frozen / same edits,feasible,20,-0.05,-0.15,0.0
+amlsim,Search frozen / same edits,delta_prob,20,0.04604715779423714,9.628459811210634e-06,0.13804454095661642
+amlsim,Search frozen / same edits,joint_disruption,20,-0.026499841604769918,-0.12970728650508145,0.04139031579203058
+amlsim,Search refreshed / same edits,similarity,20,-0.004061144001362912,-0.0309433386842537,0.024139486206368695
+amlsim,Search refreshed / same edits,preserved,20,0.0,0.0,0.0
+amlsim,Search refreshed / same edits,feasible,20,0.0,0.0,0.0
+amlsim,Search refreshed / same edits,delta_prob,20,8.786320686340331e-05,1.2978464365005494e-05,0.0002109171450138092
+amlsim,Search refreshed / same edits,joint_disruption,20,0.004061144001362915,-0.024139486206368688,0.03316145910522871
+amlsim,Matched search / own scenario,similarity,20,-0.03238883547478227,-0.08416306083356283,0.012547884085089486
+amlsim,Matched search / both feasible,similarity,20,-0.03238883547478227,-0.08022918845452891,0.013598909333610678
+amlsim,Matched search / own scenario,preserved,20,0.0,0.0,0.0
+amlsim,Matched search / both feasible,preserved,20,0.0,0.0,0.0
+amlsim,Matched search / own scenario,feasible,20,0.0,0.0,0.0
+amlsim,Matched search / both feasible,feasible,20,0.0,0.0,0.0
+amlsim,Matched search / own scenario,delta_prob,20,8.597671985626221e-05,1.1524483561515808e-05,0.0002105287462472915
+amlsim,Matched search / both feasible,delta_prob,20,8.597671985626221e-05,1.2222751975059511e-05,0.00021091468632221223
+amlsim,Matched search / own scenario,joint_disruption,20,0.03238883547478227,-0.0140142852433397,0.08233919617696624
+amlsim,Matched search / both feasible,joint_disruption,20,0.03238883547478227,-0.013604669187564707,0.08256902008711949
+hi_small,First random / same edits,similarity,20,-0.015274340127855529,-0.03777903922900798,0.0015811388300841834
+hi_small,First random / same edits,preserved,20,-0.15,-0.3,0.0
+hi_small,First random / same edits,feasible,20,0.0,0.0,0.0
+hi_small,First random / same edits,delta_prob,20,0.019859904050827028,-0.011617671437561511,0.05392915025353428
+hi_small,First random / same edits,joint_disruption,20,0.015274340127855524,-0.0015811388300841888,0.03779853224834096
+hi_small,Replay adaptive / same edits,similarity,20,-0.020653592862407498,-0.05369202564226099,0.006564115902107093
+hi_small,Replay adaptive / same edits,preserved,20,-0.1,-0.25,0.0
+hi_small,Replay adaptive / same edits,feasible,20,-0.15,-0.3,0.0
+hi_small,Replay adaptive / same edits,delta_prob,20,0.028293336927890777,0.00900924637913704,0.05417149249464273
+hi_small,Replay adaptive / same edits,joint_disruption,20,-0.08158363866053114,-0.2084813144783663,0.0204771583503174
+hi_small,Replay random search / same edits,similarity,20,-0.0032999075722888196,-0.030140970124544992,0.021472602283038954
+hi_small,Replay random search / same edits,preserved,20,-0.1,-0.25,0.0
+hi_small,Replay random search / same edits,feasible,20,-0.1,-0.25,0.0
+hi_small,Replay random search / same edits,delta_prob,20,0.03528051674365997,0.007674895972013474,0.07204453401267528
+hi_small,Replay random search / same edits,joint_disruption,20,-0.07820397073956216,-0.20530034176277376,0.016042054324744887
+hi_small,Search frozen / same edits,similarity,20,-0.028005577918816603,-0.06822541163203052,-8.552783658247743e-05
+hi_small,Search frozen / same edits,preserved,20,0.0,0.0,0.0
+hi_small,Search frozen / same edits,feasible,20,-0.1,-0.25,0.0
+hi_small,Search frozen / same edits,delta_prob,20,0.007709291577339172,0.0007571809738874437,0.017266595438122746
+hi_small,Search frozen / same edits,joint_disruption,20,-0.05341860849703317,-0.1818155111738537,0.04553514206204322
+hi_small,Search refreshed / same edits,similarity,20,-0.021749110038742643,-0.0701743958519779,0.018194945914625
+hi_small,Search refreshed / same edits,preserved,20,0.0,0.0,0.0
+hi_small,Search refreshed / same edits,feasible,20,0.05,0.0,0.15
+hi_small,Search refreshed / same edits,delta_prob,20,-0.0015790820121765136,-0.0073573261499404905,0.0023127390444278666
+hi_small,Search refreshed / same edits,joint_disruption,20,0.03195166391853767,-0.008866729033320402,0.08446161120329888
+hi_small,Matched search / own scenario,similarity,20,0.036916361685174044,-0.05884122545796999,0.138433690946223
+hi_small,Matched search / both feasible,similarity,19,0.016185614893131178,-0.07696045382673664,0.11735678747999169
+hi_small,Matched search / own scenario,preserved,20,0.0,0.0,0.0
+hi_small,Matched search / both feasible,preserved,19,0.0,0.0,0.0
+hi_small,Matched search / own scenario,feasible,20,0.05,0.0,0.15
+hi_small,Matched search / both feasible,feasible,19,0.0,0.0,0.0
+hi_small,Matched search / own scenario,delta_prob,20,-0.0012671500444412231,-0.007188252434134484,0.003053097352385519
+hi_small,Matched search / both feasible,delta_prob,19,0.0012143003313164961,-0.0012987278009715833,0.003679731252946351
+hi_small,Matched search / own scenario,joint_disruption,20,-0.005173780268679587,-0.10397049870984795,0.08401116126879307
+hi_small,Matched search / both feasible,joint_disruption,19,-0.01618561489313119,-0.11478376222456696,0.0750983536309951

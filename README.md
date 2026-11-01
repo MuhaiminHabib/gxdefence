@@ -1,6 +1,6 @@
 # Financial GXAttack study
 
-Read [Research objective, questions, and defensible contributions](RESEARCH_CONTRIBUTIONS.md) for the current research position, evidence, and claim limits. [Results index](RESULTS_INDEX.md) distinguishes completed findings, exploratory analyses, and unfinished experiments. The [latest 1 November 2026 evening snapshot](publication_snapshots/2026-11-01-191803/README.md) includes the completed resolution audit, positive pattern-constrained screening, completed transaction-consistency pilot, and provisional ongoing results; GitHub is not a live experiment monitor.
+Read [Research objective, questions, and defensible contributions](RESEARCH_CONTRIBUTIONS.md) for the current research position, evidence, and claim limits. [Results index](RESULTS_INDEX.md) distinguishes completed findings, exploratory analyses, and unfinished experiments. The [latest 1 November 2026 snapshot](publication_snapshots/2026-11-01-231311/README.md) includes the completed 200-case pattern-constrained expansion, completed resolution and transaction-consistency audits, and provisional HI-Small SubgraphX results; GitHub is not a live experiment monitor.
 
 Start with [Reproducibility and results guide](REPRODUCIBILITY.md), the [complete-graph results](complete_graphs/REPORT.md), and the [full-cohort fidelity investigation](complete_graphs/results/soft_fidelity_full/REPORT.md). The sections below describe the earlier sampled study. Raw data and model checkpoints are excluded from Git.
 

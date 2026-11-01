@@ -1,0 +1,33 @@
+{
+  "manifest_id": "2395a4a7475a4237c9eaa79862d5db59908bb312026f07fe879849450b92c14a",
+  "qualified_datasets": [
+    "amlsim",
+    "hi_small"
+  ],
+  "decisions": [
+    {
+      "dataset": "amlsim",
+      "condition": "degree_cycles",
+      "selector": "Best of 40",
+      "targets": 10,
+      "feasible_coverage": 1.0,
+      "joint_disruption": 0.3695863378839908,
+      "excess_disruption": 0.19067541934126372,
+      "excess_lo": 0.12490999884912521,
+      "excess_hi": 0.2687778893894755,
+      "qualifies": true
+    },
+    {
+      "dataset": "hi_small",
+      "condition": "degree_cycles",
+      "selector": "Best of 40",
+      "targets": 10,
+      "feasible_coverage": 0.9,
+      "joint_disruption": 0.38791636814131214,
+      "excess_disruption": 0.12275389749648849,
+      "excess_lo": 0.04067470882613162,
+      "excess_hi": 0.23395107453478178,
+      "qualifies": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """Rebuild a publication snapshot from verified immutable cases, without editing live runs."""
 import argparse,hashlib,importlib.util,json,os,shutil,subprocess,sys,tempfile
-from collections import Counter
+from collections import Counter,defaultdict
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
@@ -35,7 +35,7 @@ def validate_sources(m):
                 assert sha(ROOT/rel)==expected,('changed source/input',rel);checked+=1
     return checked
 def stage_cases(source,target,m,kind,phase):
-    target.mkdir(parents=True,exist_ok=True);counts=Counter();hashes={};identities=set();permutation=Counter();maxerr={}
+    target.mkdir(parents=True,exist_ok=True);counts=Counter();hashes={};identities=set();permutation=Counter();maxerr={};pattern_stats=defaultdict(Counter)
     if kind=='subgraphx':expected={(int(t),int(s)) for t in m['targets'] for s in m['trials']}
     else:
         key='targets' if kind in ['resolution','transaction'] else phase
@@ -56,15 +56,27 @@ def stage_cases(source,target,m,kind,phase):
                 assert sorted(ev['permutation'])==list(range(len(c['graph_details']['Clean']['ids'])))
         if kind=='pattern':
             assert len(c['rows'])==30
+            seeds=m['config']['fresh_seeds'][c['trial']]
+            assert set(map(int,c['explanations']))==set(seeds)
+            assert {(r['condition'],r['selector'],r['seed']) for r in c['rows']}=={(condition,selector,seed) for condition in ['source_fixed','degree','degree_cycles'] for selector in ['Best of 40','First random candidate'] for seed in seeds}
+            assert not set(m['screening'][c['dataset']])&set(m['expanded'][c['dataset']])
             checked={tuple(map(tuple,v['rewires'])):v for v in c['checks']['selected_global_cycle_checks']}
             for method,r in c['selected'].items():
                 if method.startswith('degree_cycles|') and r:
                     assert all(r['structure'][k]==0 for k in ['cycles2_delta','cycles3_delta','indegree_l1','outdegree_l1'])
                     independent=checked[tuple(map(tuple,r['rewires']))]
                     assert independent['cycles2_delta']==independent['cycles3_delta']==0
+            stats=pattern_stats[c['dataset']];stats['search_cases']+=1
+            chosen=c['selected']['degree_cycles|Best of 40'];count=c['generation']['degree_cycles']['accepted']
+            stats['feasible_degree_cycle_cases']+=int(bool(chosen and chosen['feasible']))
+            stats['zero_structural_pool_cases']+=int(count==0)
+            stats['nonempty_pool_without_feasible_attack']+=int(count>0 and chosen is None)
+            stats['fewer_than_40_structural_candidates']+=int(count<40)
+            stats['total_structural_candidates']+=count
         (target/p.name).write_bytes(raw);counts[c['dataset']]+=1;hashes[p.name]=hashlib.sha256(raw).hexdigest()
     return dict(saved=len(identities),expected=len(expected),complete=identities==expected,by_dataset=dict(counts),
-                case_sha256=hashes,permutation_comparisons=dict(permutation),maximum_permutation_logit_error=maxerr)
+                case_sha256=hashes,permutation_comparisons=dict(permutation),maximum_permutation_logit_error=maxerr,
+                pattern_search_validation={k:dict(v) for k,v in pattern_stats.items()})
 def capture():
     stamp=datetime.now(timezone(timedelta(hours=8)));name=stamp.strftime('%Y-%m-%d-%H%M%S')
     out=ROOT/'publication_snapshots'/name;assert not out.exists();out.mkdir(parents=True)
@@ -109,6 +121,11 @@ def capture():
                     assert bool(ok)==d['qualifies']
                     if ok:qualified.append(d['dataset'])
                 assert qualified==decision['qualified_datasets'];write(out/folder/'promotion_decision.json',decision)
+                if folder+'/expanded' in records:
+                    expanded=records[folder+'/expanded']
+                    write(out/folder/'expanded/validation_summary.json',dict(complete=expanded['complete'],saved=expanded['saved'],expected=expanded['expected'],
+                          seeds_and_trial_membership_verified=True,screening_and_expansion_targets_disjoint=True,
+                          selected_cycles_checked_independently=True,by_dataset=expanded['pattern_search_validation']))
             if kind=='transaction' and (src/'promotion_decision.json').exists():
                 import pandas as pd
                 decision=json.loads((src/'promotion_decision.json').read_text());assert decision['manifest_id']==identity(m)
@@ -137,15 +154,19 @@ def capture():
         for key,r in records.items():
             label='Complete' if r['complete'] else 'Provisional; incomplete cohort'
             lines.append(f'| {key} | {r["saved"]}/{r["expected"]} | {label} | [Report]({key}/REPORT.md) |')
-        lines+=['','The completed pattern screening is pilot evidence; its expansion remains separate. '
-                'Partial expansion means may average different numbers of completed trials per target and are not confirmatory. '
+        expanded=records.get('exploratory_pattern_constraints/expanded',{})
+        pattern_note=('The pattern expansion is complete: 50 separate targets per dataset, two search trials per target and five fresh explainer seeds per trial. '
+                      'Seeds and trials are averaged within targets for uncertainty estimates; screening and expansion remain separate.'
+                      if expanded.get('complete') else
+                      'The pattern expansion remains incomplete. Partial expansion means may average different numbers of completed trials per target and are not confirmatory.')
+        lines+=['',pattern_note+' '
                 'Transaction-consistency pilot completeness is determined by its coverage row; its verified promotion decision is published separately. '
                 'HI-Small SubgraphX results remain provisional until the planned cohort finishes.', '',
                 'The additional resolution cohort excludes the original fresh-seed cohort but was included in the earlier retrospective aggregates. '
                 'It supplies new explainer draws and native permutation controls, not an independent dataset or trained-model replication.', '',
                 '[Updated contribution register](../../RESEARCH_CONTRIBUTIONS.md) | [Case/input hash manifest](snapshot.json)', '',
                 'Raw datasets, checkpoints, per-target records and machine logs remain local. Case hashes identify the exact saved inputs. '
-                'The previous morning snapshot is preserved in ../2026-11-01/. Later live progress requires another upload.']
+                'Previous publication snapshots are preserved in sibling directories. Later live progress requires another upload.']
         (out/'README.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
         print(json.dumps(dict(snapshot=str(out.relative_to(ROOT)),coverage={k:{a:b for a,b in r.items() if a not in ['case_sha256']} for k,r in records.items()}),indent=2))
     finally:

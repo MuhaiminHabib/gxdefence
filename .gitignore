@@ -96,6 +96,7 @@
 !/framework/README.md
 !/framework/requirements-*.txt
 !/results/environment.json
+!/results/classifier_metrics/per_training_seed.json
 !/results/pilot/*summary.csv
 !/results/pilot/*trial_means.csv
 !/results/pilot/counts.csv

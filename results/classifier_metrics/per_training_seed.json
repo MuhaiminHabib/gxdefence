@@ -1,0 +1,187 @@
+{
+  "rows": [
+    {
+      "dataset": "AMLSim",
+      "model": "GATv2",
+      "training_seed": 42,
+      "illicit_f1": 0.8394698085419735,
+      "test_pr_auc": 0.9091638065718998,
+      "illicit_precision": 0.8333333333333334,
+      "illicit_recall": 0.8456973293768546,
+      "best_epoch": 282,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GATv2",
+      "training_seed": 43,
+      "illicit_f1": 0.85,
+      "test_pr_auc": 0.8906168991810628,
+      "illicit_precision": 0.8425655976676385,
+      "illicit_recall": 0.857566765578635,
+      "best_epoch": 561,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GATv2",
+      "training_seed": 44,
+      "illicit_f1": 0.8512518409425626,
+      "test_pr_auc": 0.8693545243302941,
+      "illicit_precision": 0.8450292397660819,
+      "illicit_recall": 0.857566765578635,
+      "best_epoch": 633,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GATv2",
+      "training_seed": 45,
+      "illicit_f1": 0.8307254623044097,
+      "test_pr_auc": 0.873529485779589,
+      "illicit_precision": 0.7978142076502732,
+      "illicit_recall": 0.8664688427299704,
+      "best_epoch": 404,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GATv2",
+      "training_seed": 46,
+      "illicit_f1": 0.7171853856562923,
+      "test_pr_auc": 0.796205080443849,
+      "illicit_precision": 0.6592039800995025,
+      "illicit_recall": 0.7863501483679525,
+      "best_epoch": 262,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GCN",
+      "training_seed": 42,
+      "illicit_f1": 0.37375745526838966,
+      "test_pr_auc": 0.32670059188332656,
+      "illicit_precision": 0.28101644245142005,
+      "illicit_recall": 0.5578635014836796,
+      "best_epoch": 197,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GCN",
+      "training_seed": 43,
+      "illicit_f1": 0.35343035343035345,
+      "test_pr_auc": 0.27556030596715364,
+      "illicit_precision": 0.272,
+      "illicit_recall": 0.5044510385756676,
+      "best_epoch": 336,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GCN",
+      "training_seed": 44,
+      "illicit_f1": 0.35427394438722964,
+      "test_pr_auc": 0.2773833967484345,
+      "illicit_precision": 0.27129337539432175,
+      "illicit_recall": 0.5103857566765578,
+      "best_epoch": 175,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GCN",
+      "training_seed": 45,
+      "illicit_f1": 0.3765182186234818,
+      "test_pr_auc": 0.3378915045117031,
+      "illicit_precision": 0.2857142857142857,
+      "illicit_recall": 0.5519287833827893,
+      "best_epoch": 433,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GCN",
+      "training_seed": 46,
+      "illicit_f1": 0.33363886342804766,
+      "test_pr_auc": 0.274195814016995,
+      "illicit_precision": 0.2413793103448276,
+      "illicit_recall": 0.5400593471810089,
+      "best_epoch": 216,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GraphSAGE",
+      "training_seed": 42,
+      "illicit_f1": 0.888243831640058,
+      "test_pr_auc": 0.9440727011651089,
+      "illicit_precision": 0.8693181818181818,
+      "illicit_recall": 0.9080118694362018,
+      "best_epoch": 429,
+      "used_in_current_attacks": true
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GraphSAGE",
+      "training_seed": 43,
+      "illicit_f1": 0.9035087719298246,
+      "test_pr_auc": 0.9405047015307222,
+      "illicit_precision": 0.8904899135446686,
+      "illicit_recall": 0.9169139465875371,
+      "best_epoch": 579,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GraphSAGE",
+      "training_seed": 44,
+      "illicit_f1": 0.9013254786450663,
+      "test_pr_auc": 0.934716929299127,
+      "illicit_precision": 0.8947368421052632,
+      "illicit_recall": 0.9080118694362018,
+      "best_epoch": 651,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GraphSAGE",
+      "training_seed": 45,
+      "illicit_f1": 0.9155555555555556,
+      "test_pr_auc": 0.9566576915227962,
+      "illicit_precision": 0.9142011834319527,
+      "illicit_recall": 0.9169139465875371,
+      "best_epoch": 287,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "AMLSim",
+      "model": "GraphSAGE",
+      "training_seed": 46,
+      "illicit_f1": 0.9088191330343797,
+      "test_pr_auc": 0.9469978677943692,
+      "illicit_precision": 0.9156626506024096,
+      "illicit_recall": 0.9020771513353115,
+      "best_epoch": 408,
+      "used_in_current_attacks": false
+    },
+    {
+      "dataset": "HI-Small",
+      "model": "GraphSAGE",
+      "training_seed": 42,
+      "illicit_f1": 0.054933623935010896,
+      "test_pr_auc": 0.050068876701369204,
+      "illicit_precision": 0.028359544815241017,
+      "illicit_recall": 0.8725413060582219,
+      "best_epoch": 193,
+      "used_in_current_attacks": true
+    }
+  ],
+  "notes": [
+    "Test metrics on the entire test split, not only eligible attack targets.",
+    "test_pr_auc is sklearn average_precision_score, not trapezoidal PR area.",
+    "best_epoch is the stored zero-based index.",
+    "Attack/explainer seeds 2026-2030 reuse classifier seed 42; they are not independent classifier training runs.",
+    "Elliptic excluded per the established study scope."
+  ]
+}

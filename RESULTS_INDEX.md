@@ -2,6 +2,8 @@
 
 GitHub contains reports and aggregate CSVs. Raw graphs, model checkpoints and individual case files remain local. Running experiments are uploaded as snapshots, not live updates.
 
+[Per-training-seed classifier metrics](results/classifier_metrics/per_training_seed.json): illicit test F1, average precision (`test_pr_auc`), precision, recall and recorded zero-based best epoch. Includes AMLSim GCN, GraphSAGE and GATv2 seeds 42–46, and complete-graph HI-Small GraphSAGE seed 42. The current attack experiments reuse GraphSAGE seed 42; attack/explainer seeds are not independent classifier-training runs.
+
 Read the [research objective, questions and claim register](RESEARCH_CONTRIBUTIONS.md) and the [2 November 2026 completed snapshot](publication_snapshots/2026-11-02-102453/README.md) first. Reports were rebuilt from verified saved cases. All phases in that snapshot are complete; earlier partial snapshots remain preserved.
 
 | Experiment | Coverage | Report |

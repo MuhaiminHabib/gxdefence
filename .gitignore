@@ -46,6 +46,12 @@
 !/exploratory_transaction_consistency/*.md
 !/exploratory_resolution_validation/*.py
 !/exploratory_resolution_validation/*.md
+!/exploratory_subgraphx_fresh_seed/*.py
+!/exploratory_subgraphx_fresh_seed/*.md
+!/exploratory_subgraphx_fresh_seed/results/REPORT.md
+!/exploratory_subgraphx_fresh_seed/results/coverage.json
+!/exploratory_subgraphx_fresh_seed/results/summary.csv
+!/exploratory_subgraphx_fresh_seed/results/paired_effects.csv
 !/exploratory_pattern_constraints/*.py
 !/exploratory_pattern_constraints/*.md
 !/publication_snapshots/**/*.md

@@ -14,12 +14,13 @@ def identity(d):return hashlib.sha256(json.dumps(d,sort_keys=True).encode()).hex
 def write(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,indent=2)+'\n',encoding='utf8')
 def worker(kind,work):
     folders=dict(resolution='exploratory_resolution_validation',pattern='exploratory_pattern_constraints',
-                 transaction='exploratory_transaction_consistency',subgraphx='subgraphx_hi_small')
+                 transaction='exploratory_transaction_consistency',subgraphx='subgraphx_hi_small',
+                 subgraphx_fresh='exploratory_subgraphx_fresh_seed')
     folder=folders[kind];sys.path.insert(0,str(ROOT/folder))
     spec=importlib.util.spec_from_file_location('publication_report_module',ROOT/folder/'run.py')
     mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
     m=json.loads((work/'manifest.json').read_text());mod.OUT=work
-    if kind=='resolution':mod.report(m)
+    if kind in ['resolution','subgraphx_fresh']:mod.report(m)
     elif kind=='pattern':
         mod.report('screening',m,m['config']['datasets'])
         decision=json.loads((work/'promotion_decision.json').read_text())
@@ -29,7 +30,7 @@ def worker(kind,work):
     else:mod.report(work,{(t,s) for t in m['targets'] for s in m['trials']})
 def validate_sources(m):
     checked=0
-    for field in ['sources','inputs','input_hashes','checkpoints']:
+    for field in ['sources','inputs','input_hashes','checkpoints','original_sources']:
         for rel,expected in m.get(field,{}).items():
             if isinstance(expected,str) and len(expected)==64:
                 assert sha(ROOT/rel)==expected,('changed source/input',rel);checked+=1
@@ -37,6 +38,7 @@ def validate_sources(m):
 def stage_cases(source,target,m,kind,phase):
     target.mkdir(parents=True,exist_ok=True);counts=Counter();hashes={};identities=set();permutation=Counter();maxerr={};pattern_stats=defaultdict(Counter)
     if kind=='subgraphx':expected={(int(t),int(s)) for t in m['targets'] for s in m['trials']}
+    elif kind=='subgraphx_fresh':expected={(m['config']['dataset'],int(t),0) for t in m['targets']}
     else:
         key='targets' if kind in ['resolution','transaction'] else phase
         trials=[1,2] if phase=='expanded' else [0]
@@ -47,6 +49,37 @@ def stage_cases(source,target,m,kind,phase):
         if kind=='subgraphx':
             assert c['params']==m['params'] and c['sources']==m['sources'] and all(c['checks'].values())
         else:assert c['manifest_id']==identity(m)
+        if kind=='subgraphx_fresh':
+            cfg=m['config'];seeds={cfg['source_trial'],*cfg['fresh_seeds']}
+            assert set(map(int,c['explanations']))==seeds and len(c['rows'])==2*len(seeds)
+            assert {(r['method'],r['seed']) for r in c['rows']}=={(method,seed) for method in cfg['methods'] for seed in seeds}
+            source_key=f'subgraphx_hi_small/results/full/cases/hi_small_{c["target"]}_2026.json'
+            assert c['source_sha256']==m['inputs'][source_key]
+            original=json.loads((ROOT/source_key).read_text())
+            assert c['checks']['model_unchanged']
+            for method in ['Clean']+cfg['methods']:
+                assert c['checks'][method]['source_seed_native_set_parity']
+                saved=original['clean']['SubgraphX'] if method=='Clean' else original['attacks'][method]['scores']
+                assert c['explanations']['2026']['graphs'][method]['scores']==saved
+            if c['target'] in m['targets'][:cfg['technical_targets']]:
+                assert c['technical'] and c['checks']['same_seed_repeat']
+                assert all(c['checks'][method]['full_local_physical_fidelity_parity'] for method in ['Clean']+cfg['methods'])
+            for row in c['rows']:
+                seed=row['seed'];ev=c['explanations'][str(seed)]
+                assert row['stage']==('selection_seed' if seed==cfg['source_trial'] else 'fresh')
+                if seed!=cfg['source_trial']:assert ev['repeat_seed']==cfg['repeat_seeds'][cfg['fresh_seeds'].index(seed)]
+                a=set(ev['graphs']['Clean']['scores']);b=set(ev['graphs'][row['method']]['scores']);rep=set(ev['clean_repeat']['scores'])
+                def overlap(x,y):
+                    return (len(x&y)/(len(x)*len(y))**.5 if x and y else float(not (x|y)),len(x&y)/len(x|y) if x|y else 1.)
+                similarity,jaccard=overlap(a,b);repeat_similarity,repeat_jaccard=overlap(a,rep)
+                for key,value in dict(similarity=similarity,jaccard=jaccard,clean_repeat_similarity=repeat_similarity,
+                                      clean_repeat_jaccard=repeat_jaccard,excess_disruption=repeat_similarity-similarity).items():
+                    assert abs(row[key]-value)<1e-12,(p,key)
+                assert row['preserved']==int(original['attacks'][row['method']]['preserved'])
+                for metric in ['hard_plus','hard_minus','soft_plus','soft_minus']:
+                    clean=ev['fidelity']['Clean'][metric];attacked=ev['fidelity'][row['method']][metric]
+                    assert row['clean_'+metric]==clean and row['attacked_'+metric]==attacked
+                    assert abs(row['delta_'+metric]-(attacked-clean))<1e-12
         if kind=='resolution':
             assert set(map(int,c['explanations']))==set(m['config']['seeds'])
             assert len(c['rows'])==50
@@ -85,7 +118,8 @@ def capture():
     specs=[('resolution','exploratory_resolution_validation',[('', 'cases')]),
            ('pattern','exploratory_pattern_constraints',[('screening','screening/cases'),('expanded','expanded/cases')]),
            ('transaction','exploratory_transaction_consistency',[('pilot','pilot/cases')]),
-           ('subgraphx','subgraphx_hi_small',[('','cases')])]
+           ('subgraphx','subgraphx_hi_small',[('','cases')]),
+           ('subgraphx_fresh','exploratory_subgraphx_fresh_seed',[('','cases')])]
     records={};config_hashes={};allowed=['REPORT.md','coverage.json','summary.csv','paired_effects.csv','trial_means.csv','fidelity_paired_effects.csv','search_coverage.csv']
     try:
         for kind,folder,phases in specs:
@@ -136,6 +170,27 @@ def capture():
                     ok=abs(r['mean'])>=.10 and (r.lo>0 or r.hi<0);assert bool(ok)==d['promising']
                     if ok:qualified.append(d['dataset'])
                 assert qualified==decision['qualified_datasets'];write(out/folder/'promotion_decision.json',decision)
+            if kind=='subgraphx_fresh':
+                validation=json.loads((src/'validation.json').read_text())
+                assert validation==dict(passed=True,manifest_id=identity(m),targets=m['targets'][:m['config']['technical_targets']])
+                recoveries=[]
+                for p in sorted((src/'recoveries').glob('*.json')):
+                    recovery=json.loads(p.read_text())
+                    assert recovery['frozen_manifest_sha256']==sha(mpath)
+                    assert recovery['recovery_wrapper_sha256']==sha(ROOT/folder/'resume_resilient.py')
+                    assert recovery['recovery_document_sha256']==sha(ROOT/folder/'RECOVERY.md')
+                    assert all(sha(src/'cases'/name)==expected for name,expected in recovery['completed_case_sha256'].items())
+                    recoveries.append(dict(recorded_at_perth=recovery['recorded_at_perth'],record_sha256=sha(p),
+                                           frozen_manifest_sha256=recovery['frozen_manifest_sha256'],
+                                           recovery_wrapper_sha256=recovery['recovery_wrapper_sha256'],
+                                           recovery_document_sha256=recovery['recovery_document_sha256'],
+                                           preserved_completed_cases=len(recovery['completed_case_sha256']),
+                                           retry_policy=recovery['retry_policy']))
+                r=records[folder]
+                write(out/folder/'validation_summary.json',dict(complete=r['complete'],targets=r['saved'],expected=r['expected'],
+                      fresh_seeds_per_target=len(m['config']['fresh_seeds']),source_hashes_verified=checked,
+                      technical_targets_checked=len(validation['targets']),native_overlap_rows_recomputed=True,
+                      source_explanations_and_fidelity_rows_verified=True,recoveries=recoveries))
             print('CAPTURED',folder,flush=True)
         resolution=records['exploratory_resolution_validation'];assert resolution['complete']
         write(out/'exploratory_resolution_validation/validation_summary.json',dict(complete=True,targets=resolution['saved'],
@@ -172,11 +227,16 @@ def capture():
                 '[Updated contribution register](../../RESEARCH_CONTRIBUTIONS.md) | [Case/input hash manifest](snapshot.json)', '',
                 'Raw datasets, checkpoints, per-target records and machine logs remain local. Case hashes identify the exact saved inputs. '
                 'Previous publication snapshots are preserved in sibling directories. Later live progress requires another upload.']
+        if 'exploratory_subgraphx_fresh_seed' in records:
+            lines+=['','The separate HI-Small SubgraphX fresh-seed audit evaluates fixed saved attacks on 100 sampled targets '
+                    'with five unseen paired seeds. It measures seed attenuation and residual overlap disruption, '
+                    'not a new attack-search trial or an independent trained-model replication. '
+                    'Its validation summary verifies the file-lock recovery and unchanged completed cases.']
         (out/'README.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
         print(json.dumps(dict(snapshot=str(out.relative_to(ROOT)),coverage={k:{a:b for a,b in r.items() if a not in ['case_sha256']} for k,r in records.items()}),indent=2))
     finally:
         resolved=temp.resolve();assert resolved.is_relative_to(ROOT.resolve()) and resolved.name.startswith('_publication_work_')
         shutil.rmtree(resolved)
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--worker',choices=['resolution','pattern','transaction','subgraphx']);p.add_argument('--work',type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--worker',choices=['resolution','pattern','transaction','subgraphx','subgraphx_fresh']);p.add_argument('--work',type=Path);a=p.parse_args()
     worker(a.worker,a.work) if a.worker else capture()

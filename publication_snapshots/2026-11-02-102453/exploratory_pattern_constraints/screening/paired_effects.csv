@@ -1,0 +1,11 @@
+dataset,a,b,mean,lo,hi
+amlsim,source_fixed|Best of 40,source_fixed|First random candidate,0.1857017302854483,0.10586938805479668,0.26201102426457573
+amlsim,degree|Best of 40,degree|First random candidate,0.31852393498689774,0.2300385836468912,0.4019429338852521
+amlsim,degree_cycles|Best of 40,degree_cycles|First random candidate,0.29082069045861847,0.21877918926326484,0.36200662570065584
+amlsim,degree_cycles|Best of 40,source_fixed|Best of 40,0.1449348301631484,0.07160933686428034,0.23509183213096538
+amlsim,degree_cycles|Best of 40,degree|Best of 40,0.005444394643403723,-0.029589167371383805,0.04158003203882139
+hi_small,source_fixed|Best of 40,source_fixed|First random candidate,0.2923999235833846,0.18941895719506,0.3808952778253457
+hi_small,degree|Best of 40,degree|First random candidate,0.07802302782371913,0.007239991815211945,0.16469228589305834
+hi_small,degree_cycles|Best of 40,degree_cycles|First random candidate,0.11838796565328824,0.026604814893700243,0.2209582614840326
+hi_small,degree_cycles|Best of 40,source_fixed|Best of 40,-0.06635254976710861,-0.14051112460945214,-0.007089380891916288
+hi_small,degree_cycles|Best of 40,degree|Best of 40,0.0022578826157860976,0.0,0.006773647847358294

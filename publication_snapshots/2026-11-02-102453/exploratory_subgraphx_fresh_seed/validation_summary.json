@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "targets": 100,
+  "expected": 100,
+  "fresh_seeds_per_target": 5,
+  "source_hashes_verified": 115,
+  "technical_targets_checked": 3,
+  "native_overlap_rows_recomputed": true,
+  "source_explanations_and_fidelity_rows_verified": true,
+  "recoveries": [
+    {
+      "recorded_at_perth": "2026-11-02T09:31:34.564479+08:00",
+      "record_sha256": "ea36798fccac6cf87eaded82dc096308c56bdc16134025cd75eb443e21825927",
+      "frozen_manifest_sha256": "726d78d9efae81098d54cd6ac5c4e14af4baf7e507b56ea301e186fe6feae394",
+      "recovery_wrapper_sha256": "6bf7cea6259ddd1dbf868bf668dd302ab0a229a529e7d76fb23b6b0c98262897",
+      "recovery_document_sha256": "d81687e5b8a002bd772af6f9474c34920f75fc6d275136db9d807f3461d660d6",
+      "preserved_completed_cases": 18,
+      "retry_policy": {
+        "exception": "PermissionError",
+        "attempts": 40,
+        "initial_delay_seconds": 0.25,
+        "maximum_delay_seconds": 2.0
+      }
+    }
+  ]
+}

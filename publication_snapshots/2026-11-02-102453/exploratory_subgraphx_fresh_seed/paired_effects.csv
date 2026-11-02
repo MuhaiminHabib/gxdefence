@@ -1,0 +1,34 @@
+comparison,method,metric,targets,mean,lo,hi
+Fresh minus selection,SubgraphX-targeted search,similarity,100,0.2188914997960042,0.1793096994818945,0.2596958013833758
+Fresh minus selection,SubgraphX-targeted search,jaccard,100,0.20313085561295685,0.16445505317682577,0.2442449673635046
+Fresh minus selection,SubgraphX-targeted search,excess_disruption,100,-0.20928726706351608,-0.28738905349230165,-0.13617658337398364
+Fresh minus selection,SubgraphX-targeted search,clean_hard_plus,100,0.018000000000000002,-0.012000000000000002,0.052000000000000005
+Fresh minus selection,SubgraphX-targeted search,clean_hard_minus,100,0.002,0.0,0.006000000000000001
+Fresh minus selection,SubgraphX-targeted search,clean_soft_plus,100,0.0069646543860435485,-0.0003075820311903953,0.01658121470659968
+Fresh minus selection,SubgraphX-targeted search,clean_soft_minus,100,0.0014879419803619388,-0.006928796383738518,0.010779079031944272
+Fresh minus selection,SubgraphX-targeted search,attacked_hard_plus,100,0.013999999999999999,-0.018000000000000002,0.052000000000000005
+Fresh minus selection,SubgraphX-targeted search,attacked_hard_minus,100,0.006000000000000001,0.0,0.016
+Fresh minus selection,SubgraphX-targeted search,attacked_soft_plus,100,0.0030837412476539612,-0.004861073136329651,0.010070923072099683
+Fresh minus selection,SubgraphX-targeted search,attacked_soft_minus,100,-0.0034205016195774074,-0.01683154159784317,0.009962604448944324
+Fresh minus selection,SubgraphX-targeted search,delta_hard_plus,100,-0.0040000000000000036,-0.054000000000000006,0.046
+Fresh minus selection,SubgraphX-targeted search,delta_hard_minus,100,0.004,0.0,0.012000000000000002
+Fresh minus selection,SubgraphX-targeted search,delta_soft_plus,100,-0.0038809131383895886,-0.016690537513792517,0.007331595849990843
+Fresh minus selection,SubgraphX-targeted search,delta_soft_minus,100,-0.004908443599939346,-0.023825334114581348,0.013691367720812529
+Fresh minus selection,Random search,similarity,100,0.21371076976866987,0.17287745963384746,0.2553087089846122
+Fresh minus selection,Random search,jaccard,100,0.184683692649819,0.14618893266813413,0.223361555561676
+Fresh minus selection,Random search,excess_disruption,100,-0.20410653703618176,-0.27600761969961135,-0.130896905860469
+Fresh minus selection,Random search,clean_hard_plus,100,0.018000000000000002,-0.013999999999999999,0.052000000000000005
+Fresh minus selection,Random search,clean_hard_minus,100,0.002,0.0,0.006000000000000001
+Fresh minus selection,Random search,clean_soft_plus,100,0.0069646543860435485,-0.00043800224363803905,0.016438138069212408
+Fresh minus selection,Random search,clean_soft_minus,100,0.0014879419803619388,-0.006800744882225989,0.010809923467040062
+Fresh minus selection,Random search,attacked_hard_plus,100,-0.016,-0.04800000000000001,0.016
+Fresh minus selection,Random search,attacked_hard_minus,100,0.002,0.0,0.006000000000000001
+Fresh minus selection,Random search,attacked_soft_plus,100,-0.002312973201274872,-0.010842780059576035,0.004711751945316783
+Fresh minus selection,Random search,attacked_soft_minus,100,-0.007461208939552307,-0.02015724982619286,0.004614288604259475
+Fresh minus selection,Random search,delta_hard_plus,100,-0.034,-0.08,0.012
+Fresh minus selection,Random search,delta_hard_minus,100,0.0,0.0,0.0
+Fresh minus selection,Random search,delta_soft_plus,100,-0.00927762758731842,-0.022014934784173965,0.0016159123316407146
+Fresh minus selection,Random search,delta_soft_minus,100,-0.008949150919914245,-0.026860212084650996,0.008143154710531219
+Random minus adaptive,selection_seed,similarity,100,-0.03723056938828304,-0.05838347525295151,-0.018261559940415954
+Random minus adaptive,fresh,similarity,100,-0.042411299415617325,-0.0902367083236413,0.004331569804862052
+Fresh minus selection in random-adaptive contrast,both,similarity,100,-0.005180730027334284,-0.05164300623374024,0.040338096110316524

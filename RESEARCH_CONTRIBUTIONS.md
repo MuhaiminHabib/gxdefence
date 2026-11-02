@@ -1,6 +1,6 @@
 # Research objective, questions, and defensible contributions
 
-**Evidence reviewed: 2 November 2026 (Australia/Perth).** The [latest results snapshot](publication_snapshots/2026-11-02-062105/README.md) was rebuilt from verified saved cases. HI-Small SubgraphX is complete at 795/795 targets in one trial. The 200-case pattern-constraint expansion, additional 100-target resolution audit, 20-target pattern screening, and 40-target transaction-consistency pilot are also complete. This is a claim register, not a declaration that every finding is novel; cohorts, explainers, and trials must not be pooled indiscriminately.
+**Evidence reviewed: 2 November 2026, completed fresh-seed update (Australia/Perth).** The [latest results snapshot](publication_snapshots/2026-11-02-102453/README.md) was rebuilt from verified saved cases. HI-Small SubgraphX is complete at 795/795 targets in one trial, and its separate 100-target audit with five unseen paired seeds is now complete. The 200-case pattern-constraint expansion, additional 100-target resolution audit, 20-target pattern screening, and 40-target transaction-consistency pilot are also complete. This is a claim register, not a declaration that every finding is novel; cohorts, explainers, and trials must not be pooled indiscriminately.
 
 ## Research objective
 
@@ -16,7 +16,7 @@ The intended contribution is a controlled empirical evaluation on directed finan
 |---|---|---|
 | RQ1 | How much can small structural edits change financial-graph explanations while preserving the classifier's prediction? | Completed PG-targeted complete-graph study, GNN-targeted three-trial study, and both SubgraphX studies: AMLSim has 166 targets across three trials; HI-Small has 795 targets in one trial. |
 | RQ2 | How does restricting the attacker from mixed addition/deletion to deletion-only access change explanation disruption? | Completed paired SubgraphX experiment: 30 targets per dataset. |
-| RQ3 | Does disruption selected under one explainer seed persist under unseen explanation randomness? | Completed original audit: 50 targets per dataset, five fresh seeds. The additional 50-target-per-dataset resolution audit with new seeds is also complete. |
+| RQ3 | Does disruption selected under one explainer seed persist under unseen explanation randomness? | Completed GNN audit: 50 targets per dataset, five fresh seeds; additional resolution audit complete. The separate 100-target HI-Small SubgraphX audit also completed five fresh seeds: disruption attenuates, while a residual contrast with clean reruns remains. |
 | RQ4 | Does lower explanation overlap correspond to lower fidelity, including fidelity relative to size-matched random explanations? | Completed full-cohort hard/soft fidelity analysis and fresh-seed random-mask controls. |
 | RQ5 | How much do random search and proposal budget explain the observed attack effectiveness? | Completed three-trial baselines, the 795-target single-trial HI-Small SubgraphX comparison, and retrospective AMLSim SubgraphX trajectory analysis. |
 | RQ6 | Does matching model-indistinguishable parallel transaction rows change the interpretation of attack and clean-repeat overlap? | Completed retrospective audit, mechanical checks, and additional 100-target fresh-randomness/native-permutation validation. |
@@ -52,13 +52,15 @@ The fresh-seed GNN-targeted audit adds a size-matched random-explanation referen
 
 The separate completed HI-Small SubgraphX-targeted study instead shows declining native-set necessity: hard necessity falls from **0.0855 to 0.0453**, and soft necessity from **0.0544 to 0.0294**. Its harmonic fidelity summary falls from **0.1567 to 0.0864**. These are descriptive means over 795 targets in one trial, without a fresh-seed or random-explanation fidelity audit for this full cohort. They support an attack/explainer-dependent interpretation, not a claim that every attack has the same fidelity effect.
 
+The separate 100-target SubgraphX fresh-seed audit adds a secondary fidelity result: mean attacked-minus-clean soft necessity is **-2.43 pp [-4.10, -0.95]** for adaptive search and **-2.65 pp [-4.16, -1.30]** for random search. Corresponding hard-necessity change intervals include zero. These are descriptive target-bootstrap intervals after averaging five fresh seeds, without multiplicity adjustment or random-explanation fidelity controls for this audit. They do not establish explanation accuracy or universal fidelity degradation.
+
 **Contribution type:** domain-specific evaluation finding and controlled interpretation. **Boundary:** this is not proof of improved explanation accuracy. Random masks control cardinality, not connectivity or degree. Removing graph edges can introduce distribution shift; the study has no ground-truth transaction-level explanation labels or investigator study. The general distinction between overlap and accuracy is prior knowledge.
 
-Evidence: [full-cohort fidelity](complete_graphs/results/soft_fidelity_full/REPORT.md), [random-mask audit](followup_audit/results/gnn_audit/REPORT.md), [audit intervals](followup_audit/results/gnn_audit/summary.csv), [completed HI-Small SubgraphX fidelity](publication_snapshots/2026-11-02-062105/subgraphx_hi_small/REPORT.md).
+Evidence: [full-cohort fidelity](complete_graphs/results/soft_fidelity_full/REPORT.md), [random-mask audit](followup_audit/results/gnn_audit/REPORT.md), [audit intervals](followup_audit/results/gnn_audit/summary.csv), [completed HI-Small SubgraphX fidelity](publication_snapshots/2026-11-02-102453/subgraphx_hi_small/REPORT.md).
 
-### C3. Fresh explanation randomness produces dataset-dependent attenuation
+### C3. Explanation disruption depends on evaluation randomness
 
-**Claim we can use:** In the fixed saved-attack audit, moving from the selection seed to unseen GNNExplainer seeds leaves mean AMLSim overlap approximately unchanged, while reducing measured disruption on HI-Small.
+**Claim we can use:** Fixed saved attacks on HI-Small show less overlap disruption under unseen GNNExplainer and SubgraphX seeds. The SubgraphX audit still shows lower overlap than independent clean reruns. In the GNNExplainer audit on AMLSim, mean overlap remains approximately unchanged.
 
 | GNN-targeted attack | Selection-seed similarity | Fresh-seed similarity | Fresh minus selection, 95% target interval |
 |---|---:|---:|---|
@@ -67,9 +69,18 @@ Evidence: [full-cohort fidelity](complete_graphs/results/soft_fidelity_full/REPO
 
 The audit used 50 targets per dataset and five unseen paired clean/attacked seeds. A similar HI-Small attenuation occurs for random search. Independent clean-repeat controls quantify ordinary variability, but are not a perfectly matched null for same-seed clean/attacked comparisons.
 
-**Contribution type:** operational assumption audit. **Boundary:** the attack retains knowledge of the model and selection-time explainer; the final explainer randomness is unseen. This is not a fully black-box attack, and the evidence does not establish robustness across retrained models or unseen datasets.
+**Completed SubgraphX extension:** 100 targets were sampled from the completed 795-target HI-Small cohort independently of attack outcomes. Adaptive and random-search attacks selected under seed 2026 were held fixed and evaluated with five unseen paired clean/attacked seeds and five independent clean-repeat seeds. No attack search was repeated.
 
-Evidence: [fresh-seed report](followup_audit/results/gnn_audit/REPORT.md), [paired seed changes](followup_audit/results/gnn_audit/seed_generalization.csv).
+| HI-Small SubgraphX, 100-target audit | Selection-seed native similarity | Fresh native similarity | Fresh minus selection, 95% target interval |
+|---|---:|---:|---|
+| Adaptive targeted search | 0.1491 | 0.3680 | **0.2189 [0.1793, 0.2597]** |
+| Best-of-40 random search | 0.1119 | 0.3256 | **0.2137 [0.1729, 0.2553]** |
+
+Fresh clean-repeat similarity is **0.7042**. The clean-repeat-minus-attacked similarity contrast remains **0.3361 [0.2716, 0.4035]** for adaptive search and **0.3785 [0.3108, 0.4481]** for random search. These reference contrasts are not corrected attack-success rates. Both saved attack methods preserve the class on all 100 sampled targets. The result supports attenuation with residual overlap disruption under unseen randomness, rather than either complete seed-invariance or complete disappearance of the attack effect.
+
+**Contribution type:** operational assumption audit, strengthened by a second explainer. **Boundary:** the attacker retains knowledge of the model and selection-time explainer; only final explanation randomness is unseen. The 100 targets are a subset of the 795-target study, not independent data. Five seeds are averaged within each target before bootstrap resampling; intervals omit graph-node dependence, common seed effects, and training variation. Different cohorts and overlap definitions prevent a controlled ranking of GNNExplainer versus SubgraphX vulnerability. This does not establish a fully black-box attack, new-search repeatability, or generalization across retrained models or datasets.
+
+Evidence: [GNN fresh-seed report](followup_audit/results/gnn_audit/REPORT.md), [GNN paired seed changes](followup_audit/results/gnn_audit/seed_generalization.csv), [completed SubgraphX fresh-seed report](publication_snapshots/2026-11-02-102453/exploratory_subgraphx_fresh_seed/REPORT.md), [SubgraphX paired effects](publication_snapshots/2026-11-02-102453/exploratory_subgraphx_fresh_seed/paired_effects.csv), [SubgraphX summary and fidelity intervals](publication_snapshots/2026-11-02-102453/exploratory_subgraphx_fresh_seed/summary.csv), [validation and recovery evidence](publication_snapshots/2026-11-02-102453/exploratory_subgraphx_fresh_seed/validation_summary.json).
 
 ## Additional completed findings: baselines and parameters
 
@@ -90,9 +101,11 @@ The completed **795-target HI-Small SubgraphX study** extends this finding to th
 
 Clean-repeat native similarity is **0.7047**. Both search methods preserve all 795 predicted labels; random search has 0.0338 lower mean similarity than adaptive search. The independent clean-repeat comparison is a variability reference, not a matched null. Probability changes in this table are averages, not per-target caps; the two-percentage-point cap in C7 belongs to the separate constrained study.
 
-**Boundary:** HI-Small has one trial, so between-trial uncertainty and generalization to new explainer seeds are not established by this full-cohort result. Matching maximum proposal budgets does not equalize unique explainer calls, gradient work, wall time, or total computational cost. These descriptive means do not establish a universal statistical ordering or support claiming that the adaptation is consistently superior to random search.
+The separate 100-target fresh-seed audit gives a random-minus-adaptive similarity difference of **-0.0424 [-0.0902, 0.0043]**. The negative mean favors random search, but the paired interval includes zero; superiority under fresh randomness is not established. The change in this method contrast from selection to fresh seeds is **-0.0052 [-0.0516, 0.0403]**, also inconclusive. These are secondary, descriptive comparisons.
 
-Evidence: [GNN three-trial tables](gnn_three_trials/results/full/TABLES_PAPER_LAYOUT.md), [AMLSim SubgraphX results](subgraphx_primary/results/full/REPORT.md), [completed HI-Small SubgraphX report](publication_snapshots/2026-11-02-062105/subgraphx_hi_small/REPORT.md), [HI-Small trial means](publication_snapshots/2026-11-02-062105/subgraphx_hi_small/trial_means.csv).
+**Boundary:** HI-Small has one source attack-search trial. C3 now tests unseen explainer seeds on 100 fixed attacked targets, but between-search-trial uncertainty remains unmeasured. Matching maximum proposal budgets does not equalize unique explainer calls, gradient work, wall time, or total computational cost. These results do not establish a universal statistical ordering or support claiming that the adaptation is consistently superior to random search.
+
+Evidence: [GNN three-trial tables](gnn_three_trials/results/full/TABLES_PAPER_LAYOUT.md), [AMLSim SubgraphX results](subgraphx_primary/results/full/REPORT.md), [completed HI-Small SubgraphX report](publication_snapshots/2026-11-02-102453/subgraphx_hi_small/REPORT.md), [HI-Small trial means](publication_snapshots/2026-11-02-102453/subgraphx_hi_small/trial_means.csv).
 
 ### C5. AMLSim SubgraphX disruption saturates rapidly with proposal budget
 
@@ -144,7 +157,7 @@ The finding therefore persists under new explanation draws on additional targets
 
 **Contribution status:** strengthened completed empirical evidence under the stated architecture, feature matrix and cohorts. **Boundary:** matching increases overlap by construction and is an upper-bound diagnostic, not a corrected attack-success rate or semantic-accuracy metric. Independent clean repeats remain a variability reference rather than a perfectly matched null. The general symmetry problem is established literature; recomputing transaction-derived features can break the stated equivalence.
 
-Evidence: [initial resolution audit](exploratory_multigraph_resolution/results/REPORT.md), [initial paired analysis](exploratory_multigraph_resolution/results/PAIRED_BASELINE.md), [completed additional validation](publication_snapshots/2026-11-02-062105/exploratory_resolution_validation/REPORT.md), [native permutation and attack summaries](publication_snapshots/2026-11-02-062105/exploratory_resolution_validation/summary.csv), [verification summary](publication_snapshots/2026-11-02-062105/exploratory_resolution_validation/validation_summary.json).
+Evidence: [initial resolution audit](exploratory_multigraph_resolution/results/REPORT.md), [initial paired analysis](exploratory_multigraph_resolution/results/PAIRED_BASELINE.md), [completed additional validation](publication_snapshots/2026-11-02-102453/exploratory_resolution_validation/REPORT.md), [native permutation and attack summaries](publication_snapshots/2026-11-02-102453/exploratory_resolution_validation/summary.csv), [verification summary](publication_snapshots/2026-11-02-102453/exploratory_resolution_validation/validation_summary.json).
 
 ## Completed constrained-attack study
 
@@ -169,7 +182,7 @@ The initial screening used ten targets per dataset and yielded excess disruption
 
 **Boundary:** this is a completed experimental extension, not a new learned attack method. Exact total cycle counts do not preserve every individual motif or establish financial plausibility. Constraint conditions use different proposal distributions and realized budgets, so a better mean under a stricter constraint is not evidence that adding constraints inherently improves an attack. No feature consistency, fidelity degradation, human deception, fully black-box capability, or generalization across trained models is established.
 
-Evidence: [completed expansion report](publication_snapshots/2026-11-02-062105/exploratory_pattern_constraints/expanded/REPORT.md), [expanded paired comparisons](publication_snapshots/2026-11-02-062105/exploratory_pattern_constraints/expanded/paired_effects.csv), [actual search coverage](publication_snapshots/2026-11-02-062105/exploratory_pattern_constraints/expanded/search_coverage.csv), [validated feasibility and coverage](publication_snapshots/2026-11-02-062105/exploratory_pattern_constraints/expanded/validation_summary.json), [separate screening report](publication_snapshots/2026-11-02-062105/exploratory_pattern_constraints/screening/REPORT.md), [protocol](exploratory_pattern_constraints/README.md).
+Evidence: [completed expansion report](publication_snapshots/2026-11-02-102453/exploratory_pattern_constraints/expanded/REPORT.md), [expanded paired comparisons](publication_snapshots/2026-11-02-102453/exploratory_pattern_constraints/expanded/paired_effects.csv), [actual search coverage](publication_snapshots/2026-11-02-102453/exploratory_pattern_constraints/expanded/search_coverage.csv), [validated feasibility and coverage](publication_snapshots/2026-11-02-102453/exploratory_pattern_constraints/expanded/validation_summary.json), [separate screening report](publication_snapshots/2026-11-02-102453/exploratory_pattern_constraints/screening/REPORT.md), [protocol](exploratory_pattern_constraints/README.md).
 
 ## Completed secondary finding from the transaction-consistency pilot
 
@@ -197,7 +210,7 @@ The necessity increase remains after subtracting size-matched random-mask necess
 
 Neither dataset met the prespecified criterion for expansion. This is absence of a clear effect in this pilot, not an equivalence test. Replaying previously selected adaptive edits on HI-Small reduced observed label/2pp feasibility from 16/20 to 13/20 after feature refresh; the paired feasibility-change interval touches zero. Report this as a descriptive transfer limitation, not a robust average causal claim.
 
-Evidence: [complete transaction-consistency report](publication_snapshots/2026-11-02-062105/exploratory_transaction_consistency/pilot/REPORT.md), [primary paired comparisons](publication_snapshots/2026-11-02-062105/exploratory_transaction_consistency/pilot/paired_effects.csv), [secondary fidelity comparisons](publication_snapshots/2026-11-02-062105/exploratory_transaction_consistency/pilot/fidelity_paired_effects.csv), [no-expansion decision](publication_snapshots/2026-11-02-062105/exploratory_transaction_consistency/promotion_decision.json).
+Evidence: [complete transaction-consistency report](publication_snapshots/2026-11-02-102453/exploratory_transaction_consistency/pilot/REPORT.md), [primary paired comparisons](publication_snapshots/2026-11-02-102453/exploratory_transaction_consistency/pilot/paired_effects.csv), [secondary fidelity comparisons](publication_snapshots/2026-11-02-102453/exploratory_transaction_consistency/pilot/fidelity_paired_effects.csv), [no-expansion decision](publication_snapshots/2026-11-02-102453/exploratory_transaction_consistency/promotion_decision.json).
 
 ## Supporting contributions and extras
 
@@ -215,9 +228,9 @@ Evidence: [complete transaction-consistency report](publication_snapshots/2026-1
 | A large systematic change in optimized attack success after feature refresh | [Transaction-consistency study](exploratory_transaction_consistency/README.md) is complete at pilot scale | The current primary intervals include zero and the expansion criterion failed. A larger effect cannot be claimed from this pilot. |
 | Generalization of graph-pattern-constrained vulnerability beyond the evaluated setting | [Pattern-constraint study](exploratory_pattern_constraints/README.md): screening and 200-case expansion are complete | New classifiers, other datasets, feature-consistent rewirings, or stronger attacker-access restrictions. The current C7 evidence is conditional on the fixed model and graph-store threat model. |
 | Generalization of the resolution finding to new datasets or architectures | Current additional resolution cohort is complete | Independent datasets/trained models or edge-attribute-aware architectures; those experiments have not been conducted. |
-| HI-Small SubgraphX robustness across fresh explainer seeds or retrained models | [SubgraphX HI-Small protocol](subgraphx_hi_small/README.md): the full 795-target single-trial cohort is complete | Independent fresh-seed evaluation or additional trained models. Full-cohort completion alone does not establish this generalization. |
+| HI-Small SubgraphX robustness across independently repeated searches or retrained models | Full 795-target single-trial study and [100-target fresh-seed audit](exploratory_subgraphx_fresh_seed/README.md) are complete | New attack-search trials or independently trained models. The completed audit reuses fixed attacks and addresses unseen explanation randomness only. |
 
-Current completion counts and publication boundaries are in the [latest snapshot](publication_snapshots/2026-11-02-062105/README.md); earlier partial snapshots remain as history. Every experiment phase listed in the latest snapshot is complete, including HI-Small SubgraphX. Negative promotion decisions remain negative results rather than unfinished experiments.
+Current completion counts and publication boundaries are in the [latest snapshot](publication_snapshots/2026-11-02-102453/README.md); earlier partial snapshots remain as history. Every experiment phase listed in the latest snapshot is complete, including HI-Small SubgraphX. Negative promotion decisions remain negative results rather than unfinished experiments.
 
 ## Literature positioning
 
@@ -236,13 +249,13 @@ These references motivate narrow candidate gaps. They are not an exhaustive nove
 1. Most completed attacks change graph structure while freezing transaction-derived features. The current main threat model is graph-store corruption, not fully consistent financial transaction manipulation.
 2. Class preservation is not identical to probability preservation. Report both, including failures; a 0.02 probability cap belongs only to experiments explicitly configured for it.
 3. Binary top-quarter overlap, top-10 overlap, native SubgraphX overlap, soft-mask cosine, hard fidelity, and soft fidelity are different quantities. Their numerical values are not interchangeable.
-4. Target-bootstrap intervals average repeated seeds/trials within targets. They omit dependence between connected nodes and uncertainty from retraining the classifier. Trial SD is not a confidence interval.
+4. Target-bootstrap intervals average repeated seeds/trials within targets. They omit dependence between connected nodes, common seed effects and uncertainty from retraining the classifier. Trial SD is not a confidence interval.
 5. Eligibility selects correctly classified illicit test targets with restricted neighborhoods. Results are conditional on this cohort and on one frozen classifier per dataset.
 6. No current evidence establishes human-investigator deception, ground-truth explanation error, universal robustness, or an effective new defense.
 7. Do not claim universal degradation, universal superiority over random search, a fully black-box attack, first-ever symmetry-aware evaluation, or first-ever financial multigraph attacks.
 
 ## Suggested concise contribution statement
 
-> We evaluate prediction-preserving explanation attacks on directed financial transaction multigraphs and show that their measured effects depend on attacker access, explainer randomness, and evaluation granularity. Paired deletion-only experiments quantify the role of insertion access; fresh-seed and random-explanation controls distinguish overlap changes from uniform fidelity degradation; and saved search trajectories expose strong random-search baselines and early proposal-budget saturation. A multigraph audit, strengthened by additional fresh-randomness and native edge-order controls, shows that transaction-ID instability can obscure attack-associated changes when the classifier cannot distinguish parallel records. A transaction-consistency pilot further shows that refreshing derived account features changes the fidelity intervention being measured, while its primary matched-search effect remains inconclusive. A completed expansion on 100 additional targets with two search trials each supports explanation disruption under exact degree and short-cycle-count preservation, with lower feasible-case coverage on HI-Small.
+> We evaluate prediction-preserving explanation attacks on directed financial transaction multigraphs and show that their measured effects depend on attacker access, explainer randomness, and evaluation granularity. Paired deletion-only experiments quantify the role of insertion access; fresh-seed audits reveal attenuation with residual SubgraphX overlap disruption on HI-Small, while random-explanation controls distinguish overlap changes from uniform fidelity degradation; and saved search trajectories expose strong random-search baselines and early proposal-budget saturation. A multigraph audit, strengthened by additional fresh-randomness and native edge-order controls, shows that transaction-ID instability can obscure attack-associated changes when the classifier cannot distinguish parallel records. A transaction-consistency pilot further shows that refreshing derived account features changes the fidelity intervention being measured, while its primary matched-search effect remains inconclusive. A completed expansion on 100 additional targets with two search trials each supports explanation disruption under exact degree and short-cycle-count preservation, with lower feasible-case coverage on HI-Small.
 
 Keep screening and expansion results separate and retain infeasible cases in the denominator. Distinguish the transaction-consistency pilot's negative primary result from its secondary fidelity findings. All claims remain conditional on the fixed models, target eligibility, feature/intervention settings and stated metrics.

@@ -5,7 +5,7 @@ This repository contains experiment source, protocols, aggregated results, and d
 ## Results to read first
 
 - [Research questions and claim register](RESEARCH_CONTRIBUTIONS.md): completed contributions, exploratory findings, pending hypotheses, literature boundaries, and limitations.
-- [Latest dated publication snapshot](publication_snapshots/2026-11-02-062105/README.md): reports rebuilt from verified case records, including the completed 795-target HI-Small SubgraphX study. Earlier partial snapshots remain preserved separately.
+- [Latest dated publication snapshot](publication_snapshots/2026-11-02-102453/README.md): reports rebuilt from verified case records, including the completed 795-target HI-Small SubgraphX study and separate 100-target fresh-seed audit. Earlier partial snapshots remain preserved separately.
 - [Complete-graph report](complete_graphs/REPORT.md): five-trial results for all eligible targets, with the earlier pilot also shown.
 - [Full-cohort soft fidelity](complete_graphs/results/soft_fidelity_full/REPORT.md): 166 AMLSim and 795 HI-Small targets; soft versus hard fidelity and all-edge-removal ablation.
 - [Independent diagnostic pilot](complete_graphs/results/fidelity_diagnostic/REPORT.md): physical full-graph versus local edge-removal checks for 20 targets.
@@ -16,6 +16,8 @@ The historical root-level results reports describe the earlier study (including 
 ## Follow-up experiments
 
 The followup_audit and deletion_access folders contain completed fresh-seed/random-mask, search-budget, and access-restriction analyses. The exploratory_multigraph_resolution folder contains completed retrospective diagnostic analyses. The exploratory_fidelity_objective folder preserves a negative pilot. The additional resolution-validation cohort, pattern-constraint screening and 200-case expansion, transaction-consistency pilot, and 795-target single-trial HI-Small SubgraphX study are complete in the latest snapshot. publish_latest_results.py validates immutable source/case records, target/trial/seed coverage and selected structural checks, then invokes each original report function in an isolated temporary directory. Only aggregate outputs and case hashes are published; live case records are never published or modified by that exporter.
+
+The separate exploratory_subgraphx_fresh_seed folder evaluates saved HI-Small SubgraphX attacks on 100 targets and five new paired seeds. It does not repeat attack optimization. A Windows file-lock interruption was recovered using resume_resilient.py, which adds bounded retries only to JSON persistence and deterministic reporting; the original scientific source and frozen manifest remain unchanged. See its [recovery note](exploratory_subgraphx_fresh_seed/RECOVERY.md). The dated validation summary verifies recovery hashes and the 18 completed cases retained unchanged.
 
 Each follow-up README describes its protocol and runtime assumptions. Source code reuses existing local prepared graphs, frozen classifiers, and saved per-target cases; these are excluded from Git. The published aggregate snapshot therefore supports review of the reported evidence but does not alone reproduce the full pipeline. Runtime manifests/checkpoints must be restored and source hashes must match before resuming. Run at most one controller per experiment/output directory; separate experiments can run concurrently when resources permit. Do not infer live process state from an uploaded status file.
 
